@@ -1,0 +1,34 @@
+---
+title: "Portin"
+sidebar_label: "Portin"
+---
+
+## PortIn
+
+### Formaat
+
+**portin** ( *io port number* )
+
+### Beschrijving
+
+De functie leest een systeem I/O poort van het geheugen uit en geeft de waarde teruf (0-255).
+
+Het lezen en schrijven van systeem I/O poorten kna gevaarlijk zijn en kan zorgen voor onvoorspelbare resultaten. Deze functie wordt normaal uitgeschakeld om veiligeheidsredenen. Via Edit\>Preferences kan je dit aanpassen.
+
+Deze functie **is alleen beschikbaar voor het Windows Platform**
+
+### Zie ook
+
+[PortOut](./portout.md)
+
+### Voorbeeld
+
+Het voorbeeld staat op de [PortOut](./portout.md) pagina.
+
+### Nieuw vanaf
+
+0.9.6.41
+
+------------------------------------------------------------------------
+
+[vorige](./setsettings.md) \| [Speciale Opdrachten](./miscellaneous.md) \| [volgende](./portout.md)

@@ -1,0 +1,38 @@
+---
+title: "Ceil"
+sidebar_label: "Ceil"
+---
+
+## Ceil
+
+### Formaat
+
+**ceil** ( *uitdrukking* )
+
+### Beschrijving
+
+Afronden naar **boven** (ceil is het Engelse woord voor *Plafond*).\
+Het getal van de *uitdrukking* wordt daarbij afgerond naar het laagste gehele getal dat groter is dan of gelijk is aan het oorspronkelijke getal.\
+
+- Voor positieve getallen is het dus 3,14 → 4 en 5,85 → 6.\
+  \* Voor negatieve getallen wordt dezelfde regel toegepast: −4,24 → −4.
+
+### Zie ook
+
+[Floor](./floor.md)
+
+### Voorbeeld
+
+``` basic4gl
+print ceil(9.1)
+print ceil(-5.4)
+```
+
+geeft dan
+
+    10
+    -5
+
+------------------------------------------------------------------------
+
+[vorige](./atan.md) \| [Wiskundige Functies](./mathematical.md) \| [volgende](./cos.md)

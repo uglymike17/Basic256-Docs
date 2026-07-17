@@ -1,0 +1,8 @@
+---
+title: "Programsyntax"
+sidebar_label: "Programsyntax"
+---
+
+## Syntaxe du programme
+
+Les programmes sous BASIC-256 sont formés d’une série d’instructions séparées par un retour à la ligne et qui sont exécutées dans l’ordre.

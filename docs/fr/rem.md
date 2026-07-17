@@ -1,0 +1,15 @@
+---
+title: "Rem"
+sidebar_label: "Rem"
+---
+
+## Rem
+
+### Format
+
+**rem** *commentaire*\
+**\#** *commentaire*
+
+### Description
+
+Ligne de commentaire pour aider à comprendre le code. Une ligne qui commence par **rem** ou par **\#** est ignorée par BASIC-256.

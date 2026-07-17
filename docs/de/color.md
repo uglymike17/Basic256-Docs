@@ -1,0 +1,23 @@
+---
+title: "Color"
+sidebar_label: "Color"
+---
+
+## Color
+
+### Format
+
+**color** *Farbname*\
+**color** ( *Farbname* )\
+**color** *r*, *g*, *b*\
+**color** ( *r*, *g*, *b* )\
+**color** *rgb*\
+**color** ( *rgb* )
+
+### Beschreibung
+
+Setzt die aktuelle Farbe auf *Farbname*.
+
+### Beispiel
+
+    color blue

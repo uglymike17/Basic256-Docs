@@ -1,0 +1,19 @@
+---
+title: "Say"
+sidebar_label: "Say"
+---
+
+## Say
+
+### Format
+
+**say** *expression*
+**say** ( *expression* )
+
+### Description
+
+Uses the the system Text to Speech (TTS) engine to say the *expression*. In LINUX the FLite or eSpeak libraries are required. In Windows the current default SAPI voice will be used.
+
+### New To Version
+
+0.9.4

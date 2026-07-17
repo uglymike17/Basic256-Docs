@@ -1,0 +1,14 @@
+---
+title: "Refresh"
+sidebar_label: "Refresh"
+---
+
+## Refresh
+
+### Format
+
+refresh
+
+### Beschreibung
+
+Aktualisiert das Grafikfenster mit allen Grafikbefehlen, die seit dem vorherigen REFRESH abgesetzt wurden. REFRESH funktioniert nur im FastGraphics-Modus.

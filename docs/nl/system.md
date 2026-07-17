@@ -1,0 +1,24 @@
+---
+title: "System"
+sidebar_label: "System"
+---
+
+## System
+
+### Formaat
+
+**system** *uitdrukking*\
+**system** ( *uitdrukking* )
+
+### Beschrijving
+
+Voert een system commando uit in het terminal venster.\
+:!: OPGELET: Dit kan een zeer gevaarlijke opdracht zijn. Gebruik dit enkel als je weet wat je doet.
+
+### Vanaf versie
+
+0.9.5h
+
+------------------------------------------------------------------------
+
+[Speciale Opdrachten](./miscellaneous.md) \| [volgende](./ostype.md)

@@ -1,0 +1,12 @@
+---
+title: "Anonymefelder"
+sidebar_label: "Anonymefelder"
+---
+
+### Anonyme Felder
+
+Ein anonymes Feld ist eine Reihe von numerischen Werten oder Zeichenketten-Werten, die mit Kommata abgetrennt und in geschweifte Klammern eingeschlossen sind.\\
+Ein anonymes Feld kann anstelle von Feldvariablen oder zur Initialisierung von Feldvariablen benutzt werden:\\
+
+    dim myarray(4)
+    mayarray = {1, 2, 3, 4}
