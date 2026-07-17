@@ -86,7 +86,7 @@ sidebar_label: "Start"
 
 #### Sound
 
-[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md), [WAVplay](./wavplay.md), [WAVstop](./wavstop.md), [WAVwait](./wavwait.md)
+[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md)
 
 #### Time and Date
 

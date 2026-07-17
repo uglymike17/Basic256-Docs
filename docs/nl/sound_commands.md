@@ -18,9 +18,6 @@ Je vindt hierna de opdrachten die in het programma gebruikt kunnen worden om muz
 | [Say](./say.md)         | Zeg het nu zelf                                        |
 | [Sound](./sound.md)     | Muziek, maestro!                                       |
 | [Volume](./volume.md)   | Kan het iets stiller?                                  |
-| [WAVplay](./wavplay.md) | speel dit bestandje af                                 |
-| [WAVstop](./wavstop.md) | stop maar met spelen                                   |
-| [WAVwait](./wavwait.md) | wacht tot hij gedaan heeft met de muziek af te spelen! |
 
 ------------------------------------------------------------------------
 

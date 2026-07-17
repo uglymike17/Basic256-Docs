@@ -123,7 +123,7 @@ sidebar_label: "Start"
 Работа со строками**\
 [Asc](./asc.md), [Chr](./chr.md), [Count](./count.md), [Countx](./countx.md), [Decimal](./decimal.md), [Instr](./instr.md), [Instrx](./instrx.md), [Left](./left.md), [Length](./length.md), [Lower](./lower.md), [MD5](./md5.md), [Mid](./mid.md), [Replace](./replace.md), [Replacex](./replacex.md), [Right](./right.md), [String](./string.md), [Upper](./upper.md)\**
 Звук**\
-[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md), [WAVplay](./wavplay.md), [WAVstop](./wavstop.md), [WAVwait](./wavwait.md)\**
+[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md)\**
 Время и дата**\
 [Day](./day.md), [Hour](./hour.md), [Minute](./minute.md), [Month](./month.md), [Second](./second.md), [Year](./year.md)\**
 Дополнительные операторы и функции\*\*\

@@ -5,6 +5,10 @@ sidebar_label: "Wavstop"
 
 ### WAVstop
 
+:::warning Устарело
+Команды WAV устарели. При запуске выводится предупреждение — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Используйте вместо них [Sound](./sound.md), SoundPlay или SoundPlayer.
+:::
+
 #### Формат:
 
 **wavstop**
@@ -15,7 +19,7 @@ sidebar_label: "Wavstop"
 
 #### Смотри также:
 
-[WAVplay](./wavplay.md), [WAVwait](./wavwait.md)
+[Sound](./sound.md)
 
 #### Впервые в версии:
 

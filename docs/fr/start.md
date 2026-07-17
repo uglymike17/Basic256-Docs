@@ -133,7 +133,7 @@ L’ancienne page est la [référence de la version 0.9.6.32](./ref0.9.6.32.md).
 
 #### Son
 
-[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md), [WAVplay](./wavplay.md), [WAVstop](./wavstop.md), [WAVwait](./wavwait.md)
+[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md)
 
 #### Sortie Texte
 

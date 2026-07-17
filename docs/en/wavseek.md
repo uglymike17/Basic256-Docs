@@ -5,6 +5,10 @@ sidebar_label: "Wavseek"
 
 ## WAVseek (Statement)
 
+:::warning Obsolete
+The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundSeek](./soundseek.md) instead.
+:::
+
 ### Format
 
 **wavseek** ( [numeric_expression](./numericexpressions.md) )\
@@ -16,7 +20,7 @@ Moves the output location of the current autio file to a specific location (deci
 
 ### See Also
 
-[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md), [WAVlength](./wavlength.md), [WAVpause](./wavpause.md), [WAVplay](./wavplay.md), [WAVpos](./wavpos.md), [WAVseek](./wavseek.md), [WAVstate](./wavstate.md), [WAVstop](./wavstop.md), [WAVwait](./wavwait.md)
+[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md), [SoundLength](./soundlength.md), [SoundPause](./soundpause.md), [SoundPlay](./soundplay.md), [SoundPosition](./soundposition.md), [SoundSeek](./soundseek.md), [SoundState](./soundstate.md), [SoundStop](./soundstop.md), [SoundWait](./soundwait.md)
 
 ### History
 

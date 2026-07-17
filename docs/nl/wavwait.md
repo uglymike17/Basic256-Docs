@@ -5,6 +5,10 @@ sidebar_label: "Wavwait"
 
 ## WAVwait
 
+:::warning Verouderd
+De WAV-opdrachten zijn verouderd. Bij uitvoering verschijnt een waarschuwing — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Gebruik in plaats daarvan [Sound](./sound.md), SoundPlay of SoundPlayer.
+:::
+
 ### Formaat
 
 **wavwait** *bestandsnaam*\
@@ -13,7 +17,7 @@ Wacht tot het WAV audio bestand volledig afgespeeld is .
 
 ### Zie Ook
 
-[WAVplay](./wavplay.md) [WAVstop](./wavstop.md)
+[Sound](./sound.md)
 
 ### Voorbeeld
 

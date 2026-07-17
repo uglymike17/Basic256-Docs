@@ -5,6 +5,10 @@ sidebar_label: "Wavplay"
 
 ## WAVplay
 
+:::warning Obsolète
+Les instructions WAV sont obsolètes. À l’exécution, un avertissement s’affiche — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Utilisez plutôt [Sound](./sound.md), SoundPlay ou SoundPlayer.
+:::
+
 ### Format
 
 **wavplay** *nom_de_fichier*\
@@ -16,7 +20,7 @@ Joue le fichier audio WAV *nom_de_fichier* en arrière plan (de façon asynchron
 
 ### Voir Aussi
 
-[WAVstop](./wavstop.md) [WAVwait](./wavwait.md)
+[Sound](./sound.md)
 
 ### Disponible à partir de la version
 

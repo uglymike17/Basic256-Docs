@@ -5,6 +5,10 @@ sidebar_label: "Wavplay"
 
 ## WAVplay
 
+:::warning Veraltet
+Die WAV-Anweisungen sind veraltet. Beim Ausführen erscheint eine Warnung — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Verwende stattdessen [Sound](./sound.md), SoundPlay oder SoundPlayer.
+:::
+
 ### Format
 
 **wavplay** *filename*\
@@ -16,7 +20,7 @@ Play WAV audio file asynchronously (in the background).
 
 ### See Also
 
-[WAVstop](./wavstop.md) [WAVwait](./wavwait.md)
+[Sound](./sound.md)
 
 ### New To Version
 

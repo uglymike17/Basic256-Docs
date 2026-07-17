@@ -5,6 +5,10 @@ sidebar_label: "Wavstop"
 
 ## WAVstop
 
+:::warning Veraltet
+Die WAV-Anweisungen sind veraltet. Beim Ausführen erscheint eine Warnung — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Verwende stattdessen [Sound](./sound.md), SoundPlay oder SoundPlayer.
+:::
+
 ### Format
 
 **wavstop**
@@ -15,7 +19,7 @@ Stop playing the current asynchronous (background) WAV audio file.
 
 ### See Also
 
-[WAVplay](./wavplay.md) [WAVwait](./wavwait.md)
+[Sound](./sound.md)
 
 ### New To Version
 
