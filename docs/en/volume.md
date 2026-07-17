@@ -16,7 +16,7 @@ Adjust the amplititude of the notes played with the [Sound](./sound.md) command.
 
 ### See Also
 
-Say, [Sound](./sound.md), [Volume](./volume.md), [WAVlength](./wavlength.md), [WAVpause](./wavpause.md), [WAVplay](./wavplay.md), [WAVpos](./wavpos.md), [WAVseek](./wavseek.md), [WAVstate](./wavstate.md), [WAVstop](./wavstop.md), [WAVwait](./wavwait.md)
+[Say](./say.md), [Sound](./sound.md), [Volume](./volume.md), [WAVlength](./wavlength.md), [WAVpause](./wavpause.md), [WAVplay](./wavplay.md), [WAVpos](./wavpos.md), [WAVseek](./wavseek.md), [WAVstate](./wavstate.md), [WAVstop](./wavstop.md), [WAVwait](./wavwait.md)
 
 ### History
 
