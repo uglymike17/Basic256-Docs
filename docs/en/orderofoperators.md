@@ -13,12 +13,14 @@ Operators are evaluated according to a strict set of rules. These rules are call
 | 1 | ( ) | Grouping |
 | 2 | ^ | Exponent |
 | 3 | \- ~ | Unary Minus and Bitwise Negation (NOT) |
-| 4 | \* / \\ | Multiplication, Division, and Integer Division |
-| 5 | % | Integer Remainder (Mod) |
-| 6 | \+ - ; | Addition/Concatenation, and Subtraction |
+| 4 | \* / \\ % mod | Multiplication, Division, Integer Division, and Remainder (Mod) |
+| 5 | \+ - | Addition/Concatenation, and Subtraction |
+| 6 | \<\< \>\> | Bitwise Shift Left and Right |
 | 7 | & \| | Bitwise And and Bitwise Or |
 | 8 | \< \<= \> \>= = \<\> | Comparison (Numeric and String) |
 | 9 | NOT | Not |
 | 10 | AND | Logical And |
-| 11 | OR | Logical Or |
-| 12 | XOR | Logical Exclusive Or |
+| 11 | OR XOR | Logical Or and Logical Exclusive Or |
+| 12 | ; | Concatenation |
+
+The concatenation operator `;` binds more loosely than every other operator, so `a ; b or c` is evaluated as `a ; (b or c)`. Use parentheses when you mean `(a ; b) or c`.

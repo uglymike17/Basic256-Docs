@@ -18,6 +18,8 @@ Most operators work with one or two expressions (integers, floating point number
 | -= | Subtract from a Variable | a -= 9 | Same as a = a - 9 |
 | \*= | Multiply a Variable | a \*= 2 | Same as a = a \* 2 |
 | /= | Divide a Variable | a /= 8 | Same as a = a / 8 |
+| &= | Bitwise And into a Variable | a &= 12 | Same as a = a & 12. If either value is not a number the ampersand concatenates instead, so s\$ &= "x" appends to a string. |
+| ;= | Concatenate to a Variable | f\$ ;= 9 | Same as f\$ = f\$ ; 9. Always concatenates, converting numbers to strings. |
 | ++ | Increment Prefix | ++a | Increment (add one) the the variable and return the value after the increment. (may be applied ONLY to numeric variables or array elements) |
 | ++ | Increment Suffix | a++ | Return the value of the variable and then increment the variable by one for the next time it is accessed. (may be applied ONLY to numeric variables or array elements) |
 | – | Decrement Prefix | –a | Decrement (subtract one) the variable and return the value after the decrement. (may be applied ONLY to numeric variables or array elements) |
