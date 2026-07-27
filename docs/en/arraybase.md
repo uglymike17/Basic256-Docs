@@ -28,9 +28,37 @@ By default an integer from 0 to one less than the length of an array is used to 
     4            77
     5            88
 
+## GetArrayBase (Function)
+
+### Format
+
+**getarraybase**\
+**getarraybase** ( )
+
+returns [integer_expression](./integerexpressions.md)
+
+### Description
+
+Returns the array base currently in effect — 0 or 1 — as set by the [ArrayBase](./arraybase.md) statement. The default is 0.
+
+This is useful in a [Function](./function.md), [Subroutine](./subroutine.md), or [Module](./modules.md) that must index arrays correctly no matter which base the calling program has chosen.
+
+### Example
+
+    b = getarraybase
+    print "indexing starts at " + b
+
+    arraybase 1
+    print "indexing starts at " + getarraybase()
+
+will print
+
+    indexing starts at 0
+    indexing starts at 1
+
 ### See Also
 
-[ArrayBase](./arraybase.md), [ArrayLength](./arraylength.md), [Assigned](./assigned.md), [Dim](./dim.md), [Fill](./fill.md), [Map](./map.md), [Redim](./redim.md), [TypeOf](./typeof.md), [Unassign](./unassign.md), [VariableWatch](./variablewatch.md)
+[ArrayBase](./arraybase.md), [ArrayLength](./arraylength.md), [Assigned](./assigned.md), [Dim](./dim.md), [Fill](./fill.md), [GetArrayBase](./arraybase.md), [Map](./map.md), [Redim](./redim.md), [TypeOf](./typeof.md), [Unassign](./unassign.md), [VariableWatch](./variablewatch.md)
 
 ### History
 
