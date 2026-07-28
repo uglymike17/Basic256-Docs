@@ -26,8 +26,10 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // GitHub Pages deployment: https://uglymike17.github.io/Basic256-Docs/
-  url: 'https://uglymike17.github.io',
+  // Served from the custom domain doc.basic256.org (GitHub Pages).
+  // Custom domain => site is at the root, so baseUrl is '/'.
+  // The static/CNAME file keeps the custom domain across deploys.
+  url: 'https://doc.basic256.org',
   baseUrl: '/',
   organizationName: 'uglymike17',
   projectName: 'Basic256-Docs',
