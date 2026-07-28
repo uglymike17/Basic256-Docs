@@ -28,7 +28,7 @@ const config = {
 
   // GitHub Pages deployment: https://uglymike17.github.io/Basic256-Docs/
   url: 'https://uglymike17.github.io',
-  baseUrl: '/Basic256-Docs/',
+  baseUrl: '/',
   organizationName: 'uglymike17',
   projectName: 'Basic256-Docs',
   deploymentBranch: 'gh-pages',
