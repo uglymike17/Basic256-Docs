@@ -49,8 +49,15 @@ Very large and small floating point numbers may also be represented in scientifi
 | -5.3e4                | -53000         |
 | 2e-1                  | 0.2            |
 | 5.12e-9               | 0.00000000512  |
+
 ### String Expressions
+
+String expressions return text. They are created with the [String Operators](./stringoperators.md) and the functions that return text, working on [String Constants](./stringconstants.md) and [Variables](./variables.md). See [String Expressions](./stringexpressions.md).
+
 ### Boolean Expressions
+
+Boolean expressions answer a true or false question. They are created with the [Comparison Operators](./comparisonoperators.md) and the [Logical Operators](./logicaloperators.md). There is no separate Boolean type: true is the number 1 and false is the number 0. See [Boolean Expressions](./booleanexpressions.md).
+
 ### Regular Expressions
 
 Regular Expressions are just normal strings but have a specific format used in searching and replacing text.

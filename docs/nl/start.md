@@ -43,7 +43,7 @@ Misschien vind je de informatie een beetje te licht, maar het is de bedoeling me
 - [fastgraphics](./fastgraphics.md),[float](./float.md),[floor](./floor.md),[font](./font.md),[fornext](./fornext.md)
 - [getcolor](./getcolor.md),[getsetting](./getsetting.md),[getslice](./getslice.md),[gosubreturn](./gosubreturn.md),[goto](./goto.md),[graphheight](./graphheight.md),[graphsize](./graphsize.md),[graphvisible](./graphvisible.md),[graphwidth](./graphwidth.md)
 - [hour](./hour.md)
-- [ifthen](./ifthen.md),[imgload](./imgload.md),[imgsave](./imgsave.md),[implode](./implode.md),[implodex](./implodex.md),[input](./input.md),[instr](./instr.md),[instrx](./instrx.md),[int](./int.md)
+- [ifthen](./ifthen.md),[imgload](./imgload.md),[imgsave](./imgsave.md),[implode](./implode.md),[input](./input.md),[instr](./instr.md),[instrx](./instrx.md),[int](./int.md)
 - [key](./key.md),[keyboard](./keyboard.md),[kill](./kill.md)
 - [lasterror](./lasterror.md),[lasterrorextra](./lasterrorextra.md),[lasterrorline](./lasterrorline.md),[lasterrormessage](./lasterrormessage.md),[left](./left.md),[length](./length.md),[line](./line.md),[log](./log.md),[log10](./log10.md),[lower](./lower.md)
 - [md5](./md5.md),[mid](./mid.md),[minute](./minute.md),[month](./month.md),[mouseb](./mouseb.md),[mousex](./mousex.md),[mousey](./mousey.md),[msec](./msec.md)
