@@ -916,30 +916,32 @@ Zet de waarde van het *potlood*
 - in een RGB kleur die samengesteld is door een waarde van *rood*, *blauw*, *groen*
 - of in een kleur opgegeven door de rgb waarde.
 
-Er bestaat ook een *kleurnaam* **CLEAR**, met een waarde **-1**. Dit komt overeen met de gom. De tekening of de pixel wordt dan doorzichtig. Dit laatste is vooral nuttig als je met sprites werkt via de [Spriteslice](./spriteslice.md) opdracht.\
+Er bestaat ook een *kleurnaam* **CLEAR**, met een waarde **0**. Dit komt overeen met de gom. De tekening of de pixel wordt dan doorzichtig. Dit laatste is vooral nuttig als je met sprites werkt via de [Spriteslice](./spriteslice.md) opdracht.\
 
 | Kleurnamen en RGB waarden |  |  |
 |----|----|----|
-| Kleurnaam[^1] | RGB Waarde |  |
-| black | 0, 0, 0 | \<hi \#000000\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| white | 255, 255, 255 | \<hi \#FFFFFF\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| red | 255, 0, 0 | \<hi \#FF0000\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkred | 128, 0, 0 | \<hi \#800000\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| green | 0, 255, 0 | \<hi \#00FF00\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkgreen | 0, 128, 0 | \<hi \#008000\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| blue | 0, 0, 255 | \<hi \#0000FF\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkblue | 0, 0, 128 | \<hi \#000080\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| cyan | 0, 255, 255 | \<hi \#00FFFF\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkcyan | 0, 128, 128 | \<hi \#008080\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| purple | 255, 0, 255 | \<hi \#FF00FF\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkpurple | 128, 0, 128 | \<hi \#800080\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| yellow | 255, 255, 0 | \<hi \#FFFF00\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkyellow | 128, 128 ,0 | \<hi \#808000\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| orange | 255, 102, 0 | \<hi \#FF6600\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkorange | 176, 61 ,0 | \<hi \#B03D00\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| grey | 164, 164 ,164 | \<hi \#A4A4A4\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| darkgrey | 128, 128 ,128 | \<hi \#808080\>\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~\~\~~SP\~~\</hi\> |
-| clear | -1 | \~~SP\~~ |
+| Kleurnaam[^1] | RGB Waarde | Kleur |
+| black | 0, 0, 0 | ![black](@site/static/img/wiki/color_black.png) |
+| white | 255, 255, 255 | ![white](@site/static/img/wiki/color_white.png) |
+| red | 255, 0, 0 | ![red](@site/static/img/wiki/color_red.png) |
+| darkred | 128, 0, 0 | ![darkred](@site/static/img/wiki/color_darkred.png) |
+| green | 0, 255, 0 | ![green](@site/static/img/wiki/color_green.png) |
+| darkgreen | 0, 128, 0 | ![darkgreen](@site/static/img/wiki/color_darkgreen.png) |
+| blue | 0, 0, 255 | ![blue](@site/static/img/wiki/color_blue.png) |
+| darkblue | 0, 0, 128 | ![darkblue](@site/static/img/wiki/color_darkblue.png) |
+| cyan | 0, 255, 255 | ![cyan](@site/static/img/wiki/color_cyan.png) |
+| darkcyan | 0, 128, 128 | ![darkcyan](@site/static/img/wiki/color_darkcyan.png) |
+| purple | 255, 0, 255 | ![purple](@site/static/img/wiki/color_purple.png) |
+| darkpurple | 128, 0, 128 | ![darkpurple](@site/static/img/wiki/color_darkpurple.png) |
+| yellow | 255, 255, 0 | ![yellow](@site/static/img/wiki/color_yellow.png) |
+| darkyellow | 128, 128, 0 | ![darkyellow](@site/static/img/wiki/color_darkyellow.png) |
+| orange | 255, 102, 0 | ![orange](@site/static/img/wiki/color_orange.png) |
+| darkorange | 176, 61, 0 | ![darkorange](@site/static/img/wiki/color_darkorange.png) |
+| grey / gray | 164, 164, 164 | ![grey](@site/static/img/wiki/color_grey.png) |
+| darkgrey / darkgray | 128, 128, 128 | ![darkgrey](@site/static/img/wiki/color_darkgrey.png) |
+| clear | 0 (doorzichtig) |  |
+
+Beide schrijfwijzen van grijs werken: **grey** en **gray** zijn dezelfde kleur, en zo ook **darkgrey** en **darkgray**. Hoofdletters of kleine letters maakt niet uit.
 
 ### Zie ook
 
