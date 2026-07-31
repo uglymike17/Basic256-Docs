@@ -47,8 +47,8 @@ If the current pen and brush are both set to CLEAR the pixels or shapes drawn wi
 | DARKYELLOW | 255, 128, 128 ,0 | 4286611456 | ![darkyellow](@site/static/img/wiki/color_darkyellow.png) |
 | ORANGE | 255, 255, 102, 0 | 4294927872 | ![orange](@site/static/img/wiki/color_orange.png) |
 | DARKORANGE | 255, 176, 61 ,0 | 4289344256 | ![darkorange](@site/static/img/wiki/color_darkorange.png) |
-| GREY | 255, 164, 164 ,164 | 4288980132 | ![grey](@site/static/img/wiki/color_grey.png) |
-| DARKGREY | 255, 128, 128 ,128 | 4286611584 | ![darkgrey](@site/static/img/wiki/color_darkgrey.png) |
+| GREY / GRAY | 255, 164, 164 ,164 | 4288980132 | ![grey](@site/static/img/wiki/color_grey.png) |
+| DARKGREY / DARKGRAY | 255, 128, 128 ,128 | 4286611584 | ![darkgrey](@site/static/img/wiki/color_darkgrey.png) |
 | CLEAR | 0, 0, 0, 0 | 0 |  |
 
 ### Deprecated Form
