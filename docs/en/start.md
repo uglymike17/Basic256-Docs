@@ -3,7 +3,7 @@ title: "Start"
 sidebar_label: "Start"
 ---
 
-### BASIC-256 Syntax Reference 2.1-Beta
+### Basic256 Syntax Reference v2.1
 
 - [Program Syntax](./programsyntax.md)
 - [Modules](./modules.md)
