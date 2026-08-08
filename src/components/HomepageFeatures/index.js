@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Complete Syntax Reference',
-    img: 'img/wiki/stampmaker.png',
+    img: 'img/wiki/bitbot_reading.png',
     description: (
       <>
         Every BASIC-256 statement, function, and operator documented with
