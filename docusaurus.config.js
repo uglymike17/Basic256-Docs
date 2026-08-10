@@ -18,7 +18,7 @@ const config = {
     },
   },
   title: 'BASIC-256 Documentation',
-  tagline: 'An educational BASIC interpreter and IDE',
+  tagline: 'BASIC256 is a classic BASIC programming language designed to make learning programming fun through graphics, animation, sound and experimentation.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
