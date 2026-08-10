@@ -115,8 +115,8 @@ const config = {
                 href: 'https://github.com/uglymike17/basic256',
               },
               {
-                label: 'Downloads (Releases)',
-                href: 'https://github.com/uglymike17/basic256/releases',
+                label: 'Website',
+                href: 'https://basic256.org',
               },
               {
                 label: 'Run in Browser (WASM)',
@@ -128,16 +128,8 @@ const config = {
             title: 'Original Project',
             items: [
               {
-                label: 'Website',
-                href: 'https://basic256.org',
-              },
-              {
                 label: 'SourceForge',
                 href: 'https://sourceforge.net/projects/kidbasic/',
-              },
-              {
-                label: 'Original Wiki',
-                href: 'https://doc.basic256.org',
               },
             ],
           },
