@@ -68,7 +68,7 @@ const config = {
     ({
       image: 'img/social-card.jpg',
       metadata: [
-        {name: 'algolia-site-verification', content: 'CFA26B3731FB4ED5'},
+        {name: 'algolia-site-verification', content: 'C69DFA73DA380192'},
       ],
 
       // Algolia DocSearch. Renders a search box in the navbar.
