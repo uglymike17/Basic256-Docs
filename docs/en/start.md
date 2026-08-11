@@ -3,6 +3,8 @@ title: "Start"
 sidebar_label: "Start"
 ---
 
+<div id="autocomplete"></div>
+
 ### Basic256 Syntax Reference v2.1
 
 - [Program Syntax](./programsyntax.md)
@@ -175,4 +177,4 @@ sidebar_label: "Start"
 ### Other Documentation
 
 - [Removed Features and Statements](./removedfeatures.md)
-- \[\[systemrequirements\|System
+- [System Requirements](./systemrequirements.md)

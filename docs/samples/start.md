@@ -3,6 +3,8 @@ title: "Start"
 sidebar_label: "Start"
 ---
 
+<div id="autocomplete"></div>
+
 ## BASIC-256 Language Documentation
 
 ### Choose documentation language/Выберите документация язык

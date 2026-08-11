@@ -38,6 +38,17 @@ const config = {
 
   onBrokenLinks: 'throw',
 
+  // Algolia Experiences autocomplete library. Loaded site-wide so it survives
+  // client-side (SPA) navigation; it only activates on pages that contain the
+  // #autocomplete container (the start.md reference pages), and is a harmless
+  // no-op everywhere else.
+  scripts: [
+    {
+      src: 'https://cdn.jsdelivr.net/npm/@algolia/experiences/dist/experiences.js?appId=M3TKH0F370&apiKey=57100c07efad275f95a2a61122a0254e&experienceId=M3TKH0F370&env=prod',
+      async: true,
+    },
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
