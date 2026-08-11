@@ -3,8 +3,6 @@ title: "Start"
 sidebar_label: "Start"
 ---
 
-<div id="autocomplete"></div>
-
 ### Référence syntaxique de Basic256 v2.1
 
 - [Syntaxe du programme](./programsyntax.md)

@@ -38,17 +38,6 @@ const config = {
 
   onBrokenLinks: 'throw',
 
-  // Algolia Experiences autocomplete library. Loaded site-wide so it survives
-  // client-side (SPA) navigation; it only activates on pages that contain the
-  // #autocomplete container (the start.md reference pages), and is a harmless
-  // no-op everywhere else.
-  scripts: [
-    {
-      src: 'https://cdn.jsdelivr.net/npm/@algolia/experiences/dist/experiences.js?appId=M3TKH0F370&apiKey=57100c07efad275f95a2a61122a0254e&experienceId=M3TKH0F370&env=prod',
-      async: true,
-    },
-  ],
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -81,6 +70,17 @@ const config = {
       metadata: [
         {name: 'algolia-site-verification', content: 'CFA26B3731FB4ED5'},
       ],
+
+      // Algolia DocSearch. Renders a search box in the navbar.
+      // These three values come from the DocSearch program approval email
+      // (https://docsearch.algolia.com/apply). The apiKey MUST be the
+      // Search-only key (safe to commit publicly), never an Admin/Write key.
+      algolia: {
+        appId: 'REPLACE_WITH_APP_ID',
+        apiKey: 'REPLACE_WITH_SEARCH_ONLY_API_KEY',
+        indexName: 'REPLACE_WITH_INDEX_NAME',
+        contextualSearch: true,
+      },
 
       colorMode: {
         respectPrefersColorScheme: true,

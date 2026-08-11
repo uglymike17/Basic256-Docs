@@ -3,8 +3,6 @@ title: "Start"
 sidebar_label: "Start"
 ---
 
-<div id="autocomplete"></div>
-
 Deze documentatie werd geschreven voor jonge lezers vanaf **10 jaar**.
 Misschien vind je de informatie een beetje te licht, maar het is de bedoeling met BASIC-256 om een inleiding te hebben in de programmatie.
 
