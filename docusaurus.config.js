@@ -67,6 +67,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/social-card.jpg',
+      metadata: [
+        {name: 'algolia-site-verification', content: 'CFA26B3731FB4ED5'},
+      ],
+
       colorMode: {
         respectPrefersColorScheme: true,
       },
