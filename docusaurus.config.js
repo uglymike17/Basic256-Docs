@@ -76,9 +76,9 @@ const config = {
       // (https://docsearch.algolia.com/apply). The apiKey MUST be the
       // Search-only key (safe to commit publicly), never an Admin/Write key.
       algolia: {
-        appId: 'REPLACE_WITH_APP_ID',
-        apiKey: 'REPLACE_WITH_SEARCH_ONLY_API_KEY',
-        indexName: 'REPLACE_WITH_INDEX_NAME',
+        appId: 'LZHG9M42JA',
+        apiKey: '748fd8d320f443adf490d7a8fba15394',
+        indexName: 'Docusaurus documentation website',
         contextualSearch: true,
       },
 
