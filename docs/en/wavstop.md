@@ -5,9 +5,7 @@ sidebar_label: "Wavstop"
 
 ## WAVstop (Statement)
 
-:::warning Obsolete
-The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundStop](./soundstop.md) instead.
-:::
+**Obsolete.** The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundStop](./soundstop.md) instead.
 
 ### Format
 

@@ -5,9 +5,7 @@ sidebar_label: "Wavseek"
 
 ## WAVseek (Statement)
 
-:::warning Obsolete
-The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundSeek](./soundseek.md) instead.
-:::
+**Obsolete.** The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundSeek](./soundseek.md) instead.
 
 ### Format
 

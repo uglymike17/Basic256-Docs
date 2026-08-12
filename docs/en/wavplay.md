@@ -5,9 +5,7 @@ sidebar_label: "Wavplay"
 
 ## WAVplay (Statement)
 
-:::warning Obsolete
-The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundPlay](./soundplay.md) instead — see also [Sound](./sound.md) and [SoundPlayer](./soundplayer.md).
-:::
+**Obsolete.** The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundPlay](./soundplay.md) instead — see also [Sound](./sound.md) and [SoundPlayer](./soundplayer.md).
 
 ### Format
 

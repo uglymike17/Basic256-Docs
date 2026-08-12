@@ -5,9 +5,7 @@ sidebar_label: "Wavwait"
 
 ## WAVwait
 
-:::warning Obsolète
-Les instructions WAV sont obsolètes. À l’exécution, un avertissement s’affiche — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Utilisez plutôt [Sound](./sound.md), SoundPlay ou SoundPlayer.
-:::
+**Obsolète.** Les instructions WAV sont obsolètes. À l’exécution, un avertissement s’affiche — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Utilisez plutôt [Sound](./sound.md), SoundPlay ou SoundPlayer.
 
 ### Format
 

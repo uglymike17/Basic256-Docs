@@ -5,9 +5,7 @@ sidebar_label: "Wavpause"
 
 ## WAVpause (Statement)
 
-:::warning Obsolete
-The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundPause](./soundpause.md) instead.
-:::
+**Obsolete.** The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundPause](./soundpause.md) instead.
 
 ### Format
 

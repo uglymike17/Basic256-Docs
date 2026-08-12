@@ -5,9 +5,7 @@ sidebar_label: "Wavpos"
 
 ## WAVpos (Function)
 
-:::warning Obsolete
-The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundPosition](./soundposition.md) instead.
-:::
+**Obsolete.** The WAV statements are obsolete. Running one prints a warning — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Use [SoundPosition](./soundposition.md) instead.
 
 ### Format
 

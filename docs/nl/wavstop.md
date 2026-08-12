@@ -5,9 +5,7 @@ sidebar_label: "Wavstop"
 
 ## WAVstop
 
-:::warning Verouderd
-De WAV-opdrachten zijn verouderd. Bij uitvoering verschijnt een waarschuwing — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Gebruik in plaats daarvan [Sound](./sound.md), SoundPlay of SoundPlayer.
-:::
+**Verouderd.** De WAV-opdrachten zijn verouderd. Bij uitvoering verschijnt een waarschuwing — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Gebruik in plaats daarvan [Sound](./sound.md), SoundPlay of SoundPlayer.
 
 ### Formaat
 

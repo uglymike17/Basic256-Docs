@@ -5,9 +5,7 @@ sidebar_label: "Wavwait"
 
 ### WAVwait
 
-:::warning Устарело
-Команды WAV устарели. При запуске выводится предупреждение — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Используйте вместо них [Sound](./sound.md), SoundPlay или SoundPlayer.
-:::
+**Устарело.** Команды WAV устарели. При запуске выводится предупреждение — `WAVPLAY suite is obsolete. Use SOUND/SOUNDPLAY/SOUNDPLAYER instead`. Используйте вместо них [Sound](./sound.md), SoundPlay или SoundPlayer.
 
 #### Формат:
 
