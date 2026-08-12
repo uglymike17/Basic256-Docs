@@ -1,6 +1,6 @@
 ---
-title: "Graphicsimagejkstellr"
-sidebar_label: "Graphicsimagejkstellr"
+title: "Stellar Cores by Joel Kahn"
+sidebar_label: "Stellar Cores"
 ---
 
 <img src="/en/kahn_joel_stellar_cores.png" data-query="?200" width="200" alt="kahn_joel_stellar_cores.png" />

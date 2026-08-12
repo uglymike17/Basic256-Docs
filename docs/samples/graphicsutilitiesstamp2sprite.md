@@ -1,6 +1,6 @@
 ---
-title: "stamp2sprite.kbs"
-sidebar_label: "stamp2sprite.kbs"
+title: "Stamp-to-Sprite by j. m. Reneau"
+sidebar_label: "Stamp-to-Sprite"
 ---
 
 <img src="graphicsutilitiesstamp2sprite.png" data-query="?200" width="200" alt="graphicsutilitiesstamp2sprite.png" />

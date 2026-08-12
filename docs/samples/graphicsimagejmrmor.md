@@ -1,6 +1,6 @@
 ---
-title: "morie pattern - j.m.reneau 2010-07-27"
-sidebar_label: "morie pattern - j.m.reneau 2010-07-27"
+title: "Moire pattern - j.m.reneau 2010-07-27"
+sidebar_label: "Moire Pattern "
 ---
 
 <img src="/jmreneau_morie.png" data-query="?200" width="200" alt="jmreneau_morie.png" />

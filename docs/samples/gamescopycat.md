@@ -1,6 +1,6 @@
 ---
-title: "2013-01-07 j.m.reneau"
-sidebar_label: "2013-01-07 j.m.reneau"
+title: "Copy Cat by j.m.reneau"
+sidebar_label: "Copy Cat"
 ---
 
 |  |  |
@@ -100,6 +100,7 @@ Tested with version 1.99.99.9 on 2016-01-12.
     subroutine playdie()
        sound 100,500
        say "you loose."
+       clg
     end subroutine
 
     subroutine playsound(s, d)

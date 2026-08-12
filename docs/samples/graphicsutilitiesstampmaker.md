@@ -1,11 +1,12 @@
 ---
-title: "Draw a shape then copy then copy the array to your program and use it as a stamp or a poly. The shape is completed when you return to the initial point (Red)"
-sidebar_label: "Draw a shape then copy then copy the array to your program and use it as a stamp or a poly. The shape is completed when you return to the initial point (Red)"
+title: "Stamp Maker"
+sidebar_label: "Stamp Maker"
 ---
 
 ## Stampmaker
 
 Generates coordenates for stamp and poly instructions
+Draw a shape then copy then copy the array to your program and use it as a stamp or a poly. The shape is completed when you return to the initial point (Red)
 
 ### Description
 
@@ -16,7 +17,7 @@ It isn’t easy to draw by inserting coordenates {x1,y1,x2,y2……xn,yn} . This
     # Draw a shape then copy the array and use it for Stamps
      graphsize 800,500
      fastgraphics
-    penwidth (2)
+     penwidth (2)
      print "Shape={";
      oldx=0
      oldy=0
@@ -29,8 +30,8 @@ It isn’t easy to draw by inserting coordenates {x1,y1,x2,y2……xn,yn} . This
 
     font "arial",15,100
      loop:
-    gosub previousshapes
-    gosub drawgraph
+     gosub previousshapes
+     gosub drawgraph
      circle mousex,mousey,3
      color red
      circle shape[0],shape[1],4

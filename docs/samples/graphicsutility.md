@@ -1,6 +1,6 @@
 ---
-title: "Graphicsutility"
-sidebar_label: "Graphicsutility"
+title: "Graphics Utility"
+sidebar_label: "Graphics Utility"
 ---
 
 #### Graphics Utilities

@@ -1,6 +1,6 @@
 ---
-title: "mobius.kbs"
-sidebar_label: "mobius.kbs"
+title: "Animated Mobius Strip.kbs"
+sidebar_label: "Mobius Strip"
 ---
 
 <img src="jmreneau_mobius.png" data-query="?200" width="200" alt="jmreneau_mobius.png" />

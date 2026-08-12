@@ -1,6 +1,6 @@
 ---
-title: "stampdraw.kbs - j.m.reneau - 2012-12-31"
-sidebar_label: "stampdraw.kbs - j.m.reneau - 2012-12-31"
+title: "Jim’s Stamp Editor - j.m.reneau - 2012-12-31"
+sidebar_label: "Stamp Editor"
 ---
 
 #### Jim’s Stamp Editor

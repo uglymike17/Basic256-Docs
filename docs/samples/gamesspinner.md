@@ -1,6 +1,6 @@
 ---
-title: "spinner.kbs - spin the wheel for a random number"
-sidebar_label: "spinner.kbs - spin the wheel for a random number"
+title: "Spinner - spin the wheel for a random number"
+sidebar_label: "Spinner"
 ---
 
 <img src="gamesspinner.png" data-query="?200" width="200" alt="gamesspinner.png" />
