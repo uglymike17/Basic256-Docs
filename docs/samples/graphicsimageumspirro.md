@@ -2,7 +2,7 @@
 title: "Color changing Spiral by UglyMike"
 sidebar_label: "Colored Spiral"
 ---
-
+![Color cahnging Spiral](@site/static/img/wiki/ColorSpiral.png)
 Color Changing Spiral by UglyMike
 
     # Contributed by UglyMike
@@ -34,9 +34,9 @@ Color Changing Spiral by UglyMike
        circle x, y, rad
        rad= rad + incrad
        if rad > 25 or rad < 3 then incrad=-incrad   
-   next i
-   pause 0.02
-   rad = 5
-   incrad = 0.06
-   end while      
-   refresh
+    next i
+    pause 0.02
+    rad = 5
+    incrad = 0.06
+    end while      
+    refresh
