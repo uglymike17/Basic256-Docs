@@ -3,7 +3,7 @@ title: "Stellar Cores by Joel Kahn"
 sidebar_label: "Stellar Cores"
 ---
 
-<img src="/en/kahn_joel_stellar_cores.png" data-query="?200" width="200" alt="kahn_joel_stellar_cores.png" />
+<img src="/img/wiki/en/kahn_joel_stellar_cores.png" width="300" alt="Stellar Cores sample program output" />
 Stellar Cores by Joel Kahn (July 2010) with minor updates.
 
     cls

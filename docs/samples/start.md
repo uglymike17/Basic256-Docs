@@ -7,7 +7,7 @@ sidebar_label: "Start"
 
 ### Choose documentation language/Выберите документация язык
 
-<img src="/basic256.png" class="align-right" data-query="?100" width="100" alt="BASIC 256 - Newton Ball" />
+<img src="/img/wiki/basic256.png" class="align-right" width="100" alt="BASIC 256 - Newton Ball" />
 
 [{{:en.png\|en}}](../en/start.md)[English](../en/start.md)
 {{:sp.png\|es}}Español

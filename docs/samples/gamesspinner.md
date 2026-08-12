@@ -3,7 +3,7 @@ title: "Spinner - spin the wheel for a random number"
 sidebar_label: "Spinner"
 ---
 
-<img src="gamesspinner.png" data-query="?200" width="200" alt="gamesspinner.png" />
+![Spinner sample program output](@site/static/img/wiki/gamesspinner.png)
 Spin a pointer to generate a random number. Requires 0.9.9.26 or higher.\
 Tested with version 1.99.99.9 on 2016-01-12.
 

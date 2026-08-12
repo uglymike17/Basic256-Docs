@@ -3,7 +3,7 @@ title: "Jagged Depths by Joel Kahn"
 sidebar_label: "Jagged Depths"
 ---
 
-<img src="/en/kahn_joel_jagged_depths.png" data-query="?200" width="200" alt="kahn_joel_jagged_depths.png" />
+<img src="/img/wiki/en/kahn_joel_jagged_depths.png" width="300" alt="Jagged Depths sample program output" />
 Jagged Depths by Joel Kahn (July 2010) with minor updates.
 
     cls

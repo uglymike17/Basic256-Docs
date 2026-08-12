@@ -3,7 +3,7 @@ title: "Moire pattern - j.m.reneau 2010-07-27"
 sidebar_label: "Moire Pattern "
 ---
 
-<img src="/jmreneau_morie.png" data-query="?200" width="200" alt="jmreneau_morie.png" />
+<img src="/img/wiki/jmreneau_morie.png" width="300" alt="Moire pattern sample program output" />
 Morie Pattern (July 27, 2010)
 
     # morie pattern - j.m.reneau 2010-07-27

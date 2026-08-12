@@ -3,7 +3,7 @@ title: "Animated Mobius Strip.kbs"
 sidebar_label: "Mobius Strip"
 ---
 
-<img src="jmreneau_mobius.png" data-query="?200" width="200" alt="jmreneau_mobius.png" />
+![Animated Mobius Strip sample program output](@site/static/img/wiki/jmreneau_mobius.png)
 Animated mobius strip (July 2010)
 
     # mobius.kbs

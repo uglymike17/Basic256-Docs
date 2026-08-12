@@ -3,7 +3,7 @@ title: "Stamp-to-Sprite by j. m. Reneau"
 sidebar_label: "Stamp-to-Sprite"
 ---
 
-<img src="graphicsutilitiesstamp2sprite.png" data-query="?200" width="200" alt="graphicsutilitiesstamp2sprite.png" />
+![Stamp-to-Sprite utility screenshot](@site/static/img/wiki/graphicsutilitiesstamp2sprite.png)
 Subroutine to draw a stamp on the screen and then capture it as a sprite. Requires 0.9.9.28 or higher.\
 With 1.0.0.0 this fancy code is no longer needed. Please see the [spritepoly](../en/spritepoly.md) statement.\
 
