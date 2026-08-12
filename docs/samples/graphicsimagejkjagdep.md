@@ -1,6 +1,6 @@
 ---
-title: "Contributed by Joel Kahn"
-sidebar_label: "Contributed by Joel Kahn"
+title: "Jagged Depths by Joel Kahn"
+sidebar_label: "Jagged Depths"
 ---
 
 <img src="/en/kahn_joel_jagged_depths.png" data-query="?200" width="200" alt="kahn_joel_jagged_depths.png" />
