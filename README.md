@@ -41,16 +41,17 @@ npm run serve
 
 ## Deploy
 
-The site is published to the `gh-pages` branch of the `Basic256-Docs`
-repository. With a GitHub account configured:
+Deployment is automatic. Every push to `main` triggers
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds
+the site and publishes it to GitHub Pages at
+[doc.basic256.org](https://doc.basic256.org). There is no manual deploy step.
 
-```bash
-# using SSH
-USE_SSH=true npm run deploy
+A run can also be triggered by hand from the repository's Actions tab
+("Deploy to GitHub Pages" → "Run workflow"), which is useful for
+re-publishing without a new commit.
 
-# or over HTTPS
-GIT_USER=<your GitHub username> npm run deploy
-```
+Because the build runs in CI, a broken link or a missing image referenced
+through `@site/` fails the workflow instead of reaching the live site.
 
 ## Content
 
