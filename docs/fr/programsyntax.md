@@ -86,11 +86,23 @@ L'instruction [color](./color.md) de BASIC256 est plus riche que l'instruction e
 
 Une couleur peut être spécifiée de cinq manières :
 
-1. une constante intégrée telle que `RED`, `DARKBLUE`, `WHITE` ou `CLEAR` ;
+1. une constante intégrée telle que `RED`, `DARKBLUE`, `WHITE` ou `CLEAR`, écrite sans guillemets ;
 2. une valeur entière ARGB, où la valeur combinée est `((a * 256 + r) * 256 + g) * 256 + b` et chaque composant varie de 0 à 255 (`a` = 0 transparent … 255 opaque) ;
 3. la fonction [rgb](./rgb.md) avec 3 ou 4 nombres, ex. `rgb(255, 160, 160)` ;
 4. une chaîne de nom de couleur SVG telle que `"firebrick"` ou `"papayawhip"` ;
 5. une chaîne hexadécimale, `"#rrggbb"` ou `"#aarrggbb"`, ex. `"#fab856"`.
+
+**Constantes sans guillemets, noms SVG entre guillemets.** Seules les constantes
+intégrées du point 1 s’écrivent en mots simples. Un nom de couleur SVG est une
+*chaîne* et doit être placé entre guillemets doubles :
+
+    color red            # constante intégrée -- sans guillemets
+    color "firebrick"    # nom de couleur SVG -- guillemets obligatoires
+
+Omettre les guillemets ne provoque pas d’erreur de syntaxe, et c’est ce qui
+rend l’erreur facile à manquer : `color firebrick` interprète `firebrick` comme
+un nom de *variable* et non comme une couleur, si bien que le programme
+continue sans appliquer la couleur voulue.
 
     clg
     color rgb(128, 128, 128)
@@ -108,9 +120,7 @@ Une couleur peut être spécifiée de cinq manières :
 
 `CLEAR` est spécial : un pinceau `CLEAR` dessine une forme non remplie, et définir **à la fois** le crayon et le pinceau sur `CLEAR` efface les pixels pour les rendre à nouveau transparents — très utile lors de la création de sprites. Utilisez [getcolor](./getcolor.md) et [getbrushcolor](./getbrushcolor.md) pour lire les valeurs actuelles.
 
-:::warning Forme obsolète
-L'ancienne instruction à trois chiffres `color r, g, b` est obsolète et déclenche un avertissement du compilateur. Écrivez plutôt `color rgb(r, g, b)`.
-:::
+**Forme obsolète.** L'ancienne instruction à trois chiffres `color r, g, b` est obsolète et déclenche un avertissement du compilateur. Écrivez plutôt `color rgb(r, g, b)`.
 
 ## Autres différences en un coup d'œil
 

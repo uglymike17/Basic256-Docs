@@ -86,11 +86,23 @@ Die [color](./color.md)-Anweisung von BASIC256 ist umfangreicher als das Textmod
 
 Eine Farbe kann auf fünf Arten angegeben werden:
 
-1. eine integrierte Konstante wie `RED`, `DARKBLUE`, `WHITE` oder `CLEAR`;
+1. eine integrierte Konstante wie `RED`, `DARKBLUE`, `WHITE` oder `CLEAR`, ohne Anführungszeichen geschrieben;
 2. ein Ganzzahl-ARGB-Wert, wobei der gepackte Wert `((a * 256 + r) * 256 + g) * 256 + b` ist und jede Komponente von 0 bis 255 reicht (`a` = 0 transparent … 255 deckend);
 3. die [rgb](./rgb.md)-Funktion mit 3 oder 4 Zahlen, z. B. `rgb(255, 160, 160)`;
 4. ein SVG-Farbname als String wie `"firebrick"` oder `"papayawhip"`;
 5. ein Hex-String, `"#rrggbb"` oder `"#aarrggbb"`, z. B. `"#fab856"`.
+
+**Konstanten ohne, SVG-Namen mit Anführungszeichen.** Nur die integrierten
+Konstanten aus Punkt 1 werden als einfache Wörter geschrieben. Ein SVG-Farbname
+ist eine *Zeichenkette* und muss in doppelte Anführungszeichen gesetzt werden:
+
+    color red            # integrierte Konstante -- ohne Anführungszeichen
+    color "firebrick"    # SVG-Farbname -- Anführungszeichen erforderlich
+
+Das Weglassen der Anführungszeichen ist kein Syntaxfehler, und genau deshalb
+fällt der Fehler leicht nicht auf: `color firebrick` liest `firebrick` als
+*Variablennamen* statt als Farbe, sodass das Programm weiterläuft, ohne die
+beabsichtigte Farbe zu setzen.
 
     clg
     color rgb(128, 128, 128)
@@ -108,9 +120,7 @@ Eine Farbe kann auf fünf Arten angegeben werden:
 
 `CLEAR` ist eine Besonderheit: Ein `CLEAR`-Pinsel zeichnet eine ungefüllte Form, und das Setzen **sowohl** des Stifts als auch des Pinsels auf `CLEAR` löscht Pixel wieder zu Transparenz — nützlich beim Erstellen von Sprites. Verwenden Sie [getcolor](./getcolor.md) und [getbrushcolor](../en/getbrushcolor.md), um die aktuellen Werte auszulesen.
 
-:::warning Veraltete Form
-Die alte Anweisung mit drei Zahlen `color r, g, b` ist veraltet und erzeugt eine Compiler-Warnung. Schreiben Sie stattdessen `color rgb(r, g, b)`.
-:::
+**Veraltete Form.** Die alte Anweisung mit drei Zahlen `color r, g, b` ist veraltet und erzeugt eine Compiler-Warnung. Schreiben Sie stattdessen `color rgb(r, g, b)`.
 
 ## Weitere Unterschiede auf einen Blick
 

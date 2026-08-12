@@ -86,11 +86,22 @@ BASIC256's [color](./color.md) statement is richer than the text-mode `COLOR for
 
 A color may be given five ways:
 
-1. a built-in constant such as `RED`, `DARKBLUE`, `WHITE`, or `CLEAR`;
+1. a built-in constant such as `RED`, `DARKBLUE`, `WHITE`, or `CLEAR`, written bare (no quotes);
 2. an integer ARGB value, where the packed value is `((a * 256 + r) * 256 + g) * 256 + b` and each component runs 0–255 (`a` = 0 transparent … 255 opaque);
 3. the [rgb](./rgb.md) function with 3 or 4 numbers, e.g. `rgb(255, 160, 160)`;
 4. an SVG color-name string such as `"firebrick"` or `"papayawhip"`;
 5. a hex string, `"#rrggbb"` or `"#aarrggbb"`, e.g. `"#fab856"`.
+
+**Constants are bare, SVG names are strings.** Only the built-in constants of
+point 1 are written as plain words. An SVG color name is a *string* and must be
+in double quotes:
+
+    color red            # built-in constant -- no quotes
+    color "firebrick"    # SVG color name -- quotes required
+
+Leaving the quotes off is not a syntax error, which is what makes the mistake
+easy to miss: `color firebrick` reads `firebrick` as a *variable* name rather
+than a color, so the program runs on without setting the color you intended.
 
     clg
     color rgb(128, 128, 128)
@@ -108,9 +119,7 @@ A color may be given five ways:
 
 `CLEAR` is special: a `CLEAR` brush draws an unfilled shape, and setting **both** pen and brush to `CLEAR` erases pixels back to transparent — useful when building sprites. Use [getcolor](./getcolor.md) and [getbrushcolor](./getbrushcolor.md) to read the current values back.
 
-:::warning Deprecated form
-The old three-number statement `color r, g, b` is deprecated and raises a compiler warning. Write `color rgb(r, g, b)` instead.
-:::
+**Deprecated form.** The old three-number statement `color r, g, b` is deprecated and raises a compiler warning. Write `color rgb(r, g, b)` instead.
 
 ## Other differences at a glance
 
