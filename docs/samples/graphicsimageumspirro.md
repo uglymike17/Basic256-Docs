@@ -2,8 +2,7 @@
 title: "Color changing Spiral by UglyMike"
 sidebar_label: "Colored Spiral"
 ---
-![Color cahnging Spiral](@site/static/img/wiki/ColorSpiral.png)
-Color Changing Spiral by UglyMike
+![Color changing Spiral](@site/static/img/wiki/ColorSpiral.png)
 
     # Contributed by UglyMike
     graphsize 800,800
