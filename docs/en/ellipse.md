@@ -18,6 +18,8 @@ The outline is drawn in the current pen color and thickness (see [PenWidth](./pe
 
 When [width](./numericexpressions.md) and [height](./numericexpressions.md) are equal the result is a circle. Note that [Circle](./circle.md) is positioned by its center point and radius, while **ellipse** is positioned by the top left corner of a bounding box.
 
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines.
+
 ### Example
 
     clg
@@ -38,7 +40,7 @@ draws\
 
 ### See Also
 
-[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md)
+[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md), [Window](./window.md)
 
 ### Availability
 

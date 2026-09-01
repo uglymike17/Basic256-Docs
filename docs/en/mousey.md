@@ -16,9 +16,11 @@ returns [integer_expression](./integerexpressions.md)
 
 Returns the current or last mouse y location of the mouse pointer over the graphic output.
 
+The position is measured in pixels unless a [Window](./window.md) has been set, in which case it is in the units that window defines. -1 is returned when the pointer is not over the graphics output, whatever window is in force.
+
 ### See Also
 
-[Clickb](./clickb.md), [Clickclear](./clickclear.md), [Clickx](./clickx.md), [Clicky](./clicky.md), [Mouseb](./mouseb.md), [Mousex](./mousex.md), [Mousey](./mousey.md),
+[Clickb](./clickb.md), [Clickclear](./clickclear.md), [Clickx](./clickx.md), [Clicky](./clicky.md), [Mouseb](./mouseb.md), [Mousex](./mousex.md), [Mousey](./mousey.md), [Window](./window.md)
 
 ### History
 

@@ -16,9 +16,11 @@ sidebar_label: "Putslice"
 
 Put the graphics stored in the slice array on the screen at x,y.
 
+These coordinates are always measured in pixels and are not changed by [Window](./window.md), because the array is a number of pixels wide and high.
+
 ### See Also
 
-[GetSlice](./getslice.md), [PutSlice](./putslice.md)
+[GetSlice](./getslice.md), [PutSlice](./putslice.md), [Window](./window.md)
 
 ### History
 

@@ -14,6 +14,8 @@ sidebar_label: "Text"
 
 Paints a text string on the Graphics Output Window at [x_position](./numericexpressions.md), [y_position](./numericexpressions.md) using the current color and font.
 
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines.
+
 ### Example
 
     color grey
@@ -30,7 +32,7 @@ Will draw.\
 
 ### See Also
 
-[Font](./font.md), [Text](./text.md), [TextHeight](./textheight.md), [TextWidth](./textwidth.md)
+[Font](./font.md), [Text](./text.md), [TextHeight](./textheight.md), [TextWidth](./textwidth.md), [Window](./window.md)
 
 ### History
 

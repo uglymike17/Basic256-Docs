@@ -18,6 +18,8 @@ Draws an area bounded by an arc and chord (segment) of the circle or ellipse ins
 
 As seen in the example below a chord may be used to draw a filled circle or an ellipse by defining the angular width to go all the way around (2\*pi).
 
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines.
+
 ### Example
 
     # chord_example.kbs
@@ -40,7 +42,7 @@ draws\
 
 ### See Also
 
-[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md)
+[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md), [Window](./window.md)
 
 ### History
 

@@ -14,6 +14,8 @@ sidebar_label: "Line"
 
 Draws a line from the point ([x1_position](./integerexpressions.md), [y1_position](./integerexpressions.md)) to the point ([x2_position](./integerexpressions.md), [y2_position](./integerexpressions.md)) with the current pen [color](./color.md). The width of the line may be adjusted using the [PenWidth](./penwidth.md) statement.
 
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines.
+
 ### Example
 
     clg
@@ -33,7 +35,7 @@ draws\
 
 ### See Also
 
-[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md)
+[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md), [Window](./window.md)
 
 ### History
 

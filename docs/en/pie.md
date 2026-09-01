@@ -16,6 +16,8 @@ sidebar_label: "Pie"
 
 Draws a pie shaped slice inside the rectangle defined by a bounding rectangle (defined by [x_position](./numericexpressions.md), [y_position](./numericexpressions.md), [width](./numericexpressions.md), and [height](./numericexpressions.md)) or by a square bounding a circle (defined by [center_x_position](./numericexpressions.md), [center_y_position](./numericexpressions.md), [radius](./numericexpressions.md)). The angles are defined from the 12 o’clock position in a clockwise direction in radians.
 
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines.
+
 ### Example
 
     # pie_chart.kbs
@@ -50,7 +52,7 @@ draws\
 
 ### See Also
 
-[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md)
+[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [GetPenWidth](./getpenwidth.md), [Line](./line.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [Stamp](./stamp.md), [Window](./window.md)
 
 ### History
 

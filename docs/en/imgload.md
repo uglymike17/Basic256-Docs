@@ -21,9 +21,11 @@ The parameters [x_position](./numericexpressions.md) and [y_position](./numerice
 The Imgload starement will read in most common image file formats including: BMP (Windows Bitmap), GIF (Graphic Interchange Format),JPG/JPEG (Joint Photographic Experts Group), and PNG (Portable Network Graphics).\
 Optionally scales size of the loaded image by the defined scale (1=normal size). Also optionally rotates the image by a specified angle around the images center (clockwise in radians).
 
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines.
+
 ### See Also
 
-[Imgload](./imgload.md), [Imgsave](./imgsave.md)
+[Imgload](./imgload.md), [Imgsave](./imgsave.md), [Window](./window.md)
 
 ### History
 

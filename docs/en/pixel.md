@@ -15,6 +15,8 @@ returns *rgb_expr*
 
 Returns the [RGB](./rgb.md) value of the pixel at the [x_position](./numericexpressions.md) and [y_position](./numericexpressions.md) coordinate. If the pixels has not been set since the last [Clg](./clg.md) command or was drawn with the color CLEAR a -1 will be returned.
 
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines and the nearest pixel is read.
+
 ### Sample Program
 
 The following sample program shows how to use the binary and operation and integer division to extract the red, blue, and green values from the number returned by pixel.
@@ -39,7 +41,7 @@ The following sample program shows how to use the binary and operation and integ
 
 ### See Also
 
-[Pixel](./pixel.md)
+[Pixel](./pixel.md), [Window](./window.md)
 
 ### History
 

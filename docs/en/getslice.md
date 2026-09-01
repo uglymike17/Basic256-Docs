@@ -15,6 +15,8 @@ returns [List of Values](./lists.md)
 
 Return a 2 dimensional array of the pixels in the rectangle defined by the parameters.
 
+These coordinates are always measured in pixels and are not changed by [Window](./window.md), because the array is a number of pixels wide and high.
+
 ### Example
 
     clg
@@ -46,7 +48,7 @@ displays
 
 ### See Also
 
-[GetSlice](./getslice.md), [PutSlice](./putslice.md)
+[GetSlice](./getslice.md), [PutSlice](./putslice.md), [Window](./window.md)
 
 ### New To Version
 
