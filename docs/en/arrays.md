@@ -45,6 +45,10 @@ or
     b fill ""
     a[] fill -1
 
+### Matrix Arithmetic
+
+A two dimensional array can be read as a matrix of rows by columns, and the [Mat](./mat.md) statements add, subtract, multiply, transpose and invert whole arrays in one statement.
+
 ### Passing Arrays of Data to Builtin Functions and Statements
 
 When passing an array of data, like to the [sound](./sound.md) statement, you may include an empty set of brackets \[\] after the variable name. This was added to reduce the confusion between a regular variable and a variable containing an array of values.
