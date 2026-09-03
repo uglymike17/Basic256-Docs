@@ -35,28 +35,28 @@ Tested with version 1.99.99.9 on 2016-01-12.
        game[t] = int(rand*pies)
     next t
 
-    round = 0
+    currentRound = 0
     gameon = true
     while gameon
        # show the pattern
-       round++
-       print "Round " + round
-       for t = 0 to round -1
+       currentRound++
+       print "Round " + currentRound
+       for t = 0 to currentRound -1
           call showslice(100,300,game[t])
        next t
        #
        # get the user to give it back
        print "  Play it back."
-       for t = 0 to round -1
+       for t = 0 to currentRound -1
           g = getclick(3000,game[t])
           if g = -1 then
              # made a mistake - die
              gameon = false
-             t = round
+             t = currentRound
           end if
        next t
     end while
-    print "You completed " + round + " rounds."
+    print "You completed " + currentRound + " rounds."
     end
 
     subroutine showslice(waittime, soundtime, slice)
