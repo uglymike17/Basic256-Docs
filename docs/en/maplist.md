@@ -9,6 +9,8 @@ A Map List is a connection of string keys and associated values. The key and val
 
 You may use Map Lists in many statements that are expecting maps and can be used to create a map without the [map](./map.md) statement.
 
+A Map List may be written over as many lines as it needs, one pair to a line, with a [remark](./rem.md) inside the braces. See [Lists](./lists.md).
+
 ### Example
 
     inventory = {"apple"->.27,"bananna"->.18,"orange"->.43, "grapefruit"->1.02}
@@ -22,3 +24,4 @@ You may use Map Lists in many statements that are expecting maps and can be used
 |         |                 |
 |---------|-----------------|
 | 2.0.0.0 | Added Map Lists |
+| 2.1.2 | Map Lists may be written over several lines, with remarks inside the braces |

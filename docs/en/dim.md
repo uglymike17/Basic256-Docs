@@ -40,7 +40,7 @@ sidebar_label: "Dim"
 
 ### Description
 
-Returns a newly created single dimensional array of length *integer* or a 2 dimensional array that can be addressed by *row* and *column*. By default the elements in the array are left uninitialized (empty), You may add the fill option to fill all elements with a single value.\
+Returns a newly created single dimensional array of length *integer* or a 2 dimensional array that can be addressed by *row* and *column*. Every element is given a starting value, so that it may be read straight away: a variable whose name ends in **$** is filled with the empty string, and any other variable with the whole number 0. You may add the fill option to fill all of the elements with a single value of your own instead.\
 The first element of an array has an index of 0 (zero). Indexes range from 0 to length-1.
 
 The **dim** statement can also be used to create a new array that is a duplicate of another array. The form “DIM var = var” does this by dimensioning a new array in memory and copying all of the data from the original array.
@@ -80,3 +80,4 @@ will print
 | 1.99.99.56 | Added fill clause                                  |
 | 1.99.99.57 | Added additional fill options                      |
 | 1.99.99.72 | added the \[\] when setting one array from another |
+| 2.1        | elements are filled with 0 (or "" for a $ name) instead of being left unassigned |

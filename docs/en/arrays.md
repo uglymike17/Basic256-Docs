@@ -29,6 +29,12 @@ or
 
     b[] = {1,2,3,4}
 
+A list may be spread over several lines, one row to a line, and may carry a [remark](./rem.md) inside the braces.
+
+    a = {{0,1,2},   # the top row
+         {3,4,5},
+         {6,7,8}}
+
 3\. By using the [Dim](./dim.md) statement to copy an existing array into another array.
 
     a = {1,2,3,4}
@@ -61,3 +67,4 @@ When passing an array of data, like to the [sound](./sound.md) statement, you ma
 | 1.99.99.57 | added the fill assignment operator           |
 | 1.99.99.72 | added the array passing note                 |
 | 2.0.0.0    | Added ability to change array base           |
+| 2.1.2      | Lists assigning an array may span several lines |
