@@ -21,14 +21,14 @@ sidebar_label: "Poly"
 #### Пример:
 
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     dim tri(6)
     tri = {100, 100, 200, 200, 100, 200}
     poly tri
 
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     poly {100, 100, 200, 200, 100, 200}
 

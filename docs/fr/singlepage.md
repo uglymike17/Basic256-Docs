@@ -250,7 +250,7 @@ Trace un cercle dont les coordonnées du centre sont x,y et le rayon r. Le cercl
 ### Exemple
 
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color red
     circle 100,100,50
 
@@ -1535,7 +1535,7 @@ Trace une ligne reliant les points x0,y0 et x1, y1.
 ### Exemple
 
     color white
-    rect 0,0,300,300
+    rect 0,0,500,500
     color black
     line 50,50,200,200
     line 100,200,200,200
@@ -2095,14 +2095,14 @@ Avant la version 0.9.4 il fallait également passer le nombre de sommets en para
 ### Exemple
 
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     dim tri(6)
     tri = {100, 100, 200, 200, 100, 200}
     poly tri
 
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     poly {100, 100, 200, 200, 100, 200}
 
@@ -2211,7 +2211,7 @@ Dessine un rectangle de dimensions *largeur* x *hauteur* pixels en utilisant la 
 ### Example
 
     color white
-    rect 0,0,300,300
+    rect 0,0,500,500
     color red
     rect 50,50,150,150
     color blue
@@ -2725,7 +2725,7 @@ Les deux codes ci-dessous produiront le même affichage.
 
     clg
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     dim tri(6)
     tri = {0, 0, 100, 100, 0, 100}
@@ -2736,7 +2736,7 @@ Les deux codes ci-dessous produiront le même affichage.
 
     clg
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     # stamp du triangle en 0,0 (taille normale)
     stamp 100, 100, {0, 0, 100, 100, 0, 100}

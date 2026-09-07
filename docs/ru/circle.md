@@ -16,7 +16,7 @@ sidebar_label: "Circle"
 #### Пример:
 
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color red
     circle 100,100,50
 

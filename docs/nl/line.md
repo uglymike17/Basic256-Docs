@@ -20,7 +20,7 @@ De lijn gaat van (*x<sub>0</sub>*,*y<sub>0</sub>*) naar (*x<sub>1</sub>*,*y<sub>
 
 ``` basic4gl
 color white
-rect 0,0,300,300
+rect 0,0,500,500
 color black
 line 50,50,200,200
 line 100,200,200,200

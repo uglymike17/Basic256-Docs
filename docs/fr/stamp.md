@@ -29,7 +29,7 @@ Les deux codes ci-dessous produiront le même affichage.
 
     clg
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     dim tri(6)
     tri = {0, 0, 100, 100, 0, 100}
@@ -40,7 +40,7 @@ Les deux codes ci-dessous produiront le même affichage.
 
     clg
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     # stamp du triangle en 0,0 (taille normale)
     stamp 100, 100, {0, 0, 100, 100, 0, 100}

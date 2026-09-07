@@ -16,7 +16,7 @@ sidebar_label: "Line"
 #### Пример:
 
     color white
-    rect 0,0,300,300
+    rect 0,0,500,500
     color black
     line 50,50,200,200
     line 100,200,200,200

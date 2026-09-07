@@ -17,7 +17,7 @@ Trace une ligne reliant les points x0,y0 et x1, y1.
 ### Exemple
 
     color white
-    rect 0,0,300,300
+    rect 0,0,500,500
     color black
     line 50,50,200,200
     line 100,200,200,200

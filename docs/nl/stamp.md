@@ -31,7 +31,7 @@ Beide programma’s zullen 2 driehoeken tekenen, waarvan de 2 kleiner is.
 ``` basic4gl
 clg
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 dim driehoek(6)
 tri = {0, 0, 100, 100, 0, 100}
@@ -44,7 +44,7 @@ stamp 200, 100, .5, driehoek
 ``` basic4gl
 clg
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 # Teken de driehoek op 0,0 (volledige grootte)
 stamp 100, 100, {0, 0, 100, 100, 0, 100}

@@ -663,7 +663,7 @@ Hiermee ga je dus een cirkel tekenen die het middelpunt heeft op de *x*,*y* coö
 
 ``` basic4gl
 color yellow
-rect 0,0,300,300
+rect 0,0,500,500
 color red
 circle 120,120,80
 ```
@@ -2518,7 +2518,7 @@ De lijn gaat van (*x<sub>0</sub>*,*y<sub>0</sub>*) naar (*x<sub>1</sub>*,*y<sub>
 
 ``` basic4gl
 color white
-rect 0,0,300,300
+rect 0,0,500,500
 color black
 line 50,50,200,200
 line 100,200,200,200
@@ -3268,7 +3268,7 @@ Het aantal punten werd als parameter van het poly statement weggenomen sinds de 
 
 ``` basic4gl
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 dim driehoek(6) # met 3 maal 2 = 6 getallen
 driehoek = {100, 180, 150, 80, 200,180}
@@ -3277,7 +3277,7 @@ poly driehoek
 
 ``` basic4gl
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 poly {100, 180, 150, 80, 200,180}
 ```
@@ -3596,7 +3596,7 @@ De functie tekent een vierhoek van *breedte* x *hoogte* pixels met in kleur van 
 
 ``` basic4gl
 color white
-rect 0,0,300,300
+rect 0,0,500,500
 color red
 rect 50,50,150,150
 color blue
@@ -4447,7 +4447,7 @@ Beide programma’s zullen 2 driehoeken tekenen, waarvan de 2 kleiner is.
 ``` basic4gl
 clg
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 dim driehoek(6)
 tri = {0, 0, 100, 100, 0, 100}
@@ -4460,7 +4460,7 @@ stamp 200, 100, .5, driehoek
 ``` basic4gl
 clg
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 # Teken de driehoek op 0,0 (volledige grootte)
 stamp 100, 100, {0, 0, 100, 100, 0, 100}

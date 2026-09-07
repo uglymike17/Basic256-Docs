@@ -17,7 +17,7 @@ sidebar_label: "Rect"
 #### Пример:
 
     color white
-    rect 0,0,300,300
+    rect 0,0,500,500
     color red
     rect 50,50,150,150
     color blue

@@ -17,7 +17,7 @@ Hiermee ga je dus een cirkel tekenen die het middelpunt heeft op de *x*,*y* coö
 
 ``` basic4gl
 color yellow
-rect 0,0,300,300
+rect 0,0,500,500
 color red
 circle 120,120,80
 ```

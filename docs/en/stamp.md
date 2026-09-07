@@ -43,7 +43,7 @@ Draws a polygon with top left corner (origin) at x, y. Optionally scales size of
 Both of the code blocks below will draw a pair of green triangles on the graphics window:
 
     clg blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     tri = {{0, 0}, {100, 100}, {0, 100}}
     # stamp the triangle at 0,0 (full size)
@@ -52,7 +52,7 @@ Both of the code blocks below will draw a pair of green triangles on the graphic
     stamp 200, 100, .5, tri[]
 
     clg blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     # stamp the triangle at 0,0 (full size)
     stamp 100, 100, {{0, 0}, {100, 100}, {0, 100}}

@@ -48,22 +48,22 @@ This sample used to need a twenty line subroutine. It drew the outline on the sc
     print "press any key to stop"
 
     color black
-    rect 0, 0, 300, 300
+    rect 0, 0, 500, 500
 
     dim dx(4)
     dim dy(4)
     for t = 0 to 3
        dx[t] = 1
        dy[t] = 1
-       spriteplace t, rand*300, rand*300
+       spriteplace t, rand*500, rand*500
        spriteshow t
     next t
 
     while key = 0
        for t = 0 to 3
           spritemove t, dx[t], dy[t]
-          if spritex(t) <= 0 or spritex(t) >= 300 then dx[t] *= -1
-          if spritey(t) <= 0 or spritey(t) >= 300 then dy[t] *= -1
+          if spritex(t) <= 0 or spritex(t) >= 500 then dx[t] *= -1
+          if spritey(t) <= 0 or spritey(t) >= 500 then dy[t] *= -1
        next t
        refresh
     end while

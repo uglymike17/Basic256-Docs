@@ -29,7 +29,7 @@ Het aantal punten werd als parameter van het poly statement weggenomen sinds de 
 
 ``` basic4gl
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 dim driehoek(6) # met 3 maal 2 = 6 getallen
 driehoek = {100, 180, 150, 80, 200,180}
@@ -38,7 +38,7 @@ poly driehoek
 
 ``` basic4gl
 color blue
-rect 0,0,300,300
+rect 0,0,500,500
 color green
 poly {100, 180, 150, 80, 200,180}
 ```

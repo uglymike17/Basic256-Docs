@@ -28,7 +28,7 @@ Both of the code blocks below will draw a pair of green triangles on the graphic
 
     clg
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     dim tri(6)
     tri = {0, 0, 100, 100, 0, 100}
@@ -39,7 +39,7 @@ Both of the code blocks below will draw a pair of green triangles on the graphic
 
     clg
     color blue
-    rect 0,0,300,300
+    rect 0,0,500,500
     color green
     # stamp the triangle at 0,0 (full size)
     stamp 100, 100, {0, 0, 100, 100, 0, 100}
