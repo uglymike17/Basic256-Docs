@@ -16,7 +16,9 @@ sidebar_label: "Spritepoly"
 
 ### Description
 
-Create a sprite from a list of points that represent a polygon. The top left corner of the polygon should be (0,0). The sides of the polygon are defined by the values stored in the array, which should be stored as x,y pairs, sequentially. The length of a one dimensional array/2 or the number of rows on a two dimensional array will define the number of points.
+Create a sprite from a list of points that represent a polygon. The sides of the polygon are defined by the values stored in the array, which should be stored as x,y pairs, sequentially. The length of a one dimensional array/2 or the number of rows on a two dimensional array will define the number of points.
+
+The polygon is moved into the top left corner of the sprite for you, so it does not matter whereabouts it is drawn — negative coordinates are fine. The sprite is made just big enough to hold the polygon and the [penwidth](./penwidth.md) it is drawn with, since half of a line's thickness falls outside the shape it outlines.
 
 One dimensional arrays and lists must have at least six values and an even number of values. A two dimensional array may have 3 or more rows but must have two columns.
 
@@ -53,3 +55,4 @@ One dimensional arrays and lists must have at least six values and an even numbe
 | 0.9.9.70   | New To Version                                |
 | 1.99.99.55 | two dimensional list support was added        |
 | 1.99.99.72 | added required \[\] to passing variable array |
+| 2.1.2      | the polygon is now placed correctly wherever it is drawn, and the sprite allows for the pen width |
