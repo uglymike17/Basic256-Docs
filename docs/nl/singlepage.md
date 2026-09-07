@@ -665,7 +665,7 @@ Hiermee ga je dus een cirkel tekenen die het middelpunt heeft op de *x*,*y* coö
 color yellow
 rect 0,0,500,500
 color red
-circle 120,120,80
+circle 250,250,180
 ```
 
 toont het mooie beeld\
@@ -4450,7 +4450,7 @@ color blue
 rect 0,0,500,500
 color green
 dim driehoek(6)
-tri = {0, 0, 200, 200, 0, 200}
+driehoek = {0, 0, 200, 200, 0, 200}
 # Teken de driehoek op 100,100 (volledige grootte)
 stamp 100, 100, driehoek
 #  Teken de driehoek op 350,100 (halve grootte)

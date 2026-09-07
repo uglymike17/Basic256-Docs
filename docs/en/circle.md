@@ -21,15 +21,15 @@ The coordinates may be whole numbers or fractions. They are measured in pixels u
     clg
 
     color red
-    circle 75,75,50
+    circle 125,125,80
 
     penwidth 5
     color orange, yellow
-    circle 150,150,75
+    circle 250,250,125
 
     penwidth 10
     color blue, clear
-    circle 225,225,50
+    circle 375,375,80
 
 draws\
 ![Circle](@site/static/img/wiki/circle.png)

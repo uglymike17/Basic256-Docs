@@ -34,7 +34,7 @@ color blue
 rect 0,0,500,500
 color green
 dim driehoek(6)
-tri = {0, 0, 200, 200, 0, 200}
+driehoek = {0, 0, 200, 200, 0, 200}
 # Teken de driehoek op 100,100 (volledige grootte)
 stamp 100, 100, driehoek
 #  Teken de driehoek op 350,100 (halve grootte)

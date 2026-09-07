@@ -18,7 +18,7 @@ sidebar_label: "Circle"
     color blue
     rect 0,0,500,500
     color red
-    circle 100,100,50
+    circle 250,250,150
 
 Будет изображено\
 ![Circle](@site/static/img/wiki/ru/cir.png)

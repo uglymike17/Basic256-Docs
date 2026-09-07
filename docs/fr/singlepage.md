@@ -252,7 +252,7 @@ Trace un cercle dont les coordonnées du centre sont x,y et le rayon r. Le cercl
     color blue
     rect 0,0,500,500
     color red
-    circle 100,100,50
+    circle 250,250,150
 
 dessine\
 ![Circle](@site/static/img/wiki/en/cir.png)

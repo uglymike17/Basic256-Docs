@@ -19,7 +19,7 @@ Hiermee ga je dus een cirkel tekenen die het middelpunt heeft op de *x*,*y* coö
 color yellow
 rect 0,0,500,500
 color red
-circle 120,120,80
+circle 250,250,180
 ```
 
 toont het mooie beeld\
