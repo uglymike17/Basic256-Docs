@@ -32,20 +32,20 @@ Les deux codes ci-dessous produiront le même affichage.
     rect 0,0,500,500
     color green
     dim tri(6)
-    tri = {0, 0, 100, 100, 0, 100}
-    # stamp du triangle en 0,0 (taille normale)
+    tri = {0, 0, 200, 200, 0, 200}
+    # stamp du triangle en 100,100 (taille normale)
     stamp 100, 100, tri
-    # stamp du triangle en 200,100 (taille moitié)
-    stamp 200, 100, .5, tri
+    # stamp du triangle en 350,100 (taille moitié)
+    stamp 350, 100, .5, tri
 
     clg
     color blue
     rect 0,0,500,500
     color green
-    # stamp du triangle en 0,0 (taille normale)
-    stamp 100, 100, {0, 0, 100, 100, 0, 100}
-    # stamp du triangle en 200,100 (taille moitié)
-    stamp 200, 100, .5, {0, 0, 100, 100, 0, 100}
+    # stamp du triangle en 100,100 (taille normale)
+    stamp 100, 100, {0, 0, 200, 200, 0, 200}
+    # stamp du triangle en 350,100 (taille moitié)
+    stamp 350, 100, .5, {0, 0, 200, 200, 0, 200}
 
 Le réultat sera:\
 ![stamp.png](@site/static/img/wiki/en/stamp.png)

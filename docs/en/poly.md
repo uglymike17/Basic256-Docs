@@ -25,13 +25,13 @@ The coordinates may be whole numbers or fractions. They are measured in pixels u
     # using an array
     clg blue
     color green
-    dim tri = {100, 100, 200, 200, 100, 200}
+    dim tri = {100, 100, 400, 400, 100, 400}
     poly tri[]
 
     # using a list
     clg blue
     color green
-    poly {{100, 100}, {200, 200}, {100, 200}}
+    poly {{100, 100}, {400, 400}, {100, 400}}
 
 Both programs use the poly statement to draw the following:\
 ![poly.png](@site/static/img/wiki/en/poly.png)

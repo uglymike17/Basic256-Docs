@@ -28,13 +28,13 @@ Avant la version 0.9.4 il fallait également passer le nombre de sommets en para
     rect 0,0,500,500
     color green
     dim tri(6)
-    tri = {100, 100, 200, 200, 100, 200}
+    tri = {100, 100, 400, 400, 100, 400}
     poly tri
 
     color blue
     rect 0,0,500,500
     color green
-    poly {100, 100, 200, 200, 100, 200}
+    poly {100, 100, 400, 400, 100, 400}
 
 Les deux codes ci-dessus produiront le résultat suivant:\
 ![poly.png](@site/static/img/wiki/en/poly.png)

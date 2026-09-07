@@ -32,7 +32,7 @@ color blue
 rect 0,0,500,500
 color green
 dim driehoek(6) # met 3 maal 2 = 6 getallen
-driehoek = {100, 180, 150, 80, 200,180}
+driehoek = {150, 350, 250, 130, 350, 350}
 poly driehoek
 ```
 
@@ -40,7 +40,7 @@ poly driehoek
 color blue
 rect 0,0,500,500
 color green
-poly {100, 180, 150, 80, 200,180}
+poly {150, 350, 250, 130, 350, 350}
 ```
 
 Beide programma’s tonen hetzelfde resultaat:\

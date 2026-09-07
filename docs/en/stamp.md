@@ -44,18 +44,18 @@ Both of the code blocks below will draw a pair of green triangles on the graphic
 
     clg blue
     color green
-    tri = {{0, 0}, {100, 100}, {0, 100}}
-    # stamp the triangle at 0,0 (full size)
+    tri = {{0, 0}, {200, 200}, {0, 200}}
+    # stamp the triangle at 100,100 (full size)
     stamp 100, 100, tri[]
-    # stamp the triangle at 200,100 (half size)
-    stamp 200, 100, .5, tri[]
+    # stamp the triangle at 350,100 (half size)
+    stamp 350, 100, .5, tri[]
 
     clg blue
     color green
-    # stamp the triangle at 0,0 (full size)
-    stamp 100, 100, {{0, 0}, {100, 100}, {0, 100}}
-    # stamp the triangle at 200,100 (half size)
-    stamp 200, 100, .5, {0, 0, 100, 100, 0, 100}
+    # stamp the triangle at 100,100 (full size)
+    stamp 100, 100, {{0, 0}, {200, 200}, {0, 200}}
+    # stamp the triangle at 350,100 (half size)
+    stamp 350, 100, .5, {0, 0, 200, 200, 0, 200}
 
 Both programs will draw:\
 ![stamp.png](@site/static/img/wiki/en/stamp.png)

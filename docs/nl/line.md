@@ -22,9 +22,9 @@ De lijn gaat van (*x<sub>0</sub>*,*y<sub>0</sub>*) naar (*x<sub>1</sub>*,*y<sub>
 color white
 rect 0,0,500,500
 color black
-line 50,50,200,200
-line 100,200,200,200
-line 100,200,50,50
+line 100,100,400,400
+line 200,400,400,400
+line 200,400,100,100
 ```
 
 maakt volgende tekening

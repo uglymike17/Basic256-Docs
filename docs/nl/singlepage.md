@@ -2520,9 +2520,9 @@ De lijn gaat van (*x<sub>0</sub>*,*y<sub>0</sub>*) naar (*x<sub>1</sub>*,*y<sub>
 color white
 rect 0,0,500,500
 color black
-line 50,50,200,200
-line 100,200,200,200
-line 100,200,50,50
+line 100,100,400,400
+line 200,400,400,400
+line 200,400,100,100
 ```
 
 maakt volgende tekening
@@ -3271,7 +3271,7 @@ color blue
 rect 0,0,500,500
 color green
 dim driehoek(6) # met 3 maal 2 = 6 getallen
-driehoek = {100, 180, 150, 80, 200,180}
+driehoek = {150, 350, 250, 130, 350, 350}
 poly driehoek
 ```
 
@@ -3279,7 +3279,7 @@ poly driehoek
 color blue
 rect 0,0,500,500
 color green
-poly {100, 180, 150, 80, 200,180}
+poly {150, 350, 250, 130, 350, 350}
 ```
 
 Beide programma’s tonen hetzelfde resultaat:\
@@ -3598,11 +3598,11 @@ De functie tekent een vierhoek van *breedte* x *hoogte* pixels met in kleur van 
 color white
 rect 0,0,500,500
 color red
-rect 50,50,150,150
+rect 80,80,250,250
 color blue
-rect 100,100,150,150
+rect 160,160,250,250
 color green
-rect 10,140,280,20
+rect 20,240,460,40
 ```
 
 geeft dan\
@@ -4450,11 +4450,11 @@ color blue
 rect 0,0,500,500
 color green
 dim driehoek(6)
-tri = {0, 0, 100, 100, 0, 100}
-# Teken de driehoek op 0,0 (volledige grootte)
+tri = {0, 0, 200, 200, 0, 200}
+# Teken de driehoek op 100,100 (volledige grootte)
 stamp 100, 100, driehoek
-#  Teken de driehoek op 200,100 (halve grootte)
-stamp 200, 100, .5, driehoek
+#  Teken de driehoek op 350,100 (halve grootte)
+stamp 350, 100, .5, driehoek
 ```
 
 ``` basic4gl
@@ -4462,10 +4462,10 @@ clg
 color blue
 rect 0,0,500,500
 color green
-# Teken de driehoek op 0,0 (volledige grootte)
-stamp 100, 100, {0, 0, 100, 100, 0, 100}
-#  Teken de driehoek op 200,100 (halve grootte)
-stamp 200, 100, .5, {0, 0, 100, 100, 0, 100}
+# Teken de driehoek op 100,100 (volledige grootte)
+stamp 100, 100, {0, 0, 200, 200, 0, 200}
+#  Teken de driehoek op 350,100 (halve grootte)
+stamp 350, 100, .5, {0, 0, 200, 200, 0, 200}
 ```
 
 Dit wordt dan:\

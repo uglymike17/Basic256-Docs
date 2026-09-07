@@ -19,11 +19,11 @@ Dessine un rectangle de dimensions *largeur* x *hauteur* pixels en utilisant la 
     color white
     rect 0,0,500,500
     color red
-    rect 50,50,150,150
+    rect 80,80,250,250
     color blue
-    rect 100,100,150,150
+    rect 160,160,250,250
     color green
-    rect 10,140,280,20
+    rect 20,240,460,40
 
 Affichera :\
 ![rect.png](@site/static/img/wiki/en/rect.png)

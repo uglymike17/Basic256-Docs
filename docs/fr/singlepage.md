@@ -1537,9 +1537,9 @@ Trace une ligne reliant les points x0,y0 et x1, y1.
     color white
     rect 0,0,500,500
     color black
-    line 50,50,200,200
-    line 100,200,200,200
-    line 100,200,50,50
+    line 100,100,400,400
+    line 200,400,400,400
+    line 200,400,100,100
 
 Affichera\
 ![Line](@site/static/img/wiki/en/line.png)
@@ -2098,13 +2098,13 @@ Avant la version 0.9.4 il fallait également passer le nombre de sommets en para
     rect 0,0,500,500
     color green
     dim tri(6)
-    tri = {100, 100, 200, 200, 100, 200}
+    tri = {100, 100, 400, 400, 100, 400}
     poly tri
 
     color blue
     rect 0,0,500,500
     color green
-    poly {100, 100, 200, 200, 100, 200}
+    poly {100, 100, 400, 400, 100, 400}
 
 Les deux codes ci-dessus produiront le résultat suivant:\
 ![poly.png](@site/static/img/wiki/en/poly.png)
@@ -2213,11 +2213,11 @@ Dessine un rectangle de dimensions *largeur* x *hauteur* pixels en utilisant la 
     color white
     rect 0,0,500,500
     color red
-    rect 50,50,150,150
+    rect 80,80,250,250
     color blue
-    rect 100,100,150,150
+    rect 160,160,250,250
     color green
-    rect 10,140,280,20
+    rect 20,240,460,40
 
 Affichera :\
 ![rect.png](@site/static/img/wiki/en/rect.png)
@@ -2728,20 +2728,20 @@ Les deux codes ci-dessous produiront le même affichage.
     rect 0,0,500,500
     color green
     dim tri(6)
-    tri = {0, 0, 100, 100, 0, 100}
-    # stamp du triangle en 0,0 (taille normale)
+    tri = {0, 0, 200, 200, 0, 200}
+    # stamp du triangle en 100,100 (taille normale)
     stamp 100, 100, tri
-    # stamp du triangle en 200,100 (taille moitié)
-    stamp 200, 100, .5, tri
+    # stamp du triangle en 350,100 (taille moitié)
+    stamp 350, 100, .5, tri
 
     clg
     color blue
     rect 0,0,500,500
     color green
-    # stamp du triangle en 0,0 (taille normale)
-    stamp 100, 100, {0, 0, 100, 100, 0, 100}
-    # stamp du triangle en 200,100 (taille moitié)
-    stamp 200, 100, .5, {0, 0, 100, 100, 0, 100}
+    # stamp du triangle en 100,100 (taille normale)
+    stamp 100, 100, {0, 0, 200, 200, 0, 200}
+    # stamp du triangle en 350,100 (taille moitié)
+    stamp 350, 100, .5, {0, 0, 200, 200, 0, 200}
 
 Le réultat sera:\
 ![stamp.png](@site/static/img/wiki/en/stamp.png)
