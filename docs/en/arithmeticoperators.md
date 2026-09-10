@@ -20,6 +20,7 @@ Arithmetic operators are simply the operations of simple math with integer and f
 
 ### History
 
-|         |                               |
-|---------|-------------------------------|
-| 2.0.0.0 | Added ‘mod’ alias for modulo. |
+|         |                                             |
+|---------|---------------------------------------------|
+| 2.0.0.0 | Added ‘mod’ alias for modulo.               |
+| 2.2     | ‘mod’ may be written in any capitalisation. |
