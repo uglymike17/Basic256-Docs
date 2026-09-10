@@ -152,6 +152,26 @@ Bitwise operators only work with long integer values (since 1.99.99.19) in the r
 
 A negative shift count shifts in the opposite direction, so `a << -2` gives the same result as `a >> 2`. Shifting by 64 or more places returns 0. Shifting does not sign extend, so `-8 >> 1` returns a large positive number rather than -4; a left shift can move a bit into the sign position and produce a negative result.
 
+#### Vector Operators
+
+Vector operators do the arithmetic of vectors on ordinary [arrays](./arrays.md). A vector is just an array of numbers — {x,y} in two dimensions, {x,y,z} in three — and only the number of elements has to agree between the two sides, not the shape.
+
+| Vector Operators |  |  |  |
+|----|----|----|----|
+| Operator | Name | Example | Comments |
+| [dot](./dot.md) | Dot Product | a dot b | Returns a single number: the two vectors multiplied element by element and added up. It is zero exactly when they are at right angles. |
+| [cross](./cross.md) | Cross Product | a cross b | With three elements each, returns the vector at right angles to both. With two elements each, returns the single number that says which way round they turn. |
+| [norm](./norm.md) | Vector Length | norm(v) | Returns the length of the vector. Always a decimal number. |
+| [unit](./unit.md) | Unit Vector | unit(v) | Returns the same vector scaled to length one — a direction with the distance taken out of it. |
+
+Whole numbers in give a whole number out for **dot** and **cross**, as they do for **a \* b**. See [Vector Operators](./vectoroperators.md) for the fuller picture.
+
+### History
+
+|         |                |
+|---------|----------------|
+| 2.2     | New To Version |
+
 #### Order of Operations
 
 Operators are evaluated according to a strict set of rules. These rules are called the “Order of Operations”.
@@ -166,11 +186,13 @@ Operators are evaluated according to a strict set of rules. These rules are call
 | 5 | \+ - | Addition/Concatenation, and Subtraction |
 | 6 | \<\< \>\> | Bitwise Shift Left and Right |
 | 7 | & \| | Bitwise And and Bitwise Or |
-| 8 | \< \<= \> \>= = \<\> | Comparison (Numeric and String) |
-| 9 | NOT | Not |
-| 10 | AND | Logical And |
-| 11 | OR XOR | Logical Or and Logical Exclusive Or |
-| 12 | ; | Concatenation |
+| 8 | cross | Vector Cross Product |
+| 9 | dot | Vector Dot Product |
+| 10 | \< \<= \> \>= = \<\> | Comparison (Numeric and String) |
+| 11 | NOT | Not |
+| 12 | AND | Logical And |
+| 13 | OR XOR | Logical Or and Logical Exclusive Or |
+| 14 | ; | Concatenation |
 
 The concatenation operator `;` binds more loosely than every other operator, so `a ; b or c` is evaluated as `a ; (b or c)`. Use parentheses when you mean `(a ; b) or c`.
 
@@ -182,4 +204,5 @@ The concatenation operator `;` binds more loosely than every other operator, so 
 - [Boolean (Logical) Operators](./logicaloperators.md)
 - [Variable Operators](./variableoperators.md)
 - [Bitwise Operators](./bitwiseoperators.md)
+- [Vector Operators](./vectoroperators.md)
 - [Order Of Operations](./orderofoperators.md)

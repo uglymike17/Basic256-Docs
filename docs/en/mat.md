@@ -228,7 +228,7 @@ The program is included with BASIC-256 as **Examples/Simulations/MatrixParticles
 
 ### See Also
 
-[ArrayBase](./arraybase.md), [Array Lengths](./arraylength.md), [Arrays](./arrays.md), [Dim](./dim.md), [OnError](./onerror.md), [Redim](./redim.md), [Try](./try.md)
+[ArrayBase](./arraybase.md), [Array Lengths](./arraylength.md), [Arrays](./arrays.md), [Cross](./cross.md), [Dim](./dim.md), [Dot](./dot.md), [Norm](./norm.md), [OnError](./onerror.md), [Redim](./redim.md), [Try](./try.md), [Unit](./unit.md), [Vector Operators](./vectoroperators.md)
 
 ### History
 

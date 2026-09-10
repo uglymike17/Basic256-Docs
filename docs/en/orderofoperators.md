@@ -17,10 +17,12 @@ Operators are evaluated according to a strict set of rules. These rules are call
 | 5 | \+ - | Addition/Concatenation, and Subtraction |
 | 6 | \<\< \>\> | Bitwise Shift Left and Right |
 | 7 | & \| | Bitwise And and Bitwise Or |
-| 8 | \< \<= \> \>= = \<\> | Comparison (Numeric and String) |
-| 9 | NOT | Not |
-| 10 | AND | Logical And |
-| 11 | OR XOR | Logical Or and Logical Exclusive Or |
-| 12 | ; | Concatenation |
+| 8 | cross | Vector Cross Product |
+| 9 | dot | Vector Dot Product |
+| 10 | \< \<= \> \>= = \<\> | Comparison (Numeric and String) |
+| 11 | NOT | Not |
+| 12 | AND | Logical And |
+| 13 | OR XOR | Logical Or and Logical Exclusive Or |
+| 14 | ; | Concatenation |
 
 The concatenation operator `;` binds more loosely than every other operator, so `a ; b or c` is evaluated as `a ; (b or c)`. Use parentheses when you mean `(a ; b) or c`.
