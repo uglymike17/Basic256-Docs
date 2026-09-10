@@ -31,7 +31,7 @@ One dimensional arrays and lists must have at least six values and an even numbe
     spritepoly 0, {15,0, 30,10, 25,10, 25,30, 5,30, 5,10, 0,10}
 
     color grey
-    rect 0,0,300,300
+    rect 0,0,500,500
     spriteshow 0
     s = 1
     ds = .1
