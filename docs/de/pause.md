@@ -16,3 +16,7 @@ Hält die Programmausführung für die angegebene Anzahl Sekunden an. Der *Sekun
 ### Beispiel
 
 ’ ’ pause 0.1’ ’
+
+### See Also
+
+[FrameRate](../en/framerate.md), [Msec](../en/msec.md)

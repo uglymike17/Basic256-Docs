@@ -26,6 +26,10 @@ Print "en heb nu na 20 seconden gedaan"
 
 ( pas op, het voorbeeld duurt lang)
 
+### Zie ook
+
+[FrameRate](../en/framerate.md), [Msec](../en/msec.md)
+
 ------------------------------------------------------------------------
 
 [vorige](./ifthen.md) \| [Programma Controle](./programcontrol.md) \| [volgende](./comment.md)

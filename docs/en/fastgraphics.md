@@ -19,4 +19,4 @@ When doing animation, it’s recommended to do all of your drawing commands in s
 
 ### See Also
 
-[Clg](./clg.md), [FastGraphics](./fastgraphics.md), [Graphheight](./graphheight.md), [Graphsize](./graphsize.md), [Graphwidth](./graphwidth.md), [Refresh](./refresh.md)
+[Clg](./clg.md), [FastGraphics](./fastgraphics.md), [FrameRate](./framerate.md), [Graphheight](./graphheight.md), [Graphsize](./graphsize.md), [Graphwidth](./graphwidth.md), [Refresh](./refresh.md)

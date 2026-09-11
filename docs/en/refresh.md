@@ -15,4 +15,4 @@ Updates the graphics output window to show all drawing since the previous refres
 
 ### See Also
 
-[Clg](./clg.md), [FastGraphics](./fastgraphics.md), [Graphheight](./graphheight.md), [Graphsize](./graphsize.md), [Graphwidth](./graphwidth.md), [Refresh](./refresh.md)
+[Clg](./clg.md), [FastGraphics](./fastgraphics.md), [FrameRate](./framerate.md), [Graphheight](./graphheight.md), [Graphsize](./graphsize.md), [Graphwidth](./graphwidth.md), [Refresh](./refresh.md)

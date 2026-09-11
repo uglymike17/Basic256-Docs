@@ -19,3 +19,7 @@ Stoppe l’exécution pendant un certain nombre de secondes. L’argument *secon
     print "Début de l'attente"
     pause 0.5
     print "Nous avons attendu 1/2 seconde, c'était long ?"
+
+### Voir aussi
+
+[FrameRate](../en/framerate.md), [Msec](../en/msec.md)
