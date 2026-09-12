@@ -19,7 +19,7 @@ When you write `include "math.kbs"`, BASIC-256 looks for the file in three place
 2. Next to the BASIC-256 program (the executable folder).
 3. The bundled **Modules** folder that ships with BASIC-256.
 
-Because of the third step, the modules shipped with BASIC-256 — such as `math.kbs` — can be included by their bare name from any program, wherever that program is saved. Your own module files can be dropped into that folder, or kept beside your program and included with a relative path.
+Because of the third step, the modules shipped with BASIC-256 — such as `math.kbs` and `turtle.kbs` — can be included by their bare name from any program, wherever that program is saved. Your own module files can be dropped into that folder, or kept beside your program and included with a relative path.
 
 An `include` statement must be alone on its line, and programs may nest includes up to ten levels deep.
 
@@ -55,9 +55,22 @@ Some of the functions it provides:
 | `randint(lo, hi)` | random integer, inclusive |
 | `gaussian(mean, sd)` | normally distributed random number |
 
+### The turtle module
+
+`turtle.kbs` is the other module shipped with BASIC-256. It adds a turtle: an imaginary pen steered with instructions like *go forward* and *turn right*, rather than by working out coordinates.
+
+    include "turtle.kbs"
+
+    for n = 1 to 4
+       call t_forward(80)
+       call t_right(90)
+    next n
+
+Its commands all begin with `t_`. See [Turtle Graphics](./turtle.md) for the full list.
+
 ### See Also
 
-[Include](./include.md), [Function](./function.md), [Subroutine](./subroutine.md), [Call](./call.md), [Program Syntax](./programsyntax.md)
+[Turtle Graphics](./turtle.md), [Include](./include.md), [Function](./function.md), [Subroutine](./subroutine.md), [Call](./call.md), [Program Syntax](./programsyntax.md)
 
 ### Availability
 
