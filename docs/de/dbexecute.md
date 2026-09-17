@@ -18,6 +18,12 @@ Execute an SQL statement on the open SQLite database file. This statement does n
 
 See example of usage on [DBOpen](./dbopen.md) page.
 
+### Berechtigungen
+
+Ein Programm darf Dateien in seinem eigenen Ordner frei verwenden. Für alles
+außerhalb dieses Ordners wird der Benutzer um Erlaubnis gefragt; wird sie
+verweigert, schlägt die Anweisung mit `ERROR_PERMISSION` fehl. Siehe [File and Folder Permissions](../en/filepermissions.md).
+
 ### See Also
 
 [DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)

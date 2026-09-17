@@ -32,6 +32,13 @@ Quelquefois les images sont sauvegardées avec un fond noir (là où rien n’a 
     imgsave "testimgsave1.png"
     imgsave "testimgsave2.jpg", "jpg"
 
+### Autorisations
+
+Un programme peut utiliser librement les fichiers de son propre dossier. Pour
+tout ce qui se trouve en dehors de ce dossier, l'autorisation de l'utilisateur
+est demandée ; si elle est refusée, l'instruction échoue avec
+`ERROR_PERMISSION`. Voir [File and Folder Permissions](../en/filepermissions.md).
+
 ### Voir Aussi
 
 [ImgLoad](./imgload.md)

@@ -18,6 +18,12 @@ Perform an SQL statement and create a record set so that the program may loop th
 
 See example of usage on [DBOpen](./dbopen.md) page.
 
+### Berechtigungen
+
+Ein Programm darf Dateien in seinem eigenen Ordner frei verwenden. Für alles
+außerhalb dieses Ordners wird der Benutzer um Erlaubnis gefragt; wird sie
+verweigert, schlägt die Anweisung mit `ERROR_PERMISSION` fehl. Siehe [File and Folder Permissions](../en/filepermissions.md).
+
 ### See Also
 
 [DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)

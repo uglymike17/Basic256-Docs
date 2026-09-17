@@ -52,6 +52,12 @@ will display
     3three9.43
     2two6.28
 
+### Berechtigungen
+
+Ein Programm darf Dateien in seinem eigenen Ordner frei verwenden. Für alles
+außerhalb dieses Ordners wird der Benutzer um Erlaubnis gefragt; wird sie
+verweigert, schlägt die Anweisung mit `ERROR_PERMISSION` fehl. Siehe [File and Folder Permissions](../en/filepermissions.md).
+
 ### See Also
 
 [DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)

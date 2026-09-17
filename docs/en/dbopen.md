@@ -54,6 +54,16 @@ will display
     3three9.43
     2two6.28
 
+### Permissions
+
+The database file is checked. A database in the program's own folder, or below
+it, opens with no question asked; one elsewhere on the computer asks the user's
+permission, and the statement fails with `ERROR_PERMISSION` if that is refused.
+
+Opening a database does not give a program the run of the disk through it: the
+file named by an `ATTACH DATABASE` or `VACUUM INTO` statement passed to
+[DbExecute](./dbexecute.md) is checked in the same way. See [File and Folder Permissions](./filepermissions.md).
+
 ### See Also
 
 *(See [en:start](./start.md).)*&noheader)

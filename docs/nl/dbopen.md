@@ -54,6 +54,12 @@ toont dan
     3drie9.43
     2twee6.28
 
+### Toestemming
+
+Een programma mag bestanden in zijn eigen map vrij gebruiken. Voor alles buiten
+die map wordt toestemming aan de gebruiker gevraagd; wordt die geweigerd, dan
+mislukt de opdracht met `ERROR_PERMISSION`. Zie [File and Folder Permissions](../en/filepermissions.md).
+
 ### Zie ook
 
 [DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)

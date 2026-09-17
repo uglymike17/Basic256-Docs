@@ -20,6 +20,12 @@ Open up a network connection (server) on a specific port address and wait for an
 
 See example of usage on [NetConnect](./netconnect.md) page.
 
+### Berechtigungen
+
+NETLISTEN nimmt nur Verbindungen von diesem Computer an. Verbindungen von
+anderen Rechnern werden in den Einstellungen freigegeben. Siehe
+[NetListen](../en/netlisten.md).
+
 ### See Also
 
 [NetClose](./netclose.md), [NetConnect](./netconnect.md), [NetData](./netdata.md), [NetRead](./netread.md), [NetWrite](./netwrite.md)

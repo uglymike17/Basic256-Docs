@@ -14,6 +14,12 @@ kill ( *uitdrukking* )
 Deze functie verwijdert het bestand zoals in *uitdrukking* van het system .\
 Indien het bestand niet bestaat, krijg je een foutmelding.
 
+### Toestemming
+
+Een programma mag bestanden in zijn eigen map vrij gebruiken. Voor alles buiten
+die map wordt toestemming aan de gebruiker gevraagd; wordt die geweigerd, dan
+mislukt de opdracht met `ERROR_PERMISSION`. Zie [File and Folder Permissions](../en/filepermissions.md).
+
 ### Zie ook
 
 [Close](./close.md), [Eof](./eof.md), [Open](./open.md), [Read](./read.md), [Readline](./readline.md), [Reset](./reset.md), [Seek](./seek.md), [Size](./size.md), [Write](./write.md), [Writeline](./writeline.md)

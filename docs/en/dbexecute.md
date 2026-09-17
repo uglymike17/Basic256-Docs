@@ -20,6 +20,19 @@ Execute an SQL statement contained in the string expression on the open SQLite d
 
 See example of usage on [DBOpen](./dbopen.md) page.
 
+### Permissions
+
+Ordinary SQL is passed to the database untouched. Two statements name a file of
+their own and are checked before they run: `ATTACH DATABASE`, which opens a
+second database file, and `VACUUM INTO`, which writes a copy of the database to
+a new file. A file in the program's own folder is used with no question asked;
+one elsewhere asks the user's permission.
+
+`ATTACH DATABASE ':memory:'` needs no file and is always allowed. A name
+written as a `file:` URI, or built up by an expression rather than written out
+as text, is refused outright, because what it would open cannot be known before
+the statement runs. See [File and Folder Permissions](./filepermissions.md).
+
 ### See Also
 
 *(See [en:start](./start.md).)*&noheader)

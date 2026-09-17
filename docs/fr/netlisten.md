@@ -20,6 +20,12 @@ sidebar_label: "Netlisten"
 
 Voir la page [NetConnect](./netconnect.md).
 
+### Autorisations
+
+NETLISTEN n'accepte que les connexions provenant de cet ordinateur. Les
+connexions d'autres machines s'autorisent dans les Préférences. Voir
+[NetListen](../en/netlisten.md).
+
 ### Voir Aussi
 
 [NetClose](./netclose.md), [NetConnect](./netconnect.md), [NetData](./netdata.md), [NetRead](./netread.md), [NetWrite](./netwrite.md)

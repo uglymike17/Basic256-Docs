@@ -34,6 +34,12 @@ open(1,"bestand.txt")
 
 geen feedback… als het bestand bestaat wordt het geopend, anders wordt dat bestand aangemaakt.
 
+### Toestemming
+
+Een programma mag bestanden in zijn eigen map vrij gebruiken. Voor alles buiten
+die map wordt toestemming aan de gebruiker gevraagd; wordt die geweigerd, dan
+mislukt de opdracht met `ERROR_PERMISSION`. Zie [File and Folder Permissions](../en/filepermissions.md).
+
 ### Zie Ook
 
 [Changedir](./changedir.md), [Close](./close.md), [Currentdir](./currentdir.md), [Eof](./eof.md), [Kill](./kill.md), [Read](./read.md), [Readline](./readline.md), [Reset](./reset.md), [Write](./write.md), [Writeline](./writeline.md), [Exists](./exists.md), [Seek](./seek.md), [Size](./size.md)

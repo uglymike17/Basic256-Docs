@@ -22,6 +22,12 @@ Perform an SQL statement and create a record set so that the program may loop th
 
 See example of usage on [DBOpen](./dbopen.md) page.
 
+### Permissions
+
+The statement is checked exactly as [DbExecute](./dbexecute.md) is: `ATTACH
+DATABASE` and `VACUUM INTO` name a file, and that file is subject to the same
+permission as any other. See [File and Folder Permissions](./filepermissions.md).
+
 ### See Also
 
 *(See [en:start](./start.md).)*&noheader)

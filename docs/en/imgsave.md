@@ -38,6 +38,13 @@ Sometimes images will be saved with “black” filling where the screen was und
     imgsave "testimgsave1.png"
     imgsave "testimgsave2.jpg", "jpg"
 
+### Permissions
+
+The file being written is checked. Saving into the program's own folder, or
+below it, happens with no question asked; saving elsewhere on the computer asks
+the user's permission, and the statement fails with `ERROR_PERMISSION` if that
+is refused. See [File and Folder Permissions](./filepermissions.md).
+
 ### See Also
 
 [Imgload](./imgload.md), [Imgsave](./imgsave.md)

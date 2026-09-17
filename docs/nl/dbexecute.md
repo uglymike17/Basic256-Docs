@@ -20,6 +20,12 @@ Als je een Sql opdracht wil uitvoeren om informatie uit te lezen, wordt [DBOpenS
 
 Voorbeeld is uitegewerkt op de [DBOpen](./dbopen.md) page.
 
+### Toestemming
+
+Een programma mag bestanden in zijn eigen map vrij gebruiken. Voor alles buiten
+die map wordt toestemming aan de gebruiker gevraagd; wordt die geweigerd, dan
+mislukt de opdracht met `ERROR_PERMISSION`. Zie [File and Folder Permissions](../en/filepermissions.md).
+
 ### Zie ook
 
 [DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)

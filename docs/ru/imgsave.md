@@ -19,6 +19,13 @@ sidebar_label: "Imgsave"
     color white
     rect 0, 0, graphwidth, graphheight
 
+#### Разрешения
+
+Программа может свободно работать с файлами в своей собственной папке. Для
+всего, что находится за её пределами, запрашивается разрешение пользователя;
+если в нём отказано, оператор завершается ошибкой `ERROR_PERMISSION`.
+См. [File and Folder Permissions](../en/filepermissions.md).
+
 #### Смотри также:
 
 [ImgLoad](./imgload.md)

@@ -17,6 +17,11 @@ Clears an open file. All data stored in the file is lost. If the file number is 
 
 For serial ports the reset statement has not been implemented.
 
+### Permissions
+
+Reset is not checked. It empties a file that [Open](./open.md) has already
+opened, and permission for that file was settled when it was opened. See [File and Folder Permissions](./filepermissions.md).
+
 ### See Also
 
 [Changedir](./changedir.md), [Close](./close.md), [Currentdir](./currentdir.md), [Dir](./dir.md), [Eof](./eof.md), [Exists](./exists.md), [Freefile](./freefile.md), [Kill](./kill.md), [mkdir](./mkdir.md), [Open](./open.md), [Openb](./open.md), [OpenFileDialog](./opensavefiledialog.md), [OpenSerial](./openserial.md), [Read](./read.md), [Readbyte](./readbyte.md), [Readline](./readline.md), [Reset](./reset.md), [SaveFileDialog](./opensavefiledialog.md), [Seek](./seek.md), [Size](./size.md), [Write](./write.md), [Writebyte](./writebyte.md), [Writeline](./writeline.md)

@@ -18,6 +18,13 @@ Exécute une commande SQL, créé et ouvre une série d’enregistrements qui pe
 
 Voir l’exemple d’utilisation dans la page [DBOpen](./dbopen.md) .
 
+### Autorisations
+
+Un programme peut utiliser librement les fichiers de son propre dossier. Pour
+tout ce qui se trouve en dehors de ce dossier, l'autorisation de l'utilisateur
+est demandée ; si elle est refusée, l'instruction échoue avec
+`ERROR_PERMISSION`. Voir [File and Folder Permissions](../en/filepermissions.md).
+
 ### Voir aussi
 
 [DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)

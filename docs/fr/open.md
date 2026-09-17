@@ -25,6 +25,13 @@ Openb ouvre le fichier en mode bianire (“binary safe”). Cet type d’ouvertu
 
 BASIC256 peut ouvrir jusqu’à 8 fichiers en même temps. Les fichiers peuvent être numérotés de 0 à 7. L’ouverture d’un fichier avec le numéro d’un fichier déjà ouvert provoque la fermeture de ce dernier.
 
+### Autorisations
+
+Un programme peut utiliser librement les fichiers de son propre dossier. Pour
+tout ce qui se trouve en dehors de ce dossier, l'autorisation de l'utilisateur
+est demandée ; si elle est refusée, l'instruction échoue avec
+`ERROR_PERMISSION`. Voir [File and Folder Permissions](../en/filepermissions.md).
+
 ### Voir Aussi
 
 [Changedir](./changedir.md), [Close](./close.md), [Currentdir](./currentdir.md), [Eof](./eof.md), [Read](./read.md), [Readline](./readline.md), [Reset](./reset.md), [Write](./write.md), [Writeline](./writeline.md), [Exists](./exists.md), [Seek](./seek.md), [Size](./size.md)

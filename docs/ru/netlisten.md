@@ -16,6 +16,12 @@ sidebar_label: "Netlisten"
 
 Открывает сетевое соединение (сервер) по указанному номеру порта и ждет подключения. Если *номер\_сокета*, используется нулевой (0) номер.
 
+#### Разрешения
+
+NETLISTEN принимает подключения только с этого компьютера. Подключения с
+других машин включаются в настройках. См.
+[NetListen](../en/netlisten.md).
+
 #### Смотри также:
 
 [NetAddress](./netaddress.md), [NetClose](./netclose.md), [NetConnect](./netconnect.md), [NetData](./netdata.md), [NetRead](./netread.md), [NetWrite](./netwrite.md)

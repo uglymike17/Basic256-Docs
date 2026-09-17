@@ -22,6 +22,13 @@ If the path is the empty string ’’ then the current folder will be opened. F
     f = openfiledialog("",".","Images (*.png *.xpm *.jpg);;Text files (*.txt);;XML files (*.xml)")
     print f
 
+### Permissions
+
+A path returned by either of these functions was chosen by the user, and may
+afterwards be opened without a further question even when it lies outside the
+program's own folder. This is the tidy way for a program to work on a file
+somewhere else on the computer. See [File and Folder Permissions](./filepermissions.md).
+
 ### See Also
 
 [Changedir](./changedir.md), [Close](./close.md), [Currentdir](./currentdir.md), [Dir](./dir.md), [Eof](./eof.md), [Exists](./exists.md), [Freefile](./freefile.md), [Kill](./kill.md), [mkdir](./mkdir.md), [Open](./open.md), [Openb](./open.md), [OpenFileDialog](./opensavefiledialog.md), [OpenSerial](./openserial.md), [Read](./read.md), [Readbyte](./readbyte.md), [Readline](./readline.md), [Reset](./reset.md), [SaveFileDialog](./opensavefiledialog.md), [Seek](./seek.md), [Size](./size.md), [Write](./write.md), [Writebyte](./writebyte.md), [Writeline](./writeline.md)

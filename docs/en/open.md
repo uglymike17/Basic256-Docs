@@ -25,6 +25,16 @@ Openb opens the file in a “binary safe” mode. This type of file open is reco
 
 BASIC256 may have up to 8 files open at a single time. The files are numbered from 0 to 7. Opening a file to a number while another is already open to that number will close the open file.
 
+### Permissions
+
+The file being opened is checked. A file in the program's own folder, or below
+it, opens with no question asked; a file elsewhere on the computer asks the
+user's permission, and the statement fails with `ERROR_PERMISSION` if that is
+refused. The decision is made here and once only -- the statements that then
+read from or write to the open file are not checked again. A path that came
+back from [OpenFileDialog or SaveFileDialog](./opensavefiledialog.md) was
+chosen by the user and opens without a further question. See [File and Folder Permissions](./filepermissions.md).
+
 ### See Also
 
 [Changedir](./changedir.md), [Close](./close.md), [Currentdir](./currentdir.md), [Dir](./dir.md), [Eof](./eof.md), [Exists](./exists.md), [Freefile](./freefile.md), [Kill](./kill.md), [mkdir](./mkdir.md), [Open](./open.md), [Openb](./open.md), [OpenFileDialog](./opensavefiledialog.md), [OpenSerial](./openserial.md), [Read](./read.md), [Readbyte](./readbyte.md), [Readline](./readline.md), [Reset](./reset.md), [SaveFileDialog](./opensavefiledialog.md), [Seek](./seek.md), [Size](./size.md), [Write](./write.md), [Writebyte](./writebyte.md), [Writeline](./writeline.md)

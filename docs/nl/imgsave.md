@@ -49,6 +49,12 @@ imgsave "voorbeeldbestand.png"
 imgsave "voorbeeldbestand2.jpg", "jpg"
 ```
 
+### Toestemming
+
+Een programma mag bestanden in zijn eigen map vrij gebruiken. Voor alles buiten
+die map wordt toestemming aan de gebruiker gevraagd; wordt die geweigerd, dan
+mislukt de opdracht met `ERROR_PERMISSION`. Zie [File and Folder Permissions](../en/filepermissions.md).
+
 ### Zie ook
 
 [ImgLoad](./imgload.md)

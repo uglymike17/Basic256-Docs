@@ -20,6 +20,12 @@ De functie opent een netwerk connectie (server) op een specifieke poort en wacht
 
 Voorbeeld uitgewerkt op [NetConnect](./netconnect.md).
 
+### Toestemming
+
+NETLISTEN aanvaardt alleen verbindingen vanaf deze computer. Verbindingen van
+andere machines zet je aan in de voorkeuren. Zie
+[NetListen](../en/netlisten.md).
+
 ### Zie ook
 
 [NetAddress](./netaddress.md), [NetClose](./netclose.md), [NetConnect](./netconnect.md), [NetData](./netdata.md), [NetRead](./netread.md), [NetWrite](./netwrite.md)
