@@ -1,20 +1,18 @@
 ---
-title: "Currentdir"
-sidebar_label: "Currentdir"
+title: "Mkdir"
+sidebar_label: "Mkdir"
 ---
 
-## Currentdir (Function)
+## MkDir (Statement)
 
 ### Format
 
-**currentdir**\
-**currentdir** ( )
-
-returns [string_expression](./stringexpressions.md)
+**mkdir** [string_expression](./stringexpressions.md)\
+**mkdir** ( [string_expression](./stringexpressions.md) )
 
 ### Description
 
-Returns the fully qualified path name to BASIC-256’s current directory. For all systems (including Windows) a forward slash (/) will be used to separate folders in a full path.
+Create a directory/folder in the current working directory. If the directory already exists, no error will be displayed.
 
 ### See Also
 
@@ -22,6 +20,6 @@ Returns the fully qualified path name to BASIC-256’s current directory. For al
 
 ### History
 
-|        |                |
-|--------|----------------|
-| 0.9.6r | New To Version |
+|          |                |
+|----------|----------------|
+| 2.0.0.12 | New To Version |

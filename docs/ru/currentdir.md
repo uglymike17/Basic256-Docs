@@ -16,7 +16,7 @@ sidebar_label: "Currentdir"
 
 #### Смотри также:
 
-[Changedir](./changedir.md), [Close](./close.md), [Eof](./eof.md), [Exists](./exists.md), [Open](./open.md), [Read](./read.md), [Readline](./readline.md), [Reset](./reset.md), [Seek](./seek.md), [Size](./size.md), [Write](./write.md), [Writeline](./writeline.md)
+[Changedir](./changedir.md), [Close](./close.md), [Eof](./eof.md), [Exists](./exists.md), [Kill](./kill.md), [Open](./open.md), [Read](./read.md), [Readline](./readline.md), [Reset](./reset.md), [Seek](./seek.md), [Size](./size.md), [Write](./write.md), [Writeline](./writeline.md)
 
 #### Впервые в версии:
 
