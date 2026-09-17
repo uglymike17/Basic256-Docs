@@ -38,6 +38,6 @@ geeft dan
 
 ------------------------------------------------------------------------
 
-[vorige](./eof.md) \| [Lezen en schrijven](./write_and_read.md) \| [volgende](./kill.md)
+[vorige](./eof.md) \| [Lezen en schrijven](./write_and_read.md) \| [volgende](./open.md)
 
 [^1]: true=1 en false=0

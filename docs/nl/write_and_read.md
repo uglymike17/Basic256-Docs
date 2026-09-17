@@ -23,7 +23,6 @@ Hierna vind je de nodige commando’s om iets met met bestanden te kunnen doen.
 | [Reset](./reset.md) | Het bestand begint met een nieuwe lei…. |
 | [Eof](./eof.md) | Zitten we aan het eind van het bestand? |
 | [Exists](./exists.md) | Bestaat mijn bestand wel? |
-| [Kill](./kill.md) | verwijdert bestand van het systeem! |
 | [Write](./write.md) | Schrijft iets weg in het bestand. |
 | [Writeline](./writeline.md) | Schrijft iets weg in het bestand **en** springt op een nieuwe lijn! |
 | [Readline](./readline.md) | Leest uit het bestand, lijn per lijn |

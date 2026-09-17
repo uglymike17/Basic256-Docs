@@ -62,7 +62,6 @@ Opgelet :!: Dit zijn niet alle woorden, enkel de woorden die een nuttige vertali
 \|input\| invoer\| \|
 \|instr (*in string*)\| in de tekenreeks \| \|
 \|key\|sleutel \| \|
-\|kill\| doden\| \|
 \|lasterror\| laatste fout\| \|
 \|lasterrorextra\| laatste fout extra\| \|
 \|lasterrorline\|lijn van de laatste fout \| \|
