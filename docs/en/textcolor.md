@@ -10,7 +10,8 @@ sidebar_label: "TextColor"
 **textcolor** color\
 **textcolor** ( color )\
 **textcolor** text_color, background_color\
-**textcolor** ( text_color, background_color )
+**textcolor** ( text_color, background_color )\
+**textcolor**
 
 ### Description
 
@@ -28,6 +29,8 @@ Text already on the screen keeps the colour it was written in -- **textcolor** a
 
 A program that never calls **textcolor** prints in the ordinary text colour, which follows the light or dark theme.
 
+**textcolor** on its own, with no arguments at all, hands the colour back to that theme -- black on a light theme and white on a dark one -- and clears any background with it. It is the counterpart of [TextBackground](./textbackground.md) written on its own, and it is what a program should use to finish with: naming a colour such as `black` only suits one of the two themes, and would be invisible on the other.
+
 ### Example
 
     textcolor rgb(255,220,0), rgb(20,20,90)
@@ -40,6 +43,9 @@ A program that never calls **textcolor** prints in the ordinary text colour, whi
 
     textcolor rgb(120,200,255)
     print "and the text already printed keeps its own colours"
+
+    textcolor
+    print "and this line is back to the theme's own colour"
 
 ### See Also
 

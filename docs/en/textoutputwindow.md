@@ -77,9 +77,9 @@ The font matters more here than it looks, because in the ordinary window a colum
 
     textscreen 40, 25
 
-On a fixed screen **a column really is a column**. The characters are laid out on a grid rather than by the widths of the letters, so a box drawn with `+`, `-` and `|` closes up, and columns of figures line up underneath each other, whatever font is set. The screen always fills the window, so the letters grow and shrink as the window is resized and a program does not have to care how big it has been made; [TextFont](./textfont.md) still chooses the family, the weight and the slant, but the size it is given is ignored, there being only one size that fits.
+On a fixed screen **a column really is a column**. The characters are laid out on a grid rather than by the widths of the letters, so a box drawn with `+`, `-` and `|` closes up, and columns of figures line up underneath each other, whatever font is set. The screen is fitted into the window and centred there, so the letters grow and shrink as the window is resized and a program does not have to care how big it has been made, while the cells keep the shape the font gives them however the window is dragged -- a third argument, `textscreen 8, 8, true`, makes the cells square instead, which is what a board or a picture drawn out of characters wants; [TextFont](./textfont.md) still chooses the family, the weight and the slant, but the size it is given is ignored, there being only one size that fits.
 
-Printing past the last column carries on at the start of the next row, and printing past the last row scrolls the screen up a line.
+Printing past the last column carries on at the start of the next row, and printing past the last row scrolls the screen up a line. A character that merely fills the last square of the last row does not scroll it by itself -- the screen moves when the next character arrives.
 
 :::warning
 **What scrolls off the top is gone.** A screen is a screen and not a scroll — exactly as it was on the machines this recreates — so there is nothing to scroll back to and no history kept. A program that wants to keep something on view should print it somewhere it will not be scrolled over, or use the ordinary window.
