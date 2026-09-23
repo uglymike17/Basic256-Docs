@@ -30,6 +30,8 @@ The same is true of x, so **window** 1,-1,-1,1 runs x from right to left.
 
 [PenWidth](../en/penwidth.md) and [Font](../en/font.md) keep their sizes in pixels. A line does not become thicker, and lettering does not become larger, just because the window makes a unit big.
 
+A picture keeps its size in pixels for the same reason. [Imgload](../en/imgload.md), [GetSlice](../en/getslice.md) and [PutSlice](../en/putslice.md) take their position in window units, but the image or the slice is painted at the size it really is. Use the scale argument of [Imgload](../en/imgload.md) to paint a picture larger or smaller.
+
 The window belongs to whatever you are drawing on, so it follows [SetGraph](../en/setgraph.md) onto an image and back again. The same **window** -1,-1,1,1 covers a small image and the whole graphics area alike.
 
 A window that is not the same shape as the graphics area stretches what you draw, so a [Circle](../en/circle.md) comes out as an oval. A window with no width or no height is an error.
@@ -61,10 +63,11 @@ The circle has a radius of 1 and the curve runs from -1.5 to 1.5, with 0,0 in th
 
 ### See Also
 
-[Arc](../en/arc.md), [Chord](../en/chord.md), [Circle](../en/circle.md), [ClickX](../en/clickx.md), [ClickY](../en/clicky.md), [Font](../en/font.md), [GraphSize](../en/graphsize.md), [Line](../en/line.md), [MouseX](../en/mousex.md), [MouseY](../en/mousey.md), [PenWidth](../en/penwidth.md), [Pie](../en/pie.md), [Pixel](../en/pixel.md), [Plot](../en/plot.md), [Poly](../en/poly.md), [Rect](../en/rect.md), [SetGraph](../en/setgraph.md), [Stamp](../en/stamp.md), [Text](../en/text.md)
+[Arc](../en/arc.md), [Chord](../en/chord.md), [Circle](../en/circle.md), [ClickX](../en/clickx.md), [ClickY](../en/clicky.md), [Font](../en/font.md), [GetSlice](../en/getslice.md), [GraphSize](../en/graphsize.md), [Imgload](../en/imgload.md), [Line](../en/line.md), [MouseX](../en/mousex.md), [MouseY](../en/mousey.md), [PenWidth](../en/penwidth.md), [Pie](../en/pie.md), [Pixel](../en/pixel.md), [Plot](../en/plot.md), [Poly](../en/poly.md), [PutSlice](../en/putslice.md), [Rect](../en/rect.md), [SetGraph](../en/setgraph.md), [Stamp](../en/stamp.md), [Text](../en/text.md)
 
 ### History
 
-|         |                |
-|---------|----------------|
-| 2.1.2   | New To Version |
+|         |                                                                                                   |
+|---------|---------------------------------------------------------------------------------------------------|
+| 2.1.2   | New To Version                                                                                    |
+| 2.3     | [Imgload](../en/imgload.md), [GetSlice](../en/getslice.md) and [PutSlice](../en/putslice.md) follow the window |
