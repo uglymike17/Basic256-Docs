@@ -13,7 +13,11 @@ returns [integer_expression](./integerexpressions.md)
 
 ### Description
 
-Returns the width, in pixels, of a loaded sprite.
+Returns the width, in pixels, of a loaded sprite as it appears on the screen.
+
+If the sprite has been scaled or rotated by [Spriteplace](./spriteplace.md) or [Spritemove](./spritemove.md), this is the width of the sprite as transformed and not the width of the picture it was made from. A sprite 40 pixels wide measures 120 at a scale of 3 and 20 at a scale of 0.5.
+
+A rotated sprite is as wide as the upright box that encloses it once it has been turned, so the same 40 pixel sprite measures about 57 turned an eighth of a turn, and 40 again at a half turn. That box is what [Spritecollide](./spritecollide.md) works from, so a test such as **if** x > [graphwidth](./graphwidth.md) - **spritew**(n) / 2 keeps a scaled or turned sprite inside the graphics area.
 
 ### See Also
 
@@ -21,6 +25,7 @@ Returns the width, in pixels, of a loaded sprite.
 
 ### History
 
-|        |                |
-|--------|----------------|
-| 0.9.6n | New To Version |
+|        |                                                          |
+|--------|----------------------------------------------------------|
+| 0.9.6n | New To Version                                           |
+| 2.3    | Follows the scale and rotation the sprite was placed with |

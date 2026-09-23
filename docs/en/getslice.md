@@ -7,7 +7,8 @@ sidebar_label: "Getslice"
 
 ### Format
 
-getslice([x_position](./numericexpressions.md), [y_position](./numericexpressions.md), [width](./numericexpressions.md), [height](./numericexpressions.md))
+**getslice** ( [x_position](./numericexpressions.md), [y_position](./numericexpressions.md), [width](./numericexpressions.md), [height](./numericexpressions.md) )\
+**getslice** ( [x_position](./numericexpressions.md), [y_position](./numericexpressions.md), [width](./numericexpressions.md), [height](./numericexpressions.md), [layer](./sliceconstants.md) )
 
 returns [List of Values](./lists.md)
 
@@ -15,7 +16,19 @@ returns [List of Values](./lists.md)
 
 Return a 2 dimensional array of the pixels in the rectangle defined by the parameters.
 
-These coordinates are always measured in pixels and are not changed by [Window](./window.md), because the array is a number of pixels wide and high.
+[x_position](./numericexpressions.md) and [y_position](./numericexpressions.md) are the top left corner of the rectangle. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines, the same as they are for [Pixel](./pixel.md).
+
+[width](./numericexpressions.md) and [height](./numericexpressions.md) are always a number of pixels and are never changed by a window, because they are the size of the array you get back. **getslice**(x, y, 10, 10) hands back ten pixels by ten whatever window is set, so [PutSlice](./putslice.md) can put them back exactly as they were.
+
+The optional [layer](./sliceconstants.md) says which of the graphics layers to read the pixels from. The graphics area is drawn in two layers -- what the program has painted with [Plot](./plot.md), [Line](./line.md), [Rect](./rect.md) and the rest, and the sprites that are laid on top of it -- and one of the [Slice Constants](./sliceconstants.md) chooses between them:
+
+|                  |                                                                            |
+|------------------|----------------------------------------------------------------------------|
+| **slice_all**    | Both layers as they appear on the screen. This is what you get if you leave the argument out. |
+| **slice_paint**  | Only what the program has painted, with no sprites in it                     |
+| **slice_sprite** | Only the sprites, with the painting they sit on left transparent             |
+
+**slice_paint** follows [SetGraph](./setgraph.md), so it reads the image you are currently drawing on. **slice_all** and **slice_sprite** always read the graphics area itself, sprites belonging to the screen rather than to an image. They also read the layers as they were last shown, so a program using [FastGraphics](./fastgraphics.md) should [Refresh](./refresh.md) before asking for either of them.
 
 ### Example
 
@@ -48,7 +61,7 @@ displays
 
 ### See Also
 
-[GetSlice](./getslice.md), [PutSlice](./putslice.md), [Window](./window.md)
+[GetSlice](./getslice.md), [Pixel](./pixel.md), [PutSlice](./putslice.md), [Slice Constants](./sliceconstants.md), [SpriteSlice](./spriteslice.md), [Window](./window.md)
 
 ### New To Version
 
@@ -60,3 +73,4 @@ displays
 |------------|---------------------------------------------------------------|
 | 0.9.6b     | New To Version                                                |
 | 1.99.99.65 | Changed return value to a 2 dimensional array of pixel values |
+| 2.3        | The corner may be given in [Window](./window.md) units         |

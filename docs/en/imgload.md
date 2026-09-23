@@ -23,12 +23,15 @@ Optionally scales size of the loaded image by the defined scale (1=normal size).
 
 The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines.
 
+The picture itself is always measured in pixels. A window places its centre and does not make it any larger or smaller, in the same way that it leaves [PenWidth](./penwidth.md) and [Font](./font.md) alone. Use the scale argument above to change the size an image is painted at.
+
 ### See Also
 
-[Imgload](./imgload.md), [Imgsave](./imgsave.md), [Window](./window.md)
+[Font](./font.md), [Imgload](./imgload.md), [Imgsave](./imgsave.md), [PenWidth](./penwidth.md), [Window](./window.md)
 
 ### History
 
-|        |                |
-|--------|----------------|
-| 0.9.6l | New to Version |
+|        |                                                       |
+|--------|-------------------------------------------------------|
+| 0.9.6l | New to Version                                        |
+| 2.3    | The centre may be given in [Window](./window.md) units |

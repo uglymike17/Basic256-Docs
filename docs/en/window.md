@@ -30,6 +30,8 @@ The same is true of x, so **window** 1,-1,-1,1 runs x from right to left.
 
 [PenWidth](./penwidth.md) and [Font](./font.md) keep their sizes in pixels. A line does not become thicker, and lettering does not become larger, just because the window makes a unit big.
 
+A picture keeps its size in pixels for the same reason. [Imgload](./imgload.md), [GetSlice](./getslice.md) and [PutSlice](./putslice.md) take their position in window units, but the image or the slice is painted at the size it really is. Use the scale argument of [Imgload](./imgload.md) to paint a picture larger or smaller.
+
 The window belongs to whatever you are drawing on, so it follows [SetGraph](./setgraph.md) onto an image and back again. The same **window** -1,-1,1,1 covers a small image and the whole graphics area alike.
 
 A window that is not the same shape as the graphics area stretches what you draw, so a [Circle](./circle.md) comes out as an oval. A window with no width or no height is an error.
@@ -61,10 +63,11 @@ The circle has a radius of 1 and the curve runs from -1.5 to 1.5, with 0,0 in th
 
 ### See Also
 
-[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [ClickX](./clickx.md), [ClickY](./clicky.md), [Font](./font.md), [GraphSize](./graphsize.md), [Line](./line.md), [MouseX](./mousex.md), [MouseY](./mousey.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Pixel](./pixel.md), [Plot](./plot.md), [Poly](./poly.md), [Rect](./rect.md), [SetGraph](./setgraph.md), [Stamp](./stamp.md), [Text](./text.md)
+[Arc](./arc.md), [Chord](./chord.md), [Circle](./circle.md), [ClickX](./clickx.md), [ClickY](./clicky.md), [Font](./font.md), [GetSlice](./getslice.md), [GraphSize](./graphsize.md), [Imgload](./imgload.md), [Line](./line.md), [MouseX](./mousex.md), [MouseY](./mousey.md), [PenWidth](./penwidth.md), [Pie](./pie.md), [Pixel](./pixel.md), [Plot](./plot.md), [Poly](./poly.md), [PutSlice](./putslice.md), [Rect](./rect.md), [SetGraph](./setgraph.md), [Stamp](./stamp.md), [Text](./text.md)
 
 ### History
 
-|         |                |
-|---------|----------------|
-| 2.1.2   | New To Version |
+|         |                                                                                                   |
+|---------|---------------------------------------------------------------------------------------------------|
+| 2.1.2   | New To Version                                                                                    |
+| 2.3     | [Imgload](./imgload.md), [GetSlice](./getslice.md) and [PutSlice](./putslice.md) follow the window |

@@ -14,13 +14,15 @@ sidebar_label: "Putslice"
 
 ### Description
 
-Put the graphics stored in the slice array on the screen at x,y.
+Put the graphics stored in the slice array on the screen at x,y, which is the top left corner of where it is painted.
 
-These coordinates are always measured in pixels and are not changed by [Window](./window.md), because the array is a number of pixels wide and high.
+The coordinates are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines, the same as they are for [Pixel](./pixel.md).
+
+The slice itself is always a number of pixels wide and high. A window places its corner and does not make it any larger or smaller, so **putslice** x, y, [getslice](./getslice.md)(x, y, w, h) puts every pixel back exactly where it came from whether a window is set or not.
 
 ### See Also
 
-[GetSlice](./getslice.md), [PutSlice](./putslice.md), [Window](./window.md)
+[GetSlice](./getslice.md), [Pixel](./pixel.md), [PutSlice](./putslice.md), [Window](./window.md)
 
 ### History
 
@@ -29,3 +31,4 @@ These coordinates are always measured in pixels and are not changed by [Window](
 | 0.9.6b | New To Version |
 | 1.99.99.65 | Changed from a string of data to a 2 dimensional array. Removed the transparency color option. |
 | 1.99.99.72 | added required \[\] to passing variable array |
+| 2.3 | The corner may be given in [Window](./window.md) units |
