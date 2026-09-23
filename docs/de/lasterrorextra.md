@@ -3,12 +3,14 @@ title: "Lasterrorextra"
 sidebar_label: "Lasterrorextra"
 ---
 
-## LastErrorExtra
+## LastErrorExtra (Function)
 
 ### Format
 
 **lasterrorextra**\
 **lasterrorextra** ( )
+
+returns [string_expression](../en/stringexpressions.md)
 
 ### Description
 
@@ -16,12 +18,14 @@ Returns statement specific “extra” information about the error.
 
 ### Example
 
-See example of usage on [Error Codes](./errorcodes.md) page.
+See examples of usage on [OnError](../en/onerror.md) and [ThrowError](../en/throwerror.md) pages.
 
 ### See Also
 
-[Error Codes](./errorcodes.md), [Lasterror](./lasterror.md), [Lasterrorline](./lasterrorline.md), [Lasterrormessage](./lasterrormessage.md), [Offerror](./offerror.md), [Onerror](./onerror.md)
+[Lasterror](../en/lasterror.md), [Lasterrorextra](../en/lasterrorextra.md), [Lasterrorline](../en/lasterrorline.md), [Lasterrormessage](../en/lasterrormessage.md), [Offerror](../en/offerror.md), [Onerror](../en/onerror.md), [OnStop](../en/onstop.md), [ThrowError](../en/throwerror.md), [Try / Catch / EndTry](../en/try.md)
 
-### New To Version
+### History
 
-0.9.6z
+|        |                |
+|--------|----------------|
+| 0.9.6z | New To Version |

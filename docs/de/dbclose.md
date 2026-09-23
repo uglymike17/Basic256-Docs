@@ -3,29 +3,34 @@ title: "Dbclose"
 sidebar_label: "Dbclose"
 ---
 
-## DBClose
+## DBClose (Statement)
 
 ### Format
 
 **dbclose**\
-**dbclose** ( )
+**dbclose** ( )\
+**dbclose** [database_number](../en/integerexpressions.md)\
+**dbclose** ( [database_number](../en/integerexpressions.md) )
 
 ### Description
 
-Close the currently open SQLite database file.
+Close an open SQLite database file. Database connections are numbered from 0 to 7. If the database number is omitted then database file \#0 will be closed.
 
 ### Example
 
-See example of usage on [DBOpen](./dbopen.md) page.
+See example of usage on [DBOpen](../en/dbopen.md) page.
 
 ### See Also
 
-[DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)
+*(See [en:start](../en/start.md).)*&noheader)
 
 ### External Links
 
 More information about databases in general and SQLite specifically can be found at [SQLite Home Page](http://sqlite.org) and [SQL at Wikipedia](http://en.wikipedia.org/wiki/SQL).
 
-### New To Version
+### History
 
-0.9.6y
+|          |                                              |
+|----------|----------------------------------------------|
+| 0.9.6y   | New to Version                               |
+| 0.9.9.19 | Added ability to have 8 database connections |

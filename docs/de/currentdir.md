@@ -3,12 +3,14 @@ title: "Currentdir"
 sidebar_label: "Currentdir"
 ---
 
-## Currentdir
+## Currentdir (Function)
 
 ### Format
 
 **currentdir**\
 **currentdir** ( )
+
+returns [string_expression](../en/stringexpressions.md)
 
 ### Description
 
@@ -16,8 +18,10 @@ Returns the fully qualified path name to BASIC-256’s current directory. For al
 
 ### See Also
 
-[Changedir](./changedir.md), [Close](./close.md), [Eof](./eof.md), [Open](./open.md), [Read](./read.md), [Readline](./readline.md), [Reset](./reset.md), [Write](./write.md), [Writeline](./writeline.md), [Exists](./exists.md), [Seek](./seek.md), [Size](./size.md)
+[Changedir](../en/changedir.md), [Close](../en/close.md), [Currentdir](../en/currentdir.md), [Dir](../en/dir.md), [Eof](../en/eof.md), [Exists](../en/exists.md), [Freefile](../en/freefile.md), [Kill](../en/kill.md), [mkdir](../en/mkdir.md), [Open](../en/open.md), [Openb](../en/open.md), [OpenFileDialog](../en/opensavefiledialog.md), [OpenSerial](../en/openserial.md), [Read](../en/read.md), [Readbyte](../en/readbyte.md), [Readline](../en/readline.md), [Reset](../en/reset.md), [SaveFileDialog](../en/opensavefiledialog.md), [Seek](../en/seek.md), [Size](../en/size.md), [Write](../en/write.md), [Writebyte](../en/writebyte.md), [Writeline](../en/writeline.md)
 
-### New To Version
+### History
 
-0.9.6r
+|        |                |
+|--------|----------------|
+| 0.9.6r | New To Version |

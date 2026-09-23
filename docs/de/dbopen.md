@@ -3,16 +3,18 @@ title: "DBOpen"
 sidebar_label: "DBOpen"
 ---
 
-## DBOpen
+## DBOpen (Statement)
 
 ### Format
 
-**dbopen** *SQLiteFile*\
-**dbopen** ( *SQLiteFile* )
+**dbopen** [file_name](../en/stringexpressions.md)\
+**dbopen** ( [file_name](../en/stringexpressions.md) )\
+**dbopen** [database_number](../en/integerexpressions.md) , [file_name](../en/stringexpressions.md)\
+**dbopen** ( [database_number](../en/integerexpressions.md) , [file_name](../en/stringexpressions.md) )
 
 ### Description
 
-Open an SQLite database file. If the file does not exist then create it.
+Open an SQLite database file. If the file does not exist then create it. Up to eight database connections can be made at a time in a program. If the database number is not specified then connection 0 will be used.
 
 ### Example
 
@@ -52,20 +54,27 @@ will display
     3three9.43
     2two6.28
 
-### Berechtigungen
+### Permissions
 
-Ein Programm darf Dateien in seinem eigenen Ordner frei verwenden. Für alles
-außerhalb dieses Ordners wird der Benutzer um Erlaubnis gefragt; wird sie
-verweigert, schlägt die Anweisung mit `ERROR_PERMISSION` fehl. Siehe [File and Folder Permissions](../en/filepermissions.md).
+The database file is checked. A database in the program's own folder, or below
+it, opens with no question asked; one elsewhere on the computer asks the user's
+permission, and the statement fails with `ERROR_PERMISSION` if that is refused.
+
+Opening a database does not give a program the run of the disk through it: the
+file named by an `ATTACH DATABASE` or `VACUUM INTO` statement passed to
+[DbExecute](../en/dbexecute.md) is checked in the same way. See [File and Folder Permissions](../en/filepermissions.md).
 
 ### See Also
 
-[DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)
+*(See [en:start](../en/start.md).)*&noheader)
 
 ### External Links
 
 More information about databases in general and SQLite specifically can be found at [SQLite Home Page](http://sqlite.org) and [SQL at Wikipedia](http://en.wikipedia.org/wiki/SQL).
 
-### New To Version
+### History
 
-0.9.6y
+|          |                                              |
+|----------|----------------------------------------------|
+| 0.9.6y   | New to Version                               |
+| 0.9.9.19 | Added ability to have 8 database connections |

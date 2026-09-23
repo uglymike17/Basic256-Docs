@@ -3,12 +3,16 @@ title: "Dbrow"
 sidebar_label: "Dbrow"
 ---
 
-## DBRow
+## DBRow (Function)
 
 ### Format
 
 **dbrow**\
-**dbrow** ( )
+**dbrow** ( )\
+**dbrow** ( [database_number](../en/integerexpressions.md) )\
+**dbrow** ( [database_number](../en/integerexpressions.md) , [database_recordset_number](../en/integerexpressions.md) )
+
+returns [boolean_expression](../en/booleanexpressions.md)
 
 ### Description
 
@@ -16,16 +20,19 @@ Function that advances the record set to the next row. Returns a true value if t
 
 ### Example
 
-See example of usage on [DBOpen](./dbopen.md) page.
+See example of usage on [DBOpen](../en/dbopen.md) page.
 
 ### See Also
 
-[DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBOpenSet](./dbopenset.md), [DBString](./dbstring.md)
+*(See [en:start](../en/start.md).)*&noheader)
 
 ### External Links
 
 More information about databases in general and SQLite specifically can be found at [SQLite Home Page](http://sqlite.org) and [SQL at Wikipedia](http://en.wikipedia.org/wiki/SQL).
 
-### New To Version
+### History
 
-0.9.6y
+|          |                                              |
+|----------|----------------------------------------------|
+| 0.9.6y   | New to Version                               |
+| 0.9.9.19 | Added ability to have 8 database connections |

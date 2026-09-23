@@ -8,16 +8,16 @@ sidebar_label: "Dountil"
 ### Format
 
 **do**\
-*statement(s)*\
+[statement(s)](../en/programsyntax.md)\
 **until** *booleanexpression*
 
 ### Description
 
-Execute the *statement(s)* inside the do loop whil the *booleanexpression* evaluates to false. Do / Until executes the statements one or more times. The test is done after each time the code in the loop is executed.
+Execute the [statement(s)](../en/programsyntax.md) inside the do loop whil the *booleanexpression* evaluates to false. Do / Until executes the statements one or more times. The test is done after each time the code in the loop is executed.
 
 ### See Also
 
-[For / Next](./fornext.md), [While / End While](./whileendwhile.md)
+[For / Next](../en/fornext.md), [While / End While](../en/while.md)
 
 ### Example
 

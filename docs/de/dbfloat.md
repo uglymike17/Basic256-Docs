@@ -3,28 +3,39 @@ title: "Dbfloat"
 sidebar_label: "Dbfloat"
 ---
 
-## DBFloat
+## DBFloat (Function)
 
 ### Format
 
-**dbfloat** ( *ColumnNumber* )
+**dbfloat** ( [numeric_expression](../en/numericexpressions.md) )\
+**dbfloat** ( [database_number](../en/integerexpressions.md) , [numeric_expression](../en/numericexpressions.md) )\
+**dbfloat** ( [database_number](../en/integerexpressions.md) , [database_recordset_number](../en/integerexpressions.md) , [numeric_expression](../en/numericexpressions.md) )\
+**dbfloat** ( [string_expression](../en/stringexpressions.md) )\
+**dbfloat** ( [database_number](../en/integerexpressions.md) , [string_expression](../en/stringexpressions.md) )\
+**dbfloat** ( [database_number](../en/integerexpressions.md) , [database_recordset_number](../en/integerexpressions.md) , [string_expression](../en/stringexpressions.md) )
+
+returns [float_expression](../en/floatexpressions.md)
 
 ### Description
 
-Return a floating point (decimal value) from the specified column of the current row of the open recordset.
+Return a floating point (decimal value) from the specified column number or name of the current row of the open recordset. If the field is a NULL value the decimal number 0.0 will be returned. NULL may be tested for by using the [DBNull](../en/dbnull.md) function.
 
 ### Example
 
-See example of usage on [DBOpen](./dbopen.md) page.
+See example of usage on [DBOpen](../en/dbopen.md) page.
 
 ### See Also
 
-[DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)
+*(See [en:start](../en/start.md).)*&noheader)
 
 ### External Links
 
 More information about databases in general and SQLite specifically can be found at [SQLite Home Page](http://sqlite.org) and [SQL at Wikipedia](http://en.wikipedia.org/wiki/SQL).
 
-### New To Version
+### History
 
-0.9.6y
+|          |                                              |
+|----------|----------------------------------------------|
+| 0.9.6y   | New to Version                               |
+| 0.9.9.19 | Added ability to have 8 database connections |
+| 0.9.9.22 | Added column name or alias                   |

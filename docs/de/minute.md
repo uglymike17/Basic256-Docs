@@ -3,12 +3,14 @@ title: "Minute"
 sidebar_label: "Minute"
 ---
 
-## Minute
+## Minute (Function)
 
 ### Format
 
 **minute**\
-**minute**()
+**minute** ( )
+
+returns [integer_expression](../en/integerexpressions.md)
 
 ### Description
 
@@ -38,8 +40,10 @@ Will print something like.\
 
 ### See Also
 
-[Day](./day.md), [Hour](./hour.md), [Month](./month.md), [Second](./second.md), [Year](./year.md)
+[Day](../en/day.md), [Hour](../en/hour.md), [Minute](../en/minute.md), [Month](../en/month.md), [Msec](../en/msec.md), [Second](../en/second.md), [Year](../en/year.md)
 
-### New To Version
+### History
 
-0.9.4
+|       |                |
+|-------|----------------|
+| 0.9.4 | New To Version |

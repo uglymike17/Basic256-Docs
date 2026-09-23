@@ -3,23 +3,31 @@ title: "Redim"
 sidebar_label: "Redim"
 ---
 
-## Redim
+## Redim (Statement)
 
 ### Format
 
-**redim** *numericvariable*( *integer* )\
-**redim** *stringvariable\$*( *integer* )\
-**redim** *numericvariable*( *rows* , *columns* )\
-**redim** *stringvariable\$*( *rows* , *columns* )
+**redim** [array_variable](../en/arrays.md) ( *integer* )\
+**redim** [array_variable](../en/arrays.md) ( *integer* ) **fill** [expression](../en/expressions.md)\
+**redim** [array_variable](../en/arrays.md) \[ *integer* \]\
+**redim** [array_variable](../en/arrays.md) \[ *integer* \] **fill** [expression](../en/expressions.md)
+**redim** [array_variable](../en/arrays.md) ( [array_size_rows](../en/integerexpressions.md) , [array_size_columns](../en/integerexpressions.md))\
+**redim** [array_variable](../en/arrays.md) ( [array_size_rows](../en/integerexpressions.md) , [array_size_columns](../en/integerexpressions.md)) **fill** [expression](../en/expressions.md)\
+**redim** [array_variable](../en/arrays.md) \[ [array_size_rows](../en/integerexpressions.md) , [array_size_columns](../en/integerexpressions.md)\]\
+**redim** [array_variable](../en/arrays.md) \[ [array_size_rows](../en/integerexpressions.md) , [array_size_columns](../en/integerexpressions.md)\] **fill** [expression](../en/expressions.md)\
 
 ### Description
 
-Re-sizes a previously created array, preserving data. If an array is enlarged then the new elements will be initialized with zero or the empty string. If an array is reduced in size the elements trimmed from the end are lost.
+Re-sizes a previously created array, preserving data. If an array is enlarged the new elements are given a starting value, so that they may be read straight away: the empty string for a variable whose name ends in **$**, and the whole number 0 for any other variable. Add the fill clause to give them a starting value of your own instead. Either way the fill reaches only the new elements, so the values already in the array always survive. If an array is reduced in size the elements trimmed from the end are lost.
 
 ### See Also
 
-[Dim](./dim.md)
+[ArrayBase](../en/arraybase.md), [ArrayLength](../en/arraylength.md), [Assigned](../en/assigned.md), [Dim](../en/dim.md), [Fill](../en/fill.md), [Map](../en/map.md), [Mat](../en/mat.md), [Redim](../en/redim.md), [TypeOf](../en/typeof.md), [Unassign](../en/unassign.md), [VariableWatch](../en/variablewatch.md)
 
-### New To Version
+### History
 
-0.9.5t
+|            |                                    |
+|------------|------------------------------------|
+| 0.9.5t     | New To Version                     |
+| 1.99.99.57 | Added fill for unassigned elements |
+| 2.1        | new elements are filled with 0 (or "" for a $ name) instead of being left unassigned |

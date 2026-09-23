@@ -3,27 +3,32 @@ title: "Changedir"
 sidebar_label: "Changedir"
 ---
 
-## Changedir
+## Changedir (Statement)
 
 ### Format
 
-**changedir** *expression*\
-**changedir** ( *expression* )
+**changedir** [string_expression](../en/stringexpressions.md)\
+**changedir** ( [string_expression](../en/stringexpressions.md) )
 
 ### Description
 
-Change the current working directory to the path specified in *expression*. For all systems (including Windows) a forward slash (/) will be used to separate folders in a full path.
+Change the current working directory to the path specified in [expression](../en/expressions.md). For all systems (including Windows) a forward slash (/) will be used to separate folders in a full path.
 
-### Berechtigungen
+### Permissions
 
-Ein Programm darf Dateien in seinem eigenen Ordner frei verwenden. Für alles
-außerhalb dieses Ordners wird der Benutzer um Erlaubnis gefragt; wird sie
-verweigert, schlägt die Anweisung mit `ERROR_PERMISSION` fehl. Siehe [File and Folder Permissions](../en/filepermissions.md).
+Changedir is not itself checked, and it does **not** widen what a program may
+use. The folder a program is allowed to read and write is fixed when the program
+starts and does not follow the working directory. After a `changedir` out of the
+program's own folder, a plain file name will be looked for in the new working
+directory, and using it will ask the user's permission like any other file
+outside the program's folder. See [File and Folder Permissions](../en/filepermissions.md).
 
 ### See Also
 
-[Close](./close.md), [Currentdir](./currentdir.md), [Eof](./eof.md), [Open](./open.md), [Read](./read.md), [Readline](./readline.md), [Reset](./reset.md), [Write](./write.md), [Writeline](./writeline.md), [Exists](./exists.md), [Seek](./seek.md), [Size](./size.md)
+[Changedir](../en/changedir.md), [Close](../en/close.md), [Currentdir](../en/currentdir.md), [Dir](../en/dir.md), [Eof](../en/eof.md), [Exists](../en/exists.md), [Freefile](../en/freefile.md), [Kill](../en/kill.md), [mkdir](../en/mkdir.md), [Open](../en/open.md), [Openb](../en/open.md), [OpenFileDialog](../en/opensavefiledialog.md), [OpenSerial](../en/openserial.md), [Read](../en/read.md), [Readbyte](../en/readbyte.md), [Readline](../en/readline.md), [Reset](../en/reset.md), [SaveFileDialog](../en/opensavefiledialog.md), [Seek](../en/seek.md), [Size](../en/size.md), [Write](../en/write.md), [Writebyte](../en/writebyte.md), [Writeline](../en/writeline.md)
 
-### New To Version
+### History
 
-0.9.6r
+|        |                |
+|--------|----------------|
+| 0.9.6r | New To Version |

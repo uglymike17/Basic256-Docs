@@ -3,25 +3,31 @@ title: "Clickx"
 sidebar_label: "Clickx"
 ---
 
-## Clickx
+## Clickx (Function)
 
 ### Format
 
 **clickx**\
 **clickx** ( )
 
+returns [integer_expression](../en/integerexpressions.md)
+
 ### Description
 
 Returns the mouse x location of the mouse pointer over the graphic output last time the user clicked a mouse button.
 
-### See Also
-
-[Clickclear](./clickclear.md), [Clickb](./clickb.md), [Clicky](./clicky.md), [Mouseb](./mouseb.md), [Mousex](./mousex.md), [Mousey](./mousey.md)
+The position is measured in pixels unless a [Window](../en/window.md) has been set, in which case it is in the units that window defines. Use [ClickB](../en/clickb.md) to find out whether a click has happened at all.
 
 ### Example
 
-See sample program on [Clickb](./clickb.md).
+See sample program on [Clickb](../en/clickb.md).
 
-### New To Version
+### See Also
 
-0.9.4d
+[Clickb](../en/clickb.md), [Clickclear](../en/clickclear.md), [Clickx](../en/clickx.md), [Clicky](../en/clicky.md), [Mouseb](../en/mouseb.md), [Mousex](../en/mousex.md), [Mousey](../en/mousey.md), [Window](../en/window.md)
+
+### History
+
+|        |                |
+|--------|----------------|
+| 0.9.4d | New To Version |

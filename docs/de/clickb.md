@@ -3,28 +3,27 @@ title: "Clickb"
 sidebar_label: "Clickb"
 ---
 
-## Clickb
+## Clickb (Function)
 
 ### Format
 
 **clickb**\
 **clickb** ( )
 
+returns [integer_expression](../en/integerexpressions.md)
+
 ### Description
 
-Returns the buttons that the user last clicked on the mouse (if over the graphic output). Returns 0 if no click has been recorded. If multiple buttons have been pressed the value is the sum of the values for all pressed buttons.
+Returns the buttons that the user last clicked on the mouse (if over the graphic output). Returns 0 if no click has been recorded.
 
-| Return Values |                      |
-|---------------|----------------------|
-| Value         | Mouse Button Pressed |
-| 0             | None                 |
-| 1             | Left                 |
-| 2             | Right                |
-| 4             | Center               |
-
-### See Also
-
-[Clickclear](./clickclear.md), [Clickx](./clickx.md), [Clicky](./clicky.md), [Mouseb](./mouseb.md), [Mousex](./mousex.md), [Mousey](./mousey.md)
+| Return Values           |       |
+|-------------------------|-------|
+| Constant                | Value |
+| MOUSEBUTTON_NONE        | 0     |
+| MOUSEBUTTON_LEFT        | 1     |
+| MOUSEBUTTON_RIGHT       | 2     |
+| MOUSEBUTTON_CENTER      | 4     |
+| MOUSEBUTTON_DOUBLECLICK | 32    |
 
 ### Example
 
@@ -38,6 +37,13 @@ Returns the buttons that the user last clicked on the mouse (if over the graphic
     # show where the user clicked
     print "The user clicked at (" + clickx + "," + clicky + ")"
 
-### New To Version
+### See Also
 
-0.9.4d
+[Clickb](../en/clickb.md), [Clickclear](../en/clickclear.md), [Clickx](../en/clickx.md), [Clicky](../en/clicky.md), [Mouseb](../en/mouseb.md), [Mousex](../en/mousex.md), [Mousey](../en/mousey.md),
+
+### History
+
+|            |                       |
+|------------|-----------------------|
+| 0.9.4d     | New To Version        |
+| 1.99.99.58 | Added Named Constants |

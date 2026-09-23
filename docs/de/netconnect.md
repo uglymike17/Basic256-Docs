@@ -3,18 +3,18 @@ title: "NetConnect"
 sidebar_label: "NetConnect"
 ---
 
-## NetConnect
+## NetConnect (Statement)
 
 ### Format
 
 **netconnect** *server_name*, *port_number*\
 **netconnect** ( *server_name*, *port_number* )\
-**netconnect** *socket_number*, *server_name*, *port_number*\
-**netconnect** ( *socket_number*, *server_name*, *port_number* )
+**netconnect** [network_socket_number](../en/integerexpressions.md), *server_name*, *port_number*\
+**netconnect** ( [network_socket_number](../en/integerexpressions.md), *server_name*, *port_number* )
 
 ### Description
 
-Open a network connection (client) to a server. The IP address or host name of a server are specified in the *server_name* argument, and the specific network port number in the *port_number* argument. If *socket_number* is not specified socket number zero (0) will be used.
+Open a network connection (client) to a server. The IP address or host name of a server are specified in the *server_name* argument, and the specific network port number in the *port_number* argument. If [network_socket_number](../en/integerexpressions.md) is not specified socket number zero (0) will be used.
 
 ### Example
 
@@ -23,7 +23,7 @@ Open two instances of BASIC-256 on a single computer. Paste the “server” cod
 #### Server Code
 
     # get a message and send back success
-    print "wait for connection"
+    print "wait for connection on " + netaddress()
     netlisten 9997
     print "got connection"
     do
@@ -37,9 +37,9 @@ Open two instances of BASIC-256 on a single computer. Paste the “server” cod
     until n$ = "end"
     netclose
 
-will display
+will display (where xxx.xxx.xxx.xxx is the IPv4 address of your computer)
 
-    wait for connection
+    wait for connection on xxx.xxx.xxx.xxx
     got connection
     .1 Hi There
     ....2 Hi There
@@ -84,8 +84,10 @@ will display
 
 ### See Also
 
-[NetClose](./netclose.md), [NetData](./netdata.md), [NetListen](./netlisten.md), [NetRead](./netread.md), [NetWrite](./netwrite.md)
+[Freenet](../en/freenet.md), [NetAddress](../en/netaddress.md), [NetClose](../en/netclose.md), [NetConnect](../en/netconnect.md), [NetData](../en/netdata.md), [NetListen](../en/netlisten.md), [NetRead](../en/netread.md), [NetWrite](../en/netwrite.md)
 
-### New To Version
+### History
 
-0.9.6.31
+|          |                |
+|----------|----------------|
+| 0.9.6.31 | New To Version |

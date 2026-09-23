@@ -3,19 +3,21 @@ title: "Chr"
 sidebar_label: "Chr"
 ---
 
-## Chr
+## Chr (Function)
 
 ### Format
 
-**chr** ( *expression* )
+**chr** ( [numeric_expression](../en/numericexpressions.md) )
+
+returns [string_expression](../en/stringexpressions.md)
 
 ### Description
 
-Converts the integer *expression* into a single character string expression with the ASCII value of the number. See asc for a complete ASCII character conversion chart.
+Converts the integer [expression](../en/expressions.md) into a single character string expression with the UNICODE value of the number.
 
 ### See Also
 
-[Asc](./asc.md)
+[Asc](../en/asc.md)
 
 ### Example
 
@@ -25,6 +27,12 @@ will print
 
     Boo!
 
-### New To Version
+### See Also
 
-0.9.4
+[Asc](../en/asc.md), [Chr](../en/chr.md), [Count](../en/count.md), [Countx](../en/countx.md), [Explode](../en/explode.md), [Explodex](../en/explodex.md), [Implode](../en/implode.md), [Instr](../en/instr.md), [Instrx](../en/instrx.md), [Left](../en/left.md), [Length](../en/length.md), [Ljust](../en/ljust.md), [Lower](../en/lower.md), [LTrim](../en/ltrim.md), [MD5](../en/md5.md), [Mid](../en/mid.md), [Midx](../en/midx.md), [Replace](../en/replace.md), [Replacex](../en/replacex.md), [Right](../en/right.md), [Rjust](../en/rjust.md), [RTrim](../en/rtrim.md), [Serialize](../en/serialize.md), [String](../en/string.md), [Trim](../en/trim.md), [Unserialize](../en/unserialize.md), [Upper](../en/upper.md), [Zfill](../en/zfill.md)
+
+### History
+
+|       |                |
+|-------|----------------|
+| 0.9.4 | New To Version |

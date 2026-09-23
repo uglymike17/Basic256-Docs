@@ -3,12 +3,14 @@ title: "Lasterrorline"
 sidebar_label: "Lasterrorline"
 ---
 
-## LastErrorLine
+## LastErrorLine (Function)
 
 ### Format
 
 **lasterrorline**\
 **lasterrorline** ( )
+
+returns [integer_expression](../en/integerexpressions.md)
 
 ### Description
 
@@ -16,12 +18,14 @@ Returns the line number in the program where the runtime error happened.
 
 ### Example
 
-See example of usage on [Error Codes](./errorcodes.md) page.
+See examples of usage on [OnError](../en/onerror.md) and [ThrowError](../en/throwerror.md) pages.
 
 ### See Also
 
-[Error Codes](./errorcodes.md), [Lasterror](./lasterror.md), [Lasterrorextra](./lasterrorextra.md), [Lasterrormessage](./lasterrormessage.md), [Offerror](./offerror.md), [Onerror](./onerror.md)
+[Lasterror](../en/lasterror.md), [Lasterrorextra](../en/lasterrorextra.md), [Lasterrorline](../en/lasterrorline.md), [Lasterrormessage](../en/lasterrormessage.md), [Offerror](../en/offerror.md), [Onerror](../en/onerror.md), [OnStop](../en/onstop.md), [ThrowError](../en/throwerror.md), [Try / Catch / EndTry](../en/try.md)
 
-### New To Version
+### History
 
-0.9.6z
+|        |                |
+|--------|----------------|
+| 0.9.6z | New To Version |

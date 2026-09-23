@@ -3,30 +3,35 @@ title: "Getcolor"
 sidebar_label: "Getcolor"
 ---
 
-## GetColor
+## GetColor (Function)
 
 ### Format
 
 getcolor\
 getcolor()
 
+returns [rgb_expression](../en/rgb.md)
+
 ### Description
 
-Returns the RGB value of the current drawing color (last set by color statement). RGB is calculated by taking ((red \* 256) + green \* 256) + blue where red, green, and blue are between 0 and 255. If the drawing color has been set to CLEAR a -1 will be returned.
-
-### See Also
-
-[Color](./color.md), [Rgb](./rgb.md)
+Returns the ARGB value of the current drawing pen color (last set by color statement). ARGB is calculated by the formula ( (a \* 256 + r) \* 256 + b) \* 256 + g where alpha, red, green, and blue are between 0 and 255. If the drawing color has been set to CLEAR a 0 will be returned.
 
 ### Example
 
-    color red
+    color red, blue
     print getcolor
 
 will print
 
-    16711680
+    -65536
 
-### New To Version
+### See Also
 
-0.9.5m
+[Color](../en/color.md), [GetBrushColor](../en/getbrushcolor.md), [GetColor](../en/getcolor.md), [Rgb](../en/rgb.md)
+
+### History
+
+|          |                              |
+|----------|------------------------------|
+| 0.9.5m   | New to version               |
+| 0.9.9.28 | Changed to return ARGB value |

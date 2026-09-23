@@ -3,27 +3,30 @@ title: "Netdata"
 sidebar_label: "Netdata"
 ---
 
-## NetData
+## NetData (Function)
 
 ### Format
 
 **netdata**\
 **netdata** ( )\
-**netdata** *socket_number*\
-**netdata** ( *socket_number* )
+**netdata** ( [network_socket_number](../en/integerexpressions.md) )
+
+returns [boolean_expression](../en/booleanexpressions.md)
 
 ### Description
 
-Returns a true value (1) of there is data waiting to be read in using the [NetRead](./netread.md) function, else returns false (0). If *socket_number* is not specified socket number zero (0) will be used.
+Returns a true value if there is data waiting to be read in using the [NetRead](../en/netread.md) function, else returns false. If [network_socket_number](../en/integerexpressions.md) is not specified socket number zero (0) will be used.
 
 ### Example
 
-See example of usage on [NetConnect](./netconnect.md) page.
+See example of usage on [NetConnect](../en/netconnect.md) page.
 
 ### See Also
 
-[NetClose](./netclose.md), [NetConnect](./netconnect.md), [NetListen](./netlisten.md), [NetRead](./netread.md), [NetWrite](./netwrite.md)
+[Freenet](../en/freenet.md), [NetAddress](../en/netaddress.md), [NetClose](../en/netclose.md), [NetConnect](../en/netconnect.md), [NetData](../en/netdata.md), [NetListen](../en/netlisten.md), [NetRead](../en/netread.md), [NetWrite](../en/netwrite.md)
 
-### New To Version
+### History
 
-0.9.6.31
+|          |                |
+|----------|----------------|
+| 0.9.6.31 | New To Version |

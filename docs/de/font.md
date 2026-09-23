@@ -3,15 +3,21 @@ title: "Font"
 sidebar_label: "Font"
 ---
 
-## Font
+## Font (Statement)
 
 ### Format
 
-font *fontname*, *point*, *weight*
+font [font_name](../en/stringexpressions.md), [font_size_in_point](../en/floatexpressions.md), [font_weight](../en/floatexpressions.md)\
+font ( [font_name](../en/stringexpressions.md), [font_size_in_point](../en/floatexpressions.md), [font_weight](../en/floatexpressions.md) )
 
 ### Description
 
-Sets the font used by the text command to *fontname*. Size is defined in points (1/72“) Weight represents a number from 1 to 100 that defines how dark the letters will be drawn. Light=25, Normal=50, and Bold=75.
+Sets the font used by the text command to [font_name](../en/stringexpressions.md). The size that the font will be draw on on the screen is defined in points (1/72“). The third value represents the line weight (from 1 to 100) used in drawing the text on the screen. Typical weights are: Light=25, Normal=50, and Bold=75.
+
+|                                                  |
+|--------------------------------------------------|
+| ![Common Windows Fonts](@site/static/img/wiki/commonwindowsfonts.png) |
+| Common Windows Fonts                             |
 
 ### Example
 
@@ -29,7 +35,7 @@ Will draw.\
 
 ### See Also
 
-[Text](./text.md)
+[Font](../en/font.md), [Text](../en/text.md), [TextHeight](../en/textheight.md), [TextWidth](../en/textwidth.md)
 
 ### New To Version
 

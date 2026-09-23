@@ -3,15 +3,17 @@ title: "Asc"
 sidebar_label: "Asc"
 ---
 
-## Asc
+## Asc (Function)
 
 ### Format
 
-**asc** ( *expression* )
+**asc** ( [string_expression](../en/stringexpressions.md) )
+
+returns [integer_expression](../en/integerexpressions.md)
 
 ### Description
 
-Converts the first character in a string *expression* to an integer representing it‘s ASCII value.
+Converts the first character in a [string_expression](../en/stringexpressions.md) expression to an integer representing it‘s UNICODE value.
 ^Asc^Chr^Asc^Chr^Asc^Chr^Asc^Chr^Asc^Chr^Asc^Chr^
 \|32\|SPACE\|48\|0\|64\|@\|80\|P\|96\|\`\|112\|p\|
 \|33\|!\|49\|1\|65\|A\|81\|Q\|97\|a\|113\|q\|
@@ -35,7 +37,7 @@ Converts the first character in a string *expression* to an integer representing
 
 ### See Also
 
-[Chr](./chr.md)
+[Chr](../en/chr.md)
 
 ### Example
 
@@ -47,6 +49,12 @@ will print
     65
     98
 
-### New To Version
+### See Also
 
-0.9.4
+[Asc](../en/asc.md), [Chr](../en/chr.md), [Count](../en/count.md), [Countx](../en/countx.md), [Explode](../en/explode.md), [Explodex](../en/explodex.md), [Implode](../en/implode.md), [Instr](../en/instr.md), [Instrx](../en/instrx.md), [Left](../en/left.md), [Length](../en/length.md), [Ljust](../en/ljust.md), [Lower](../en/lower.md), [LTrim](../en/ltrim.md), [MD5](../en/md5.md), [Mid](../en/mid.md), [Midx](../en/midx.md), [Replace](../en/replace.md), [Replacex](../en/replacex.md), [Right](../en/right.md), [Rjust](../en/rjust.md), [RTrim](../en/rtrim.md), [Serialize](../en/serialize.md), [String](../en/string.md), [Trim](../en/trim.md), [Unserialize](../en/unserialize.md), [Upper](../en/upper.md), [Zfill](../en/zfill.md)
+
+### History
+
+|       |                |
+|-------|----------------|
+| 0.9.4 | New To Version |

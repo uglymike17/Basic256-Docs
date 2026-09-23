@@ -3,12 +3,16 @@ title: "Dbopenset"
 sidebar_label: "Dbopenset"
 ---
 
-## DBOpenset
+## DBOpenset (Statement)
 
 ### Format
 
-**dbopenset** *SqlStatement*\
-**dbopenset** ( *SqlStatement* )
+**dbopenset** [sql_statement](../en/stringexpressions.md)\
+**dbopenset** ( [sql_statement](../en/stringexpressions.md) )\
+**dbopenset** [database_number](../en/integerexpressions.md) , [sql_statement](../en/stringexpressions.md)\
+**dbopenset** ( [database_number](../en/integerexpressions.md) , [sql_statement](../en/stringexpressions.md) )\
+**dbopenset** [database_number](../en/integerexpressions.md) , [database_recordset_number](../en/integerexpressions.md) , [sql_statement](../en/stringexpressions.md)\
+**dbopenset** ( [database_number](../en/integerexpressions.md) , [database_recordset_number](../en/integerexpressions.md) , [sql_statement](../en/stringexpressions.md) )\
 
 ### Description
 
@@ -16,22 +20,25 @@ Perform an SQL statement and create a record set so that the program may loop th
 
 ### Example
 
-See example of usage on [DBOpen](./dbopen.md) page.
+See example of usage on [DBOpen](../en/dbopen.md) page.
 
-### Berechtigungen
+### Permissions
 
-Ein Programm darf Dateien in seinem eigenen Ordner frei verwenden. Für alles
-außerhalb dieses Ordners wird der Benutzer um Erlaubnis gefragt; wird sie
-verweigert, schlägt die Anweisung mit `ERROR_PERMISSION` fehl. Siehe [File and Folder Permissions](../en/filepermissions.md).
+The statement is checked exactly as [DbExecute](../en/dbexecute.md) is: `ATTACH
+DATABASE` and `VACUUM INTO` name a file, and that file is subject to the same
+permission as any other. See [File and Folder Permissions](../en/filepermissions.md).
 
 ### See Also
 
-[DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBOpen](./dbopen.md), [DBRow](./dbrow.md), [DBString](./dbstring.md)
+*(See [en:start](../en/start.md).)*&noheader)
 
 ### External Links
 
 More information about databases in general and SQLite specifically can be found at [SQLite Home Page](http://sqlite.org) and [SQL at Wikipedia](http://en.wikipedia.org/wiki/SQL).
 
-### New To Version
+### History
 
-0.9.6y
+|          |                                              |
+|----------|----------------------------------------------|
+| 0.9.6y   | New to Version                               |
+| 0.9.9.19 | Added ability to have 8 database connections |

@@ -3,21 +3,23 @@ title: "Volume"
 sidebar_label: "Volume"
 ---
 
-## Volume
+## Volume (Statement)
 
 ### Format
 
-**volume** *level*\
-**volume** ( *level* )
+**volume** *posint_expr*\
+**volume** ( *posint_expr* )
 
 ### Description
 
-Adjust the volume of the notes played with the [Sound](./sound.md) command. Volume *levels* must be numeric values from 0 to 10. The default volume is 5.
+Adjust the amplititude of the notes played with the [Sound](../en/sound.md) command. Levels must be numeric values from 0 to 10. The default is 5.
 
 ### See Also
 
-[Sound](./sound.md)
+[Say](../en/say.md), [Sound](../en/sound.md), [Volume](../en/volume.md), [SoundLength](../en/soundlength.md), [SoundPause](../en/soundpause.md), [SoundPlay](../en/soundplay.md), [SoundPosition](../en/soundposition.md), [SoundSeek](../en/soundseek.md), [SoundState](../en/soundstate.md), [SoundStop](../en/soundstop.md), [SoundWait](../en/soundwait.md)
 
-### New To Version
+### History
 
-0.9.5i
+|        |                |
+|--------|----------------|
+| 0.9.5i | New To Version |

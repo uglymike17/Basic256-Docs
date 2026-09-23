@@ -3,20 +3,18 @@ title: "Month"
 sidebar_label: "Month"
 ---
 
-## Month
+## Month (Function)
 
 ### Format
 
 **month**\
-**month**()
+**month** ( )
+
+returns [integer_expression](../en/integerexpressions.md)
 
 ### Description
 
 Returns the current system clock’s month. January is 0, February is 1… December is 11.
-
-### See Also
-
-[Day](./day.md), [Hour](./hour.md), [Minute](./minute.md), [Second](./second.md), [Year](./year.md)
 
 ### Example
 
@@ -29,6 +27,12 @@ on New Years will display
 
     1-Jan-2010
 
-### New To Version
+### See Also
 
-0.9.4
+[Day](../en/day.md), [Hour](../en/hour.md), [Minute](../en/minute.md), [Month](../en/month.md), [Msec](../en/msec.md), [Second](../en/second.md), [Year](../en/year.md)
+
+### History
+
+|       |                |
+|-------|----------------|
+| 0.9.4 | New To Version |

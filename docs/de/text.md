@@ -3,16 +3,18 @@ title: "Text"
 sidebar_label: "Text"
 ---
 
-## Text
+## Text (Statement)
 
 ### Format
 
-**text** *x*, *y*, *string*\
-**text** ( *x*, *y*, *string* )
+**text** [x_position](../en/numericexpressions.md), [y_position](../en/numericexpressions.md), [string_expression](../en/stringexpressions.md)\
+**text** ( [x_position](../en/numericexpressions.md), [y_position](../en/numericexpressions.md), [string_expression](../en/stringexpressions.md) )
 
 ### Description
 
-Paints a text string on the Graphics Output Window at *x*, *y* using the current color and font.
+Paints a text string on the Graphics Output Window at [x_position](../en/numericexpressions.md), [y_position](../en/numericexpressions.md) using the current color and font.
+
+The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](../en/window.md) has been set, in which case they are in the units that window defines.
 
 ### Example
 
@@ -30,8 +32,10 @@ Will draw.\
 
 ### See Also
 
-[Color](./color.md), [Font](./font.md)
+[Font](../en/font.md), [Text](../en/text.md), [TextHeight](../en/textheight.md), [TextWidth](../en/textwidth.md), [Window](../en/window.md)
 
-### New To Version
+### History
 
-0.9.4
+|       |                |
+|-------|----------------|
+| 0.9.4 | New To Version |

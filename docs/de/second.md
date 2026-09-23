@@ -3,12 +3,14 @@ title: "Second"
 sidebar_label: "Second"
 ---
 
-## Second
+## Second (Function)
 
 ### Format
 
 **second**\
-**second**()
+**second** ( )
+
+returns [integer_expression](../en/integerexpressions.md)
 
 ### Description
 
@@ -38,8 +40,10 @@ Will print something like.\
 
 ### See Also
 
-[Day](./day.md), [Hour](./hour.md), [Minute](./minute.md), [Month](./month.md), [Year](./year.md)
+[Day](../en/day.md), [Hour](../en/hour.md), [Minute](../en/minute.md), [Month](../en/month.md), [Msec](../en/msec.md), [Second](../en/second.md), [Year](../en/year.md)
 
-### New To Version
+### History
 
-0.9.4
+|       |                |
+|-------|----------------|
+| 0.9.4 | New To Version |
