@@ -36,4 +36,4 @@ sidebar_label: "Sin"
     next x
 
 Будет изображено\
-![Sin](/img/wiki/ru/sin.png)
+![Sin](@site/static/img/wiki/ru/sin.png)

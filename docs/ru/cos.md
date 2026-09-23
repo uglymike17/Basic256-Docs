@@ -36,4 +36,4 @@ sidebar_label: "Cos"
     next x
 
 Будет изображено\
-![Cos](/img/wiki/ru/cos.png)
+![Cos](@site/static/img/wiki/ru/cos.png)

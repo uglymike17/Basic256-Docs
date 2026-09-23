@@ -36,4 +36,4 @@ sidebar_label: "Tan"
     next x
 
 \|Будет изображено\
-![Tan](/img/wiki/ru/tan.png)
+![Tan](@site/static/img/wiki/ru/tan.png)
