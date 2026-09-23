@@ -99,7 +99,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://uglymike17.github.io/basic256/',
+            href: 'https://run.basic256.org/',
             label: 'Run Online',
             position: 'right',
           },
@@ -123,7 +123,7 @@ const config = {
             ],
           },
           {
-            title: 'BASIC-256 v2.1 Project',
+            title: 'BASIC-256 v2.3 Project',
             items: [
               {
                 label: 'GitHub',
@@ -135,7 +135,7 @@ const config = {
               },
               {
                 label: 'Run in Browser (WASM)',
-                href: 'https://uglymike17.github.io/basic256/',
+                href: 'https://run.basic256.org/',
               },
             ],
           },
