@@ -1,16 +1,18 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Complete Syntax Reference',
+    title: 'Introduction to BASIC256',
     img: 'img/wiki/bitbot_reading.png',
+    link: '/introduction',
     description: (
       <>
-        Every BASIC-256 statement, function, and operator documented with
-        format, description, and runnable example code.
+        What BASIC256 is, what is new in it, and how to run it in a browser,
+        on the desktop or from the command line.
       </>
     ),
   },
@@ -36,14 +38,20 @@ const FeatureList = [
   },
 ];
 
-function Feature({img, title, description}) {
+function Feature({img, title, link, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <img className={styles.featureSvg} src={useBaseUrl(img)} alt={title} />
+        {link ? (
+          <Link to={link}>
+            <img className={styles.featureSvg} src={useBaseUrl(img)} alt={title} />
+          </Link>
+        ) : (
+          <img className={styles.featureSvg} src={useBaseUrl(img)} alt={title} />
+        )}
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3">{link ? <Link to={link}>{title}</Link> : title}</Heading>
         <p>{description}</p>
       </div>
     </div>
