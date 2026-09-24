@@ -5,50 +5,56 @@ sidebar_label: "Start"
 
 ## BASIC-256 Language Documentation
 
-### Choose documentation language/Выберите документация язык
+<img src="/img/logo.png" class="align-right" width="100" alt="The BASIC-256 logo" />
 
-<img src="/img/wiki/basic256.png" class="align-right" width="100" alt="BASIC 256 - Newton Ball" />
+New to BASIC-256? Read the [Introduction to BASIC256](/introduction) first, or [run it in your browser](https://run.basic256.org) straight away.
 
-[{{:en.png\|en}}](../en/start.md)[English](../en/start.md)
-{{:sp.png\|es}}Español
-[{{:fr.png\|fr}}](../fr/start.md)[French/Français](../fr/start.md)\
-[{{:nl.png\|nl}}](../nl/start.md)[Dutch](../nl/start.md)
-{{:pt.png\|pt}}Português
-[{{:ru.png\|ru}}](../ru/start.md)[Русский](../ru/start.md)
+### Choose a language / Choisissez la langue / Kies de taal / Выберите язык / Sprache wählen
 
-#### Documentation Under Development or Incomplete
+|  | Language | Translated |
+|----|----|----|
+| ![en](@site/static/img/wiki/en.png) | [English](../en/start.md) | The reference: complete for BASIC-256 2.3 |
+| ![fr](@site/static/img/wiki/fr.png) | [Français](../fr/start.md) | About three pages in five |
+| ![nl](@site/static/img/wiki/nl.png) | [Nederlands](../nl/start.md) | About half |
+| ![ru](@site/static/img/wiki/ru.png) | [Русский](../ru/start.md) | Just under half |
+| ![de](@site/static/img/wiki/de.png) | [Deutsch](../de/start.md) | About one page in five |
 
-[{{:de.png\|de}}](../de/start.md)[German](../de/start.md)
-{{:ro.png\|ro}}Română
-{{:el.png\|el}}Greek
-
-### Sample Programs
-
-- [Games and Simulations](./games.md)
-- [Graphics Gallery Programs](./graphicsimage.md)
-- [Graphics Utilities](./graphicsutility.md)
+Every language has every page: a page that has not been translated yet is shown in English, so nothing is missing whichever language you pick.
 
 ### Note
 
-- The **English** documentation is the most complete.
-- The **dutch** documentation was completed in january 2012
-- A **Russian** translation is being performed and should be updated soon.
-- The **German** translation is several years old, missing much of the language’s functionality, and has not been formatted for the WIKI. If you want to make changes or updates to the documentation, all you need to do is register. (Jim Reneau - 2010-06-30).
-- The **French** translation was completed in august 2013.
+- The **English** documentation is the reference and the most complete. It covers every statement and function in BASIC-256 2.3.
+- The translations cover part of the language. Statements and functions added since version 2.1 are documented in English only for now.
+- The **French** translation was completed in August 2013.
+- The **Dutch** documentation was completed in January 2012 and is written for young readers from the age of 10.
+- The **Russian** translation was made on the old wiki and is the third largest.
+- The **German** translation is the oldest and the least complete.
+- Spanish, Portuguese, Romanian and Greek were listed on the old wiki but were never written. A translation into any language is welcome: see [Contributing](#contributing) below.
 
-### Заметка
+### Remarque
 
-Документация на английском является наиболее полной. Русский перевод - в процессе и должен быть обновлен в ближайшее время. Перевод на немецкий был сделан несколько лет назад, отсутствует большая часть функциональности языка, и он не был отформатирован под WIKI. Если вы хотите внести изменения или дополнения к документации, все что вам нужно сделать, - это зарегистрироваться. (Джим Рено - 30 июня 2011)
+La documentation en anglais est la référence et la plus complète : elle décrit toutes les instructions et fonctions de BASIC-256 2.3. Les traductions ne couvrent qu'une partie du langage ; une page qui n'est pas encore traduite s'affiche en anglais. Les instructions ajoutées depuis la version 2.1 ne sont pour l'instant documentées qu'en anglais. La traduction française a été réalisée en août 2013. Toute aide à la traduction est la bienvenue.
 
 ### Opmerkingen
 
-De Engelse documentatie is de basis documentatie en is altijd de meest complete. De documentatie in het Nederlands werd in januari 2012 volledig bijgewerkt.\
-Indien je de documentatie wil aanvullen of aanpassen, volstaat het dat je je registreert.
+De Engelse documentatie is de basisdocumentatie en is altijd de meest complete: ze beschrijft alle opdrachten en functies van BASIC-256 2.3. De vertalingen behandelen een deel van de taal; een pagina die nog niet vertaald is, wordt in het Engels getoond. Opdrachten die sinds versie 2.1 zijn toegevoegd, zijn voorlopig alleen in het Engels beschreven. De documentatie in het Nederlands werd in januari 2012 volledig bijgewerkt en is geschreven voor jonge lezers vanaf 10 jaar. Wil je helpen met vertalen of aanvullen? Dat is van harte welkom.
 
-### Notes About the Site
+### Заметка
 
-2020-02-28 The WIKI was moved to a new host and the previous logins were lost in the transition. Please register again.
+Документация на английском языке является основной и наиболее полной: в ней описаны все команды и функции BASIC-256 2.3. Переводы охватывают только часть языка; страница, которая ещё не переведена, показывается на английском. Команды, добавленные после версии 2.1, пока описаны только на английском. Помощь с переводом приветствуется.
 
-2016-01-01 We had a few problems with an update of the wiki and all user registration has been lost. If you had an account to the server you will need to re-register and then contact me at jim{at}renejm{dot}com to be added back to the group that can edit the site. Sorry for the inconvenience.
+### Hinweis
 
-2014-08 The ability to register is available (see the register link on the top right of the screen) but newly registered users will not be able to edit anything on the site. If you wish to be added to the editors list then email me at jim{at}renejm{dot}com with your DocuWIKI user name and a brief statement about your interest in this project and I will quickly get you access updated. Help us to make BASIC256 even better. Jim.
+Die englische Dokumentation ist die Referenz und die vollständigste: Sie beschreibt alle Befehle und Funktionen von BASIC-256 2.3. Die Übersetzungen decken nur einen Teil der Sprache ab; eine Seite, die noch nicht übersetzt ist, wird auf Englisch angezeigt. Befehle, die seit Version 2.1 hinzugekommen sind, sind vorerst nur auf Englisch beschrieben. Die deutsche Übersetzung ist die älteste und am wenigsten vollständige. Hilfe bei der Übersetzung ist sehr willkommen.
+
+### Contributing
+
+Corrections, new pages and translations are all welcome, and none of them needs an account on this site:
+
+- Report a mistake or a missing page as an [issue](https://github.com/uglymike17/Basic256-Docs/issues) on the documentation's GitHub repository.
+- Send a change as a pull request to [uglymike17/Basic256-Docs](https://github.com/uglymike17/Basic256-Docs). Each page is a Markdown file in `docs/<language>/`, and a translation simply replaces the English copy of the page with the same file name in that language's folder.
+- Or talk to us on [Discord](https://discord.gg/8QaSGYAQ9R).
+
+### About This Site
+
+The BASIC-256 documentation began as a wiki kept by Jim Reneau and the BASIC-256 community, and the translations above were written there over many years. In 2026 its pages were carried over to this site, built with Docusaurus, together with the documentation for everything added to the language since. The wiki's user accounts did not come across and are no longer needed: changes are now made through GitHub, as described above.

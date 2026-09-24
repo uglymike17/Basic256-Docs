@@ -21,8 +21,8 @@ const FeatureList = [
     img: 'img/wiki/gamesballoons.png',
     description: (
       <>
-        Sample programs and graphics galleries show what BASIC-256 can do,
-        from simple games to sprite animation and generative art.
+        BASIC-256 comes with ready-to-run Examples, on the desktop and in
+        the browser, from simple games to sprite animation and generative art.
       </>
     ),
   },
