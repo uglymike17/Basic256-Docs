@@ -33,7 +33,7 @@ sidebar_label: "Start"
 - [EditVisible](./editvisible.md), [Ellipse](./ellipse.md), [Else](./else.md), [End](./end.md), [EndFunction](./endfunction.md), [EndIf](./endif.md), [EndSubroutine](./endsubroutine.md), [EndWhile](./endwhile.md), [Eof](./eof.md), [Exists](./exists.md), [Exit Do](./exitdo.md), [Exit For](./exitfor.md), [Exit While](./exitwhile.md), [Exp](./exp.md), [Explode](./explode.md), [Explodex](./explodex.md)
 - [FastGraphics](./fastgraphics.md), [Fill](./fill.md), [File Permissions](./filepermissions.md), [Float](./float.md), [Floor](./floor.md), [Font](./font.md), [For Each / Next](./foreach.md), [For / Next](./for.md), [FrameRate](./framerate.md), [Freedb](./freedb.md), [Freedbset](./freedbset.md), [Freefile](./freefile.md), [Freenet](./freenet.md), [FromBinary](./frombinary.md), [FromHex](./fromhex.md), [FromOctal](./fromoctal.md), [FromRadix](./fromradix.md), [Function](./function.md)
 - [GetBrushColor](./getbrushcolor.md), [GetClipboardImage](./getclipboardimage.md), [GetClipboardString](./getclipboardstring.md), [GetColor](./getcolor.md), [GetPenWidth](./getpenwidth.md), [GetSetting](./getsetting.md), [GetSlice](./getslice.md), [Global](./global.md), [Gosub](./gosub.md), [Goto](./goto.md), [Graphheight](./graphheight.md), [Graphsize](./graphsize.md), [GraphToolBarVisible](./graphtoolbarvisible.md), [GraphVisible](./graphvisible.md), [Graphwidth](./graphwidth.md)
-- [Hour](./hour.md)
+- [Hour](./hour.md), [Hsv](./hsv.md)
 - [If Then](./if.md), [ImageAutoCrop](./imageautocrop.md), [ImageCentered](./imagecentered.md), [ImageCopy](./imagecopy.md), [ImageCrop](./imagecrop.md), [ImageDraw](./imagedraw.md), [ImageFlip](./imageflip.md), [ImageHeight](./imageheight.md), [ImageLoad](./imageload.md), [ImageNew](./imagenew.md), [ImagePixel](./imagepixel.md), [ImageResize](./imageresize.md), [ImageRotate](./imagerotate.md), [ImageSetPixel](./imagesetpixel.md), [ImageSmooth](./imagesmooth.md), [ImageTransformed](./imagetransformed.md), [ImageWidth](./imagewidth.md), [Imgload](./imgload.md), [Imgsave](./imgsave.md), [Implode](./implode.md), [Include](./include.md), [Input](./input.md), [Input Float](./input.md), [Input Integer](./input.md), [Input String](./input.md), [Instr](./instr.md), [Instrx](./instrx.md), [Int](./int.md), [IsNumeric](./isnumeric.md)
 - [Key](./key.md), [Keypressed](./keypressed.md), [Kill](./kill.md)
 - [Lasterror](./lasterror.md), [Lasterrorextra](./lasterrorextra.md), [Lasterrorline](./lasterrorline.md), [Lasterrormessage](./lasterrormessage.md), [Left](./left.md), [Length](./length.md), [Line](./line.md), [Ljust](./ljust.md), [Locate](./locate.md), [Log](./log.md), [Log10](./log10.md), [Lower](./lower.md), [LTrim](./ltrim.md)
@@ -80,7 +80,7 @@ sidebar_label: "Start"
 
 ##### Graphics - Colors
 
-[Color](./color.md), [GetBrushColor](./getbrushcolor.md), [GetColor](./getcolor.md), [Rgb](./rgb.md)
+[Color](./color.md), [GetBrushColor](./getbrushcolor.md), [GetColor](./getcolor.md), [Hsv](./hsv.md), [Rgb](./rgb.md)
 
 ##### Graphics - Drawing
 

@@ -22,7 +22,7 @@ Sets the current drawing color to *colorname* or to an ARGB value where ((a \* 2
     - r - red 0 = off to 255 = full on
     - g - green 0 = off to 255 = full on
     - b - blue 0 = off to 255 = full on
-3.  the [rgb](./rgb.md) function passing it 3 or 4 numbers from 0-255,
+3.  the [rgb](./rgb.md) function passing it 3 or 4 numbers from 0-255, or the [hsv](./hsv.md) function passing it a hue from 0-360 and 2 or 3 more numbers from 0-100,
 4.  using an svg color name as a string [as defined by the W3C](https://www.w3.org/TR/SVG11/types.html#ColorKeywords),
 5.  or using a string with a “\#” followed by 6 or 8 hexadecimal digits (“\#ff0000”, “\#a0ffffff”)
 
@@ -81,7 +81,7 @@ Will draw the following:\
 
 ### See Also
 
-[Color](./color.md), [GetBrushColor](./getbrushcolor.md), [GetColor](./getcolor.md), [Rgb](./rgb.md)
+[Color](./color.md), [GetBrushColor](./getbrushcolor.md), [GetColor](./getcolor.md), [Hsv](./hsv.md), [Rgb](./rgb.md)
 
 ### History
 
