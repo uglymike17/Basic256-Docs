@@ -117,6 +117,10 @@ const config = {
             title: 'Docs',
             items: [
               {
+                label: 'Choose a Language',
+                to: '/docs/languages',
+              },
+              {
                 label: 'Syntax Reference (English)',
                 to: '/docs/en/start',
               },

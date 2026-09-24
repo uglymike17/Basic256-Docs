@@ -1,6 +1,8 @@
 ---
-title: "Start"
-sidebar_label: "Start"
+title: "Choose a Language"
+sidebar_label: "Choose a Language"
+sidebar_position: 0
+slug: /languages
 ---
 
 ## BASIC-256 Language Documentation
@@ -13,11 +15,11 @@ New to BASIC-256? Read the [Introduction to BASIC256](/introduction) first, or [
 
 |  | Language | Translated |
 |----|----|----|
-| ![en](@site/static/img/wiki/en.png) | [English](../en/start.md) | The reference: complete for BASIC-256 2.3 |
-| ![fr](@site/static/img/wiki/fr.png) | [Français](../fr/start.md) | About three pages in five |
-| ![nl](@site/static/img/wiki/nl.png) | [Nederlands](../nl/start.md) | About half |
-| ![ru](@site/static/img/wiki/ru.png) | [Русский](../ru/start.md) | Just under half |
-| ![de](@site/static/img/wiki/de.png) | [Deutsch](../de/start.md) | About one page in five |
+| ![en](@site/static/img/wiki/en.png) | [English](./en/start.md) | The reference: complete for BASIC-256 2.3 |
+| ![fr](@site/static/img/wiki/fr.png) | [Français](./fr/start.md) | About three pages in five |
+| ![nl](@site/static/img/wiki/nl.png) | [Nederlands](./nl/start.md) | About half |
+| ![ru](@site/static/img/wiki/ru.png) | [Русский](./ru/start.md) | Just under half |
+| ![de](@site/static/img/wiki/de.png) | [Deutsch](./de/start.md) | About one page in five |
 
 Every language has every page: a page that has not been translated yet is shown in English, so nothing is missing whichever language you pick.
 
