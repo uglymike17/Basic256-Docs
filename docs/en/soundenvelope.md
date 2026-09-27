@@ -22,7 +22,7 @@ Shapes the volume of generated tones over their duration, instead of playing the
 - *sustain* — the held amplitude, 0.0 to 1.0.
 - *release* — time, in milliseconds, to fade from the sustain level down to silence at the end.
 
-**Array form** — a custom envelope given as alternating *level, duration* breakpoints ending with a level and then a release time: `level0, dur0, level1, dur1, ..., levelN, release`. Levels are 0.0 to 1.0 and durations are in milliseconds. The array must have an odd number of values (more than four). The amplitude moves in straight lines between successive levels.
+**Array form** — a custom envelope given as alternating *level, duration* breakpoints ending with a level and then a release time: `level0, dur0, level1, dur1, ..., levelN, release`. Levels are 0.0 to 1.0 and durations are in milliseconds. The array therefore always has an even number of values, at least four. The amplitude moves in straight lines between successive levels.
 
 **No arguments** — removes the envelope, so tones play at a constant amplitude again.
 

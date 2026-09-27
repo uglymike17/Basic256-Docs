@@ -31,7 +31,7 @@ Errors with a number \< 0 are not trappable by the try/catch statement.
 | ERROR_DIVZERO | 50 | Division by zero |
 | ERROR_DOWNLOAD | 93 | Error downloading file |
 | ERROR_ENVELOPEMAX | 97 | It was exceeded the maximum length of an envelope, which is 20 seconds |
-| ERROR_ENVELOPEODD | 96 | Envelope data must contain at least 4 elements and an odd number of elements |
+| ERROR_ENVELOPEODD | 96 | Envelope data must contain at least 4 elements and an even number of elements |
 | ERROR_EXPECTEDARRAY | 84 | Expected array |
 | ERROR_EXPECTEDSOUND | 94 | Expected sound |
 | ERROR_FILENOTOPEN | 7 | File not open |
