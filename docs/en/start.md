@@ -26,7 +26,7 @@ sidebar_label: "Start"
 ### Statements and Functions - Alphabetic
 
 - [?](./print.md)
-- [Abs](./abs.md), [Acos](./acos.md), [Alert](./alert.md), [Arc](./arc.md), [ArrayBase](./arraybase.md), [ArrayLength](./arraylength.md), [Asc](./asc.md), [Asin](./asin.md), [Assigned](./assigned.md), [Atan](./atan.md)
+- [Abs](./abs.md), [Acos](./acos.md), [Alert](./alert.md), [Arc](./arc.md), [ArrayAdd](./arrayadd.md), [ArrayBase](./arraybase.md), [ArrayLength](./arraylength.md), [Asc](./asc.md), [Asin](./asin.md), [Assigned](./assigned.md), [Atan](./atan.md)
 - [Begin Case / Case / End Case](./case.md)
 - [Call](./call.md), [Ceil](./ceil.md), [Changedir](./changedir.md), [Chord](./chord.md), [Chr](./chr.md), [Circle](./circle.md), [Clg](./clg.md), [Clickb](./clickb.md), [Clickclear](./clickclear.md), [Clickx](./clickx.md), [Clicky](./clicky.md), [Close](./close.md), [Cls](./cls.md), [Color](./color.md), [Confirm](./confirm.md), [Continue Do](./continuedo.md), [Continue For](./continuefor.md), [Continue While](./continuewhile.md), [Cos](./cos.md), [Count](./count.md), [Countx](./countx.md), [Cross](./cross.md), [Currentdir](./currentdir.md)
 - [Day](./day.md), [DBClose](./dbclose.md), [DBCloseSet](./dbcloseset.md), [DBExecute](./dbexecute.md), [DBFloat](./dbfloat.md), [DBInt](./dbint.md), [DBNull](./dbnull.md), [DBOpen](./dbopen.md), [DBOpenSet](./dbopenset.md), [DBRow](./dbrow.md), [DBString](./dbstring.md), [Degrees](./degrees.md), [Dim](./dim.md), [Dir](./dir.md), [Do / Until](./do.md), [Dot](./dot.md)
@@ -54,7 +54,7 @@ sidebar_label: "Start"
 
 #### Arrays and Variables
 
-[ArrayBase](./arraybase.md), [ArrayLength](./arraylength.md), [Assigned](./assigned.md), [Dim](./dim.md), [Fill](./fill.md), [Map](./map.md), [Redim](./redim.md), [Sort](./sort.md), [TypeOf](./typeof.md), [Unassign](./unassign.md), [VariableWatch](./variablewatch.md)
+[ArrayAdd](./arrayadd.md), [ArrayBase](./arraybase.md), [ArrayLength](./arraylength.md), [Assigned](./assigned.md), [Dim](./dim.md), [Fill](./fill.md), [Map](./map.md), [Redim](./redim.md), [Sort](./sort.md), [TypeOf](./typeof.md), [Unassign](./unassign.md), [VariableWatch](./variablewatch.md)
 
 #### Base Conversion
 
