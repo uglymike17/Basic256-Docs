@@ -21,6 +21,7 @@ sidebar_label: "Start"
 - [Command Line Options](./commandline.md)
 - [Compiler Error Codes](./compileerrorcodes.md)
 - [Text Output Window Overview](./textoutputwindow.md)
+- [GUI Toolkit Overview](./toolkit.md)
 - [Turtle Graphics Overview](./turtle.md)
 
 ### Statements and Functions - Alphabetic
@@ -113,6 +114,10 @@ sidebar_label: "Start"
 ##### Graphics - Other
 
 [Pixel](./pixel.md)
+
+##### Graphics - GUI Toolkit
+
+[GUI Toolkit](./toolkit.md) (overview)
 
 ##### Graphics - Turtle
 
