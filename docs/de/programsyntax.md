@@ -84,13 +84,14 @@ BASIC256's [color](../en/color.md) statement is richer than the text-mode `COLOR
 - **One value sets both** the pen and the brush to that color.
 - **Two values set them separately**: `color pen, brush`.
 
-A color may be given five ways:
+A color may be given six ways:
 
 1. a built-in constant such as `RED`, `DARKBLUE`, `WHITE`, or `CLEAR`, written bare (no quotes);
 2. an integer ARGB value, where the packed value is `((a * 256 + r) * 256 + g) * 256 + b` and each component runs 0–255 (`a` = 0 transparent … 255 opaque);
 3. the [rgb](../en/rgb.md) function with 3 or 4 numbers, e.g. `rgb(255, 160, 160)`;
-4. an SVG color-name string such as `"firebrick"` or `"papayawhip"`;
-5. a hex string, `"#rrggbb"` or `"#aarrggbb"`, e.g. `"#fab856"`.
+4. the [hsv](../en/hsv.md) function with 3 or 4 numbers — hue 0–360, then saturation, value and the optional alpha as percentages 0–100 — e.g. `hsv(30, 80, 100)`;
+5. an SVG color-name string such as `"firebrick"` or `"papayawhip"`;
+6. a hex string, `"#rrggbb"` or `"#aarrggbb"`, e.g. `"#fab856"`.
 
 **Constants are bare, SVG names are strings.** Only the built-in constants of
 point 1 are written as plain words. An SVG color name is a *string* and must be
@@ -114,6 +115,9 @@ than a color, so the program runs on without setting the color you intended.
     color "firebrick", "#fab856" # SVG name + hex string
     rect 150, 150, 100, 100
 
+    color hsv(200, 60, 90)       # hue 200 on the wheel: a sky blue
+    circle 70, 230, 40
+
     color "papayawhip", "clear"  # brush CLEAR -> not filled
     rect 175, 175, 100, 100
 
@@ -133,4 +137,4 @@ For readers coming from another BASIC, the remaining points worth knowing:
 
 ## See Also
 
-[Rem](../en/rem.md), [Print](../en/print.md), [Goto](../en/goto.md), [Gosub](../en/gosub.md), [If Then](../en/if.md), [For / Next](../en/for.md), [For Each / Next](../en/foreach.md), [Map](../en/map.md), [Dim](../en/dim.md), [Color](../en/color.md), [Rgb](../en/rgb.md), [Variables](../en/variables.md)
+[Rem](../en/rem.md), [Print](../en/print.md), [Goto](../en/goto.md), [Gosub](../en/gosub.md), [If Then](../en/if.md), [For / Next](../en/for.md), [For Each / Next](../en/foreach.md), [Map](../en/map.md), [Dim](../en/dim.md), [Color](../en/color.md), [Rgb](../en/rgb.md), [Hsv](../en/hsv.md), [Variables](../en/variables.md)
