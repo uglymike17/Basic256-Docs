@@ -28,6 +28,17 @@ This project is the actively maintained continuation of the original BASIC256, b
 - Simple BASIC syntax
 - Free and open source (GPL3)
 
+## What's new in BASIC256 2.3.1
+
+- A GUI toolkit, as a new module: `include "toolkit.kbs"` draws a classic-style window interface on the graphics output -- push buttons, checkboxes, radio buttons, sliders, spin boxes, tabs, group boxes, drawing fields and editable text fields. Each element has a subroutine that draws it and a function that tells whether a mouse click landed on it. See [GUI Toolkit](/docs/en/toolkit) and the programs in Examples/GUI-Demo.
+- Every function and subroutine in the bundled modules now starts with its module's prefix: `ma_` for math.kbs, `tu_` for turtle.kbs and `tk_` for toolkit.kbs, and each module has a help routine (`call ma_help()`, `call tu_help()`, `call tk_help()`) that prints what is in it. This breaks programs written for 2.3.0 that include math.kbs or turtle.kbs: `hypot` is now `ma_hypot`, `t_forward` is now `tu_forward`, and so on. See [Modules](/docs/en/modules) and the [Standard library](#standard-library) below.
+- A new [ARRAYADD](/docs/en/arrayadd) statement adds to the end of an array -- a value to a one-dimensional array, a row to a two-dimensional one -- and turns a variable with nothing in it yet into an array, so a table can be built up in a loop without a DIM.
+- View/Theme/Follow System turns the whole IDE dark when the operating system is in dark mode: menus, toolbars, docks and dialogs as well as the Edit, Text Output and Variable Watch windows.
+- Safer saving: Save As opens in the program's own folder with its name filled in, the bundled examples are never overwritten, and a new preference, Warn when overwriting an existing file, is on by default. The old Automatically save program when it is successfully run option has gone.
+- [CLICKX](/docs/en/clickx), [CLICKY](/docs/en/clicky) and double-clicks work all over a graphics window that [GRAPHSIZE](/docs/en/graphsize) has scaled up or the View menu has zoomed.
+- A whole number too big for 64 bits is now reported as "Number too large" when the program is compiled.
+- New example programs, among them a series of Falling Sand programs that builds up the final program step by step, and the games balgame256.kbs and FallingLetters.kbs in Examples/Fun, also in the WASM version.
+
 ## What's new in BASIC256 2.3.0
 
 - A program now asks before it touches files outside its own folder. Anything at or below the folder it was loaded from is used without a word; naming anything outside it -- with OPEN, KILL, MKDIR, IMGSAVE, DBOPEN, a path inside SQL or any other statement -- brings up a dialog offering Don't allow, Allow once and Allow for this run. [NETLISTEN](/docs/en/netlisten) now only accepts connections from the same machine unless Preferences/Advanced says otherwise, and RMDIR has been removed. These are potentially backward compatibility breaking changes, all to keep system-corrupting programs at bay. For details, see [File and Folder Permissions](/docs/en/filepermissions).
@@ -260,12 +271,13 @@ An example video of starting several graphics demos from Windows shortcuts can b
 ## Standard library
 
 This is functionality that does not exist in SourceForge BASIC-256.
-The program now contains a Modules directory that contains two standard libraries: math.kbs and turtle.kbs.
+The program now contains a Modules directory that contains three standard libraries: math.kbs, turtle.kbs and toolkit.kbs. Every function and subroutine in a module starts with two letters and an underscore naming the module (`ma_`, `tu_`, `tk_`), which keeps its names apart from a program's own and from those of the other modules. Each module also has a help routine that prints what is in it; the [Modules](/docs/en/modules) page explains them in more detail.
 
 `math.kbs` can be included in any program you write simply with
 
 ```basic
 include "math.kbs"
+call ma_help()
 ```
 
 It provides a set of basic functions to cut down on manually typing the same functions over and over.
@@ -273,27 +285,27 @@ Currently this provides:
 
 | Function | Meaning |
 | :---: | :--- |
-| minarr(a), maxarr(a) | Returns the smallest/largest element in an array or in a list enclosed in `{}` |
-| sumarr(a), avgarr(a) | Returns the sum/average of the elements in an array or list. |
-| sign(x) | Returns -1 / 0 / 1. |
-| min(a,b), max(a,b) | Returns the smallest/largest of the two scalars |
-| lerp(a,b,t) | Linear interpolation between a and b by ratio t (usually 0 and 1). |
-| hypot(a, b) | Returns the length of the hypotenuse, sqrt(a*a + b*b) |
-| atan2(y, x) | Returns the angle in radians of the point (x, y) |
-| clamp(a,lo,hi) | Clamps the value of a between lo and hi - r=clamp(r,0,255). |
-| remap(x, a1,a2, b1,b2) | remap a value between ranges — very handy in graphics-oriented BASIC256 |
-| wrap(x, lo, hi) | Wraps a value cyclically (angles, screen edges) — natural companion to clamp |
-| dist(x1,y1,x2,y2) | distance between two points |
-| fmod(a,b) | floating-point remainder of a / b |
-| fround(x, n) | round to n decimals (built-in command round is 0-decimal) |
-| cbrt(x) | cube root |
-| randint(lo,hi) | returns a random integer between lo and hi (inclusive) |
-| gaussian(mean, sd) | random number with normal distribution |
+| ma_minarr(a), ma_maxarr(a) | Returns the smallest/largest element in an array or in a list enclosed in `{}` |
+| ma_sumarr(a), ma_avgarr(a) | Returns the sum/average of the elements in an array or list. |
+| ma_sign(x) | Returns -1 / 0 / 1. |
+| ma_min(a,b), ma_max(a,b) | Returns the smallest/largest of the two scalars |
+| ma_lerp(a,b,t) | Linear interpolation between a and b by ratio t (usually 0 and 1). |
+| ma_hypot(a, b) | Returns the length of the hypotenuse, sqrt(a*a + b*b) |
+| ma_atan2(y, x) | Returns the angle in radians of the point (x, y) |
+| ma_clamp(a,lo,hi) | Clamps the value of a between lo and hi - r=ma_clamp(r,0,255). |
+| ma_map(x, a1,a2, b1,b2) | remap a value between ranges — very handy in graphics-oriented BASIC256 |
+| ma_wrap(x, lo, hi) | Wraps a value cyclically (angles, screen edges) — natural companion to clamp |
+| ma_dist(x1,y1,x2,y2) | distance between two points |
+| ma_fmod(a,b) | floating-point remainder of a / b |
+| ma_cbrt(x) | cube root |
+| ma_randint(lo,hi) | returns a random integer between lo and hi (inclusive) |
+| ma_gaussian(mean, sd) | random number with normal distribution |
 
 `turtle.kbs` can be included in any program you write simply with
 
 ```basic
 include "turtle.kbs"
+call tu_help()
 ```
 
 It provides a set of basic turtle functions that you can use to create the classic turtle designs; the [Turtle Graphics](/docs/en/turtle) page explains them in more detail.
@@ -301,46 +313,69 @@ Currently this provides:
 
 | Moving | Meaning |
 | :---: | :--- |
-| call t_forward(d) | move d pixels along the current heading |
-| call t_backward(d) | move d pixels opposite the current heading but does not turn the turtle round |
-| call t_goto(x, y) | move to the point (x, y) without turning it to face that way |
-| call t_home() | move back to the middle of the graphics window, leaving the heading and the pen as they are |
-| call t_reset() | back to the start: centred, facing north, pen down |
+| call tu_forward(d) | move d pixels along the current heading |
+| call tu_backward(d) | move d pixels opposite the current heading but does not turn the turtle round |
+| call tu_goto(x, y) | move to the point (x, y) without turning it to face that way |
+| call tu_home() | move back to the middle of the graphics window, leaving the heading and the pen as they are |
+| call tu_reset() | back to the start: centred, facing north, pen down |
 
 | Turning | Meaning |
 | :---: | :--- |
-| call t_right(a) | turn a degrees clockwise, without moving but relative to their current heading |
-| call t_left(a) | turn a degrees anticlockwise, without moving but relative to their current heading |
-| call t_setheading(a) | face a degrees clockwise from north. This ignores the previous heading entirely |
+| call tu_right(a) | turn a degrees clockwise, without moving but relative to their current heading |
+| call tu_left(a) | turn a degrees anticlockwise, without moving but relative to their current heading |
+| call tu_setheading(a) | face a degrees clockwise from north. This ignores the previous heading entirely |
 
 | The pen | Meaning |
 | :---: | :--- |
-| call t_pendown() | the turtle leaves a trail from here on. Color sets the pen colour, PenWidth its width, and Clg clears the canvas. |
-| call t_penup() | the turtle moves without drawing from here on. Color sets the pen colour, PenWidth its width, and Clg clears the canvas. |
+| call tu_pendown() | the turtle leaves a trail from here on. Color sets the pen colour, PenWidth its width, and Clg clears the canvas. |
+| call tu_penup() | the turtle moves without drawing from here on. Color sets the pen colour, PenWidth its width, and Clg clears the canvas. |
 
 | Reading back | Meaning |
 | :---: | :--- |
-| t_x() | Returns the turtle's x position |
-| t_y() | Returns the turtle's y position |
-| t_getheading() | Returns the heading in degrees, 0 to just under 360 |
-| t_getpen() | Returns 1 if the pen is down, 0 if it is up |
+| tu_x() | Returns the turtle's x position |
+| tu_y() | Returns the turtle's y position |
+| tu_getheading() | Returns the heading in degrees, 0 to just under 360 |
+| tu_getpen() | Returns 1 if the pen is down, 0 if it is up |
 
 These let a program do arithmetic against the turtle, mix turtle drawing with ordinary coordinate drawing, or put the turtle back where it found it. To drop a circle where the turtle is standing:
 
 ```basic
-circle t_x(), t_y(), 5
+circle tu_x(), tu_y(), 5
 ```
 
 They are also what makes branching figures possible: a routine that draws a branch can note the position and heading it started from, and restore them before the next branch begins.
 
 | Short Alias | Same as |
 | :---: | :--- |
-| t_fw(d) | t_forward(d) |
-| t_bw(d) | t_backward(d) |
-| t_r(a) | t_right(a) |
-| t_l(a) | t_left(a) |
-| t_pd() | t_pendown() |
-| t_pu() | t_penup() |
+| tu_fw(d) | tu_forward(d) |
+| tu_bw(d) | tu_backward(d) |
+| tu_r(a) | tu_right(a) |
+| tu_l(a) | tu_left(a) |
+| tu_pd() | tu_pendown() |
+| tu_pu() | tu_penup() |
+
+`toolkit.kbs` can be included in any program you write simply with
+
+```basic
+include "toolkit.kbs"
+call tk_help()
+```
+
+It draws a classic-style interface on the graphics output. Each element has a subroutine that draws it and a function that tells whether a mouse click landed on it; the program keeps the state and redraws an element when it changes. The [GUI Toolkit](/docs/en/toolkit) page explains them in more detail, and the programs in Examples/GUI-Demo show each element at work.
+
+| Element | Drawn with | Clicks tested with |
+| :---: | :--- | :--- |
+| Push button | tk_button | tk_buttonhit |
+| Checkbox | tk_checkbox | tk_checkhit |
+| Radio button | tk_radio | tk_radiohit |
+| Slider | tk_slider | tk_sliderhit, tk_sliderval |
+| Spin box | tk_spinner | tk_spinhit |
+| Tabs | tk_drawtabs | tk_tabhit |
+| Group box | tk_grouper | |
+| Drawing field | tk_drawing | tk_drawhit |
+| Text field | tk_textfield | tk_texthit, with tk_textcaretat, tk_textedit$ and tk_textcaret for clicking, typing and moving the caret |
+
+> **Upgrading from 2.3.0:** the module prefixes are new in 2.3.1. A program that still calls the old names (`sumarr`, `hypot`, `t_forward`, ...) stops with an error; rename the calls to `ma_sumarr`, `ma_hypot`, `tu_forward` and so on. Two names change by more than the prefix: `remap` is now `ma_map`, and `fround` has been removed.
 
 ## Building from source
 
@@ -365,6 +400,7 @@ The GitHub repository [uglymike17/basic256](https://github.com/uglymike17/basic2
 - BASIC256 v2.1.0 was basically v2.0 but updated for the modern age and for new architectures.
 - BASIC256 v2.2.0 adds new commands, a Turtle module and a big speedup over v2.1.0.
 - BASIC256 v2.3.0 has a major upgrade to the Text Output window (fonts, colors, cursor placement, console emulation etc) and makes the product more resilient to bad actors.
+- BASIC256 v2.3.1 adds a GUI toolkit module, gives the module routines their own prefixes, adds ARRAYADD and an IDE that turns dark with the system.
 
 ## Roadmap
 
