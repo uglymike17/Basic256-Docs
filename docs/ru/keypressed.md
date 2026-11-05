@@ -15,7 +15,7 @@ return [boolean_expression](../en/booleanexpressions.md) or [integer_expression]
 
 The KeyPressed function returns a true or false value if a key is currently pressed, or returns the number of keys that are currently being pressed. Unlike the [key](../en/key.md) function that clears the keyboard buffer, the KeyPressed function does not. This allows for the creation of much more responsive games and other uses of the keyboard.
 
-See the [key](../en/key.md) function for a list of common key codes or see [here](http://qt-project.org/doc/qt-4.8/qt.html#Key-enum) for a complete list codes.
+See the [key](../en/key.md) function for a list of common key codes or see [here](https://doc.qt.io/qt-6/qt.html#Key-enum) for a complete list codes.
 
 ### Example
 

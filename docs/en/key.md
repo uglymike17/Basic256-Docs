@@ -41,7 +41,7 @@ will not display the desired results, because it’s calling key twice in succes
 | Y=89 | Z=90 |  |  |  |  |  |  |
 | Down Arrow=16777237 | Up Arrow=16777235 | Left Arrow=16777234 | Right Arrow=16777236 |  |  |  |  |
 
-[Click here for a complete list of key values](http://qt-project.org/doc/qt-4.8/qt.html#Key-enum)
+[Click here for a complete list of key values](https://doc.qt.io/qt-6/qt.html#Key-enum)
 
 ### Example
 
