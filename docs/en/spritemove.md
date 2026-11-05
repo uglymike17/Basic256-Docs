@@ -16,7 +16,7 @@ sidebar_label: "Spritemove"
 
 ### Description
 
-Move a sprite from its current position by the specified number of pixels. Motion will be limited to the current screen. Optionally the sprite may be rotated or scaled by defining optional the *rrotate_expr* and [scale_expression](./floatexpressions.md) parameters. The degree [rotate_expression](./floatexpressions.md) is measured in radians. Rotation and scaling are relative to the previous state of the sprite.
+Move a sprite from its current position by the specified number of pixels. The sprite is not stopped at the edge of the screen: it can move partly or completely off the screen, so a program that wants to keep it visible must check [Spritex](./spritex.md) and [Spritey](./spritey.md) itself. Optionally the sprite may be rotated or scaled by defining the optional [rotate_expression](./floatexpressions.md) and [scale_expression](./floatexpressions.md) parameters. The degree [rotate_expression](./floatexpressions.md) is measured in radians. Rotation and scaling are relative to the previous state of the sprite.
 
 ### See Also
 
