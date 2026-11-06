@@ -1,6 +1,6 @@
 ---
-title: "Try"
-sidebar_label: "Try"
+title: "Try / Catch / EndTry"
+sidebar_label: "Try / Catch / EndTry"
 ---
 
 ## Try / Catch / EndTry (Statement)
@@ -15,7 +15,13 @@ sidebar_label: "Try"
 
 ### Description
 
-Execute the [statement(s)](../en/programsyntax.md) inside the try. If a runtime error occurs jump to the code in the catch.
+Execute the [statement(s)](../en/programsyntax.md) inside the try. If a runtime error or a warning happens, the rest of the try part is skipped and the program jumps to the code in the catch. If nothing goes wrong, the catch part is skipped. Either way the program carries on after **end try**, which may also be written **endtry**.
+
+- Errors that happen inside a [Subroutine](../en/subroutine.md) or [Function](../en/function.md) called from the try are caught too.
+- A try may be put inside another try. An error in the catch part of the inner one goes to the outer catch.
+- A try comes before an [OnError](../en/onerror.md) trap: an error inside a try goes to its catch.
+
+In the catch, [LastError](../en/lasterror.md), [LastErrorLine](../en/lasterrorline.md) and [LastErrorMessage](../en/lasterrormessage.md) tell you which error it was.
 
 ### Example
 
@@ -29,13 +35,13 @@ Execute the [statement(s)](../en/programsyntax.md) inside the try. If a runtime 
 
 will display
 
-    9/-1= -9
+    9/-1= -9.0
     division by zero
-    9/1= 9
+    9/1= 9.0
 
 ### See Also
 
-[Lasterror](../en/lasterror.md), [Lasterrorextra](../en/lasterrorextra.md), [Lasterrorline](../en/lasterrorline.md), [Lasterrormessage](../en/lasterrormessage.md), [Offerror](../en/offerror.md), [Onerror](../en/onerror.md), [OnStop](../en/onstop.md), [ThrowError](../en/throwerror.md), [Try / Catch / EndTry](../en/try.md)
+[Error Codes](../en/errorcodes.md), [Lasterror](../en/lasterror.md), [Lasterrorextra](../en/lasterrorextra.md), [Lasterrorline](../en/lasterrorline.md), [Lasterrormessage](../en/lasterrormessage.md), [Offerror](../en/offerror.md), [Onerror](../en/onerror.md), [ThrowError](../en/throwerror.md), [Try / Catch / EndTry](../en/try.md)
 
 ### History
 

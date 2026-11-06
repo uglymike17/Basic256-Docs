@@ -22,9 +22,9 @@ Simule une erreur d’exécution. Cette erreur peut être gérée par le gestion
     print "après erreur"
     end
 
-    subroutine errortrap()
+    errortrap:
     print "l'erreur " + lasterror + " est arrivée"
-    end subroutine
+    return
 
 Affichera :\
 

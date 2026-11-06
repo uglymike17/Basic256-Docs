@@ -1,6 +1,6 @@
 ---
-title: "Try"
-sidebar_label: "Try"
+title: "Try / Catch / EndTry"
+sidebar_label: "Try / Catch / EndTry"
 ---
 
 ## Try / Catch / EndTry (Statement)
@@ -15,7 +15,13 @@ sidebar_label: "Try"
 
 ### Description
 
-Execute the [statement(s)](./programsyntax.md) inside the try. If a runtime error occurs jump to the code in the catch.
+Execute the [statement(s)](./programsyntax.md) inside the try. If a runtime error or a warning happens, the rest of the try part is skipped and the program jumps to the code in the catch. If nothing goes wrong, the catch part is skipped. Either way the program carries on after **end try**, which may also be written **endtry**.
+
+- Errors that happen inside a [Subroutine](./subroutine.md) or [Function](./function.md) called from the try are caught too.
+- A try may be put inside another try. An error in the catch part of the inner one goes to the outer catch.
+- A try comes before an [OnError](./onerror.md) trap: an error inside a try goes to its catch.
+
+In the catch, [LastError](./lasterror.md), [LastErrorLine](./lasterrorline.md) and [LastErrorMessage](./lasterrormessage.md) tell you which error it was.
 
 ### Example
 
@@ -29,13 +35,13 @@ Execute the [statement(s)](./programsyntax.md) inside the try. If a runtime erro
 
 will display
 
-    9/-1= -9
+    9/-1= -9.0
     division by zero
-    9/1= 9
+    9/1= 9.0
 
 ### See Also
 
-[Lasterror](./lasterror.md), [Lasterrorextra](./lasterrorextra.md), [Lasterrorline](./lasterrorline.md), [Lasterrormessage](./lasterrormessage.md), [Offerror](./offerror.md), [Onerror](./onerror.md), [OnStop](./onstop.md), [ThrowError](./throwerror.md), [Try / Catch / EndTry](./try.md)
+[Error Codes](./errorcodes.md), [Lasterror](./lasterror.md), [Lasterrorextra](./lasterrorextra.md), [Lasterrorline](./lasterrorline.md), [Lasterrormessage](./lasterrormessage.md), [Offerror](./offerror.md), [Onerror](./onerror.md), [ThrowError](./throwerror.md), [Try / Catch / EndTry](./try.md)
 
 ### History
 

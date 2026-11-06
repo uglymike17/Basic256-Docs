@@ -1,6 +1,6 @@
 ---
-title: "Lasterrormessage"
-sidebar_label: "Lasterrormessage"
+title: "LastErrorMessage"
+sidebar_label: "LastErrorMessage"
 ---
 
 ## LastErrorMessage (Function)
@@ -14,15 +14,15 @@ returns [string_expression](../en/stringexpressions.md)
 
 ### Description
 
-Returns a string representing the last runtime error.
+Returns the message of the last trapped runtime error or warning, the same text BASIC-256 shows when the error is not trapped, without the "ERROR on line" part. The messages are listed on the [Error Codes](../en/errorcodes.md) page.
 
 ### Example
 
-See examples of usage on [OnError](../en/onerror.md) and [ThrowError](../en/throwerror.md) pages.
+See examples of usage on [OnError](../en/onerror.md) and [LastError](../en/lasterror.md) pages.
 
 ### See Also
 
-[Lasterror](../en/lasterror.md), [Lasterrorextra](../en/lasterrorextra.md), [Lasterrorline](../en/lasterrorline.md), [Lasterrormessage](../en/lasterrormessage.md), [Offerror](../en/offerror.md), [Onerror](../en/onerror.md), [OnStop](../en/onstop.md), [ThrowError](../en/throwerror.md), [Try / Catch / EndTry](../en/try.md)
+[Error Codes](../en/errorcodes.md), [Lasterror](../en/lasterror.md), [Lasterrorextra](../en/lasterrorextra.md), [Lasterrorline](../en/lasterrorline.md), [Lasterrormessage](../en/lasterrormessage.md), [Offerror](../en/offerror.md), [Onerror](../en/onerror.md), [ThrowError](../en/throwerror.md), [Try / Catch / EndTry](../en/try.md)
 
 ### History
 
