@@ -13,7 +13,19 @@ returns [string_expression](./stringexpressions.md)
 
 ### Description
 
-Return a right justified string of at least [length_expression](./integerexpressions.md) with zeros appended to the right. it is equivalent to **rjust** ( [string_expression](./stringexpressions.md), [length_expression](./integerexpressions.md), “0”).
+Return a right justified string of at least [length_expression](./integerexpressions.md) characters, with zeros added on the left. A number is turned into a string first, and a string that is already long enough is returned as it is. A minus sign is treated like any other character, so zfill(-5, 4) is "00-5". It is equivalent to **rjust** ( [string_expression](./stringexpressions.md), [length_expression](./integerexpressions.md), “0”).
+
+### Example
+
+    print zfill(7, 3)
+    print zfill("42", 5)
+    print zfill(12345, 3)
+
+will display
+
+    007
+    00042
+    12345
 
 ### See Also
 

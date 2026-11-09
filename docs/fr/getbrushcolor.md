@@ -12,7 +12,7 @@ getbrushcolor()
 
 ### Description
 
-Retourne la valeur ARGB (aplha red green blue) du pinceau de dessin actuel. ARGB est calculé avec la formule ( (a \* 256 + r) \* 256 + b) \* 256 + g ou a,r,g, et b sont des valeurs entre 0 et 255. Si la couleur de dessin a été initialisé à CLEAR, **getbrushcolor** retournera 0.
+Retourne la valeur ARGB (aplha red green blue) du pinceau de dessin actuel. ARGB est calculé avec la formule ( (a \* 256 + r) \* 256 + g) \* 256 + b ou a,r,g, et b sont des valeurs entre 0 et 255. Si la couleur de dessin a été initialisé à CLEAR, **getbrushcolor** retournera 0.
 
 ### Voir Aussi
 
@@ -21,7 +21,7 @@ Retourne la valeur ARGB (aplha red green blue) du pinceau de dessin actuel. ARGB
 ### Exemple
 
     color red, blue
-    print getcolor
+    print getbrushcolor
 
 Affichera :
 

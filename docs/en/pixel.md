@@ -13,7 +13,9 @@ returns *rgb_expr*
 
 ### Description
 
-Returns the [RGB](./rgb.md) value of the pixel at the [x_position](./numericexpressions.md) and [y_position](./numericexpressions.md) coordinate. If the pixels has not been set since the last [Clg](./clg.md) command or was drawn with the color CLEAR a -1 will be returned.
+Returns the colour of the pixel at the [x_position](./numericexpressions.md) and [y_position](./numericexpressions.md) coordinate, as the same kind of number [Rgb](./rgb.md) makes, alpha included. A pixel that has not been drawn on since the last [Clg](./clg.md), or that was drawn with the colour CLEAR, is transparent and returns 0. White returns -1.
+
+**pixel** reads the graphics output, or the image that [SetGraph](./setgraph.md) is drawing on. It sees only what was drawn: sprites float above the drawing and are left out (use [GetSlice](./getslice.md) to read them too). A half-transparent colour drawn over something else is read back as the colour that results. A point outside the graphics output gives a meaningless number (12345), so keep the coordinates inside it.
 
 The coordinates may be whole numbers or fractions. They are measured in pixels unless a [Window](./window.md) has been set, in which case they are in the units that window defines and the nearest pixel is read.
 
@@ -41,7 +43,7 @@ The following sample program shows how to use the binary and operation and integ
 
 ### See Also
 
-[Pixel](./pixel.md), [Window](./window.md)
+[GetSlice](./getslice.md), [ImagePixel](./imagepixel.md), [Pixel](./pixel.md), [Rgb](./rgb.md), [SetGraph](./setgraph.md), [Window](./window.md)
 
 ### History
 

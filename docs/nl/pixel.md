@@ -12,7 +12,7 @@ sidebar_label: "Pixel"
 ### Beschrijving
 
 De functie geeft de RGB waarde terug van de pixel die zich op (*x*,*y*) bevindt.\
-Als de pixel sinds de laatster \[clg\] opdracht niet werd overschreven, of indien het werd overschreven met de *clear* kleur, dan wordt **-1** teruggegeven.
+De waarde bevat ook de alpha, net als bij [Rgb](./rgb.md). Als de pixel sinds de laatste \[clg\] opdracht niet werd overschreven, of indien het werd overschreven met de *clear* kleur, is hij transparant en wordt **0** teruggegeven; wit geeft **-1**. Sprites worden niet gelezen. Buiten het grafische venster heeft het resultaat geen betekenis.
 
 ### Voorbeeld
 

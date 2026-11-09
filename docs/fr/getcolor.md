@@ -12,7 +12,7 @@ getcolor()
 
 ### Description
 
-Retourne la valeur RGB de la couleur de tracé en cours (telle que définie par la commande color). RGB est calculé à l’aide de la formule ((*rouge* \* 256) + *vert* \* 256) + *bleu* où *rouge*, *vert*, et *bleu* sont compris entre 0 et 255. Si la couleur de tracé est définie à CLEAR, cette fonction retourne -1.
+Retourne la valeur ARGB (alpha, rouge, vert, bleu) de la couleur de tracé en cours (telle que définie par la commande color). ARGB est calculé à l’aide de la formule ((*alpha* \* 256 + *rouge*) \* 256 + *vert*) \* 256 + *bleu* où les quatre valeurs sont comprises entre 0 et 255 ; une couleur opaque donne donc un nombre négatif, comme [Rgb](./rgb.md). Si la couleur de tracé est définie à CLEAR, cette fonction retourne 0.
 
 ### Voir Aussi
 
@@ -25,7 +25,7 @@ Retourne la valeur RGB de la couleur de tracé en cours (telle que définie par 
 
 Donnera le résultat :
 
-    16711680
+    -65536
 
 ### Disponible à partir de a version
 
